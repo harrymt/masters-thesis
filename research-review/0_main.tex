@@ -1,0 +1,82 @@
+% -*- root: 0_main.tex -*-
+\documentclass{article}
+
+\usepackage[a4paper, top=3cm, bottom=3cm]{geometry}
+\usepackage{fancyhdr} % Customise style
+% ERROR MEANS WE NEED TO GET RID OF EMPTY LINE \\'s
+\usepackage{hyperref}
+\usepackage{url} % References
+\usepackage{graphicx} % Show images
+\usepackage[font=footnotesize,labelfont={footnotesize,footnotesize}, margin=0cm]{caption}
+\usepackage{titlesec}
+\usepackage{import} % Better version of include/input
+\usepackage{listings} % Program code
+\usepackage{float} % For better photo management
+\usepackage{parskip} % Don't indent paragraphs
+\usepackage{afterpage} % Blank pages
+\newcommand\blankpage{% Code for the blank page
+    \null
+    \thispagestyle{empty}
+    \addtocounter{page}{-1}
+    \newpage}
+
+% Appendix items
+\usepackage[toc,page]{appendix}
+
+% Add title setup/style.
+\include{_title}
+
+\begin{document}
+
+    % Stop page numbering until we say again
+    \pagenumbering{gobble}
+
+    \maketitle
+    % \afterpage{\blankpage}
+
+    % \include{0_acknowledgements}
+
+    % \include{1_abstract}
+
+
+    \newgeometry{top=2.5cm,bottom=2.5cm} % set margins to be smaller so we can fit contents onto a single page
+    \tableofcontents
+    \restoregeometry
+
+    \newpage
+
+    % Set styles after the title, abstract and toc
+    \fancypagestyle{plain} {
+      \fancyhf{}
+      \lhead[\rightmark]{\thepage}
+      \rhead[\thepage]{\leftmark}
+      \setlength{\parindent}{0pt}
+      \setlength{\parskip}{2ex}
+    }
+
+    % Start page numbers
+    \pagenumbering{arabic}
+
+    % https://www.cs.bris.ac.uk/Teaching/Resources/COMSM2202/review.html
+    % https://www.cs.bris.ac.uk/project/MSc/
+    \import{./}{2_introduction.tex}
+
+    \import{./}{3_survey.tex}
+
+    \import{./}{4_work_plan.tex}
+
+    \import{./}{5_evaluation.tex}
+
+    \import{./}{6_conclusion.tex}
+
+    \cleardoublepage
+    \bibliographystyle{unsrt}
+    \renewcommand*{\refname}{}
+    \section{References}
+    \bibliography{bibliography}
+
+    \newgeometry{top=2.5cm,bottom=2.5cm} % set margins to be smaller so we can fit appendix items onto a single page
+
+    % \include{appendix}
+
+\end{document}
