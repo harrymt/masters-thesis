@@ -1,3 +1,7 @@
 research-review/Output/*
 research-review/Output
 research-review/main.synctex.gz
+
+research-review/chapters/Output/
+
+*.log
