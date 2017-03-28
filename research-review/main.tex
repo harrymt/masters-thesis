@@ -1,4 +1,4 @@
-% -*- root: 0_main.tex -*-
+% -*- root: main.tex -*-
 \documentclass{article}
 
 \usepackage[a4paper, top=3cm, bottom=3cm]{geometry}
@@ -24,14 +24,16 @@
 \usepackage[toc,page]{appendix}
 
 % Add title setup/style.
-\include{_title}
+\include{chapters/_title}
 
 \begin{document}
+
 
     % Stop page numbering until we say again
     \pagenumbering{gobble}
 
     \maketitle
+
     % \afterpage{\blankpage}
 
     % \include{0_acknowledgements}
@@ -59,21 +61,21 @@
 
     % https://www.cs.bris.ac.uk/Teaching/Resources/COMSM2202/review.html
     % https://www.cs.bris.ac.uk/project/MSc/
-    \import{./}{2_introduction.tex}
+    \import{./chapters/}{2_introduction.tex}
 
-    \import{./}{3_survey.tex}
+    \import{./chapters/}{3_survey.tex}
 
-    \import{./}{4_work_plan.tex}
+    \import{./chapters/}{4_evaluation.tex}
 
-    \import{./}{5_evaluation.tex}
+    \import{./chapters/}{5_conclusion.tex}
 
-    \import{./}{6_conclusion.tex}
+    \import{./chapters/}{6_work_plan.tex}
 
     \cleardoublepage
     \bibliographystyle{unsrt}
     \renewcommand*{\refname}{}
     \section{References}
-    \bibliography{bibliography}
+    \bibliography{chapters/bibliography}
 
     \newgeometry{top=2.5cm,bottom=2.5cm} % set margins to be smaller so we can fit appendix items onto a single page
 
