@@ -1,13 +1,12 @@
-research-review/Output/*
-research-review/Output
+
+# LaTeX Research Review writeup
 research-review/main.synctex.gz
-
-research-review/chapters/Output/
-
+research-review/output/*
+research-review/chapters/output/
 *.log
 
 
-
+# Android App ignores
 Habit/*.iml
 Habit/.gradle
 Habit/local.properties
