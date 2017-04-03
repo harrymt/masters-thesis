@@ -5,3 +5,15 @@ research-review/main.synctex.gz
 research-review/chapters/Output/
 
 *.log
+
+
+
+Habit/*.iml
+Habit/.gradle
+Habit/local.properties
+Habit/.idea/workspace.xml
+Habit/.idea/libraries
+Habit/.DS_Store
+Habit/build
+Habit/captures
+Habit/.externalNativeBuild
