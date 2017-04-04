@@ -1,74 +1,150 @@
 \newpage
+
+
 \section{Habit Formation}
-What is a habit?
-:\newline
-:\newline
-:\newline
-How are they formed?
-:\newline
-:\newline
-Rewards!
-:\newline
-Technology and rewards
-:\newline
-:\newline
+  - What is a habit\newline
+  - What does it mean to form a habit\newline
+    - Examples\newline
+  \subsection{Benifits}
+    - How can we benefit from knowing how to form this?\newline
+    - How does CS benefit\newline
+      - Health benefits\newline
+      - Problems with forgetting thing @TODO kathy
+  \subsection{Theory}
+    - General theory for forming habits\newline
+    - Time to form, 66 days, @lally
+  \subsubsection{Trigger}
+      - What is this\newline
+      - Kathys research
+  \subsubsection{Action}
+      - List of habits\newline
+      - Types of habits that are effective\newline
+        - Using this?
+  \subsubsection{Reward}
+      - General info\newline
+      - Types\newline
+    - When users stop doing this automaticity is reduced
+  \subsubsection{Automaticity}
+      - What is it\newline
+      - Why is it needed\newline
+    - Big up needing technology for this process, 'if only we could do this automatically'
+  \subsection{Technology}
+    - How can we use tech for this problem
+  \subsubsection{State}
+      - Current apps available\newline
+      - Kathys Research
+  \subsubsection{Problems}
+      \subsubsection{- Not grounded in science}
+        - Kathys research, state
+      \subsubsection{- Lack of automaticity}
+        - Doesnt develop when you remove the system
+      \subsubsection{- Dependant on tech}
+        - To do with lack of automaticity
+  \subsubsection{Existing Research}
+      - Trigger, Action, [Reward]
+      \subsubsection{- Kathys Resaerch}
+        - Design requirements
+      \subsubsection{- Taxonomy of...}
+        - Reward focused
+  \subsubsection{Requirements for Habit Reward system}
+      - List of combined requirments\newline
+      - However still lack of retention, but, there is hope,\newline
+      <\newline
+        table of requirements\newline
+        - Foucs on just rewards\newline
+        - I will use kathys reqs for tracking requirements\newline
+      >\newline
+      - @TODO multimodal research says using multiplemodalieis improves retention / automaticity
+
+\section{Multi-Modal}
+  - What is a Modalitiy\newline
+  - Research into how multiple modalities improve retention\newline
+  - Different types, most common and @TODO research says these are most effective
+  \subsection{Types}
+  \subsubsection{Audio}
+      - What is it\newline
+      - Why are we choosing it\newline
+      - Examples
+      \subsubsection{- Why is it good?}
+        - What does it give to us\newline
+        - @TODO research
+      \subsubsection{- Reward}
+        - Cross check with my requirements
+  \subsubsection{Visual}
+      - What is it\newline
+      - Why are we choosing it\newline
+      - Examples
+      \subsubsection{- Why is it good?}
+        - @TODO research
+      \subsubsection{- Reward}
+        - Cross check with my requirments
+  \subsubsection{Vibration}
+      - What is it\newline
+      - Why are we chosing it\newline
+      - Examples\newline
+      - Wearables, Fitbit
+    \subsubsection{Why is it good?}
+        - @TODO research
+    \subsubsection{Reward}
+        - Cross check with requirements
+  \subsection{Table of multimodal reward implementation strategies}
+    - Table of requirements matched with modalities\newline
+    - If you could implement this, you could increase users automaticity for habits
+
+\section{Building the System}
+  \subsection{Design Implications}
+    - Trigger:\newline
+        - Either A, certain configured time of the day\newline
+        -        B: No trigger\newline
+        -        C: Around a specific time\newline
+    - Action:\newline
+      - Choose habit from list of habits\newline
+      - Perform\newline
+      - Use app to track the action\newline
+    - Reward:\newline
+      - You get one of these rewards, based on modalitiy selected\newline
+      - Vision\newline
+        - Through Web app\newline
+        - Could be: App, or message\newline
+      - Audatory\newline
+        - Through phone\newline
+        - Could be: App\newline
+      - Tactic\newline
+        - Through wearable\newline
+        - Could be: App
+  \subsubsection{Example user flow}
+      - Pre-Start\newline
+        - Choose daily habit type from list of X, e.g. 1 press up before breakfast\newline
+        - Enable notifications or fitbit if chosen\newline
+        - Time action / reward, variable rewards, e.g. then work out average time to send, or none\newline
+      - Start:\newline
+        - New day\newline
+        - @ trigger time, send reminder, if set, notification\newline
+        - Open notification, do habit, press tracked\newline
+        - Get reward type
+  \subsection{Implementation}
+    - Web app chosen because easiest and achievable
+  \subsubsection{Technology}
+      - React JS\newline
+      - Android/iOS specific notifications from web app\newline
+      - Save to home screen
+  \subsubsection{Reward Modality implementations}
+      - Vision\newline
+        - Send notification\newline
+        - Show nice visuals\newline
+      - Audio\newline
+        - Send notification\newline
+        - Play uplifting music\newline
+      - Tactic\newline
+        - A.P.I. sets wearable alarm\newline
+        - Wearable (fitbit) issues and tracks alarm times
+    \subsection{Component overview}
+      [app] -------> (Database) -----> at certain time ---> Send notification to trigger type of reward\newline
+      [ big button that says track]\newline
+      taskname textbox
 
 
-\subsection{Rewards}
-Why do we need them?
-:\newline
-:\newline
-What are they?
-:\newline
-:\newline
-Whats the current state?
-:\newline
-:\newline
-
-\subsection{Current Systems}
-Dependency on these systems, dependency on the actual reward
-:\newline
-:\newline
-Techniuqes for sustaining habit adoption
-:\newline
-:\newline
-Alternatives, multi-modal cross modal interaction, Single Modality Impact on Habit Adoption Techniques
-:\newline
-:\newline
-
-\newpage
-\section{Multi-Modal Interaction}
-How these techniques can be applied to habit formation? How modalities affect habit adoption?
-:\newline
-:\newline
-\subsection{Mobile Technology}
-Why might this be better? More interaction? We could fail!
-:\newline
-:\newline
-\subsection{Techniques}
-To increase chance of succeeding,,, gamification? And another reason!
-:\newline
-
-\newpage
-
-\section{Gamification \& Habits}
-Why Games?
-:\newline
-:\newline
-What elements in games can we use to make people adopt habits?
-:\newline
-\subsection{Existing Systems}
-:\newline
-:\newline
-Impact on habit formation
-
-\subsection{Gamification Elements}
-Impact on Habits?
-:\newline
-:\newline
-Impact on Multi-Modal Interaction?
-:\newline
-:\newline
+\section{Implementation old}
 
 Habit formation, Don't Kick the Habit \cite{article_dont_kick_habit}, stopping the behaviour when one stops using behaviour change apps.\newline
 Measuring Habit strength \cite{article_habit_strength} \cite{article_habit_measurement}.\newline
@@ -77,15 +153,4 @@ Multi-Modal interaction, using multiple modalities for habit formation \cite{}, 
 \newline
 Gamification elements \cite{f2p_games_how_to}, can we use any elements from Free-To-Play games?\newline
 \newline
-
-
-
-\newpage
-\section{Design Considerations}
-List of Habit forming methods
-:\newline
-:\newline
-\subsection*{Categories}
-:\newline
-:\newline
 
