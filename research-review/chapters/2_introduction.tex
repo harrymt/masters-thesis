@@ -1,115 +1,57 @@
 
 \section{Introduction}
-  \subsection{Aims and Objectives}
-    \subsubsection{Create multimodal habit reward system requirements list}
-      - 3 Modalities, requirements based on kathys and taxonomy of...
 
-    \subsubsection{Build multimodal habit reward system}
-      - Web app, wearable
+\subsection*{Background}
+Habits are actions performed with almost no conscious thought in a automatic-like way. People want to form positive habits for lots of reasons (Lally, Promoting habit formation \cite{article_promoting_habit_formation}), for example health benefits, such as remembering to exercise everyday or medicinal benefits, such as remembering to take medication. The 3 elements of habit formation are, repetition, contextual cues and positive reinforcement (Kathys, 2.3.2). Associating the cue with performance and grounding the process with a reward encourages regular repetition, leading to automatic behaviour (Lally, Experiences of habit formation \cite{article_experiences_of_habit_formation}). Building a new habit requires three steps. A contextual cue, that triggers the start of the habit (action), then finishes with a reward with positive reinforcement (Kathys disso). For example, when you eat breakfast (trigger), you might write in a journal (action), and then reflect on last week (reward). Studies have shown that the process of creating a new habit takes on average up to 66 days of repetitive use (Lally). This is a long time for people to remember, perform and sustain a new habit without any help.
 
-    \subsubsection{Build a system that improves users habit automaticity when compared to control group}
-      - Test using study\newline
-      - Test using @TODO kathys measure atomicity test
+\subsection*{Motivation - Habit Formation}
+Technology can aid this problem, by reminding and building motivation. Mobile phones provide us with an interactive platform that can help with habit formation. Existing habit formation apps guide users through a series of experiences to form a new habit. Although, literature shows these apps are bad at forming habits because they are not grounded in habit formation theory (Kathys: Beyond self tracking reminders). They get people dependent on the technology and do not build the automatic reaction to a trigger (habit automaticity). For example, when people stop using habit forming mobile apps, they also stop performing the habit.\newline
+\newline
+Studies have shown that routine-based remembering strategies are good for forming ?automaticity? (Kathy disso, table 7.1, also \cite{article_dont_forget_your_pill}) has produced a set of design requirements for building mobile apps grounded in habit formation theory. These requirements aim to facilitate the formation of reliable routine-based remembering strategies.
 
-  \subsection{Deliverables}
-  \subsubsection{Recommendations for building reward focused habit forming systems
-      - Requirements paired with multiple modalities
+\subsection*{Motivation - Chatbot}
+Interaction is often via a mobile app. This creates a notable difference in the person when removing the app from the phone, as people personalise their phone and it becomes a part of them (My phone is my soul). Removing the habit formation app, has shown to stop people performing the habit. Chatbots are a method of communicating with a computer system via a conversation using natural language. They provide a better mobile phone integration for users, as they hook into messaging services users are familiar with. When removing the system, instead of removing an app, users stop messaging a person (the chatbot). This could be the answer for solving user habit automaticity.
 
-  \subsubsection{Habit reward system}
-      - Web app\newline
-      - Automaticity measured??
+\subsection*{Motivation - Multi-Modal}
+[Reward theory is mainly based on a single modality, ]
+Studies (Designing multimodal reminders for the home, pg2, par1) have shown that good reminder systems should also interact with the user across different modalities. This would allow delivery of reminders and rewards across a modality to suit a user.
 
-  \subsection{Added Value}
-    - Can we use mutli-modal rewards to improve users habit automaticity (with a progressive web app)
-      - HCI community improve habit automaticity ??\newline
-      - Test if multimodal rewards improve habit automaticity
+\subsection*{Motivation}
+Therefore, a successful habit formation system should build habit automaticity via multimodal interaction over 66 days. After removing the system users should continue to perform the habit.
 
-  \subsection{Research Scope}
-    (basically just go through current research section and write about it here first)
-    - Kathys reserach\newline
-    - Taxonomy, req for rewards\newline
-    - MM habits
+\subsection*{Aims}
+This project aims to build a successful habit formation chatbot that uses multi-modal interaction.
 
+\subsection*{Objectives}
+The chatbot will provide habit tracking with reminder messages as triggers, and rewards in three modalities, visual, auditory and haptic.\newline
+\newline
+The rewards will provide the user with the satisfaction of completing the habit action and encourage them to build user habit automaticity. The visual reward will be a photo, the auditory reward will be a audio clip and the haptic reward will integrate with a wearable to provide tactile haptic feedback.
 
+\subsection*{Methodology}
+To net the largest amount of users to test, the chatbot will be implemented using a popular messaging platform, Facebook Messenger.\newline
+\newline
+A 66 day user study, and a 1 week follow up study, will test the success of the chatbot by evaluating effectiveness of each modality on habit automaticity. Chatbot interaction will be removed during the follow up study to test if users continue with the habit. Three groups, and a control group, will each receive reminders and rewards from a different modality.\newline
+\newline
+The user study will gather the following:
+\begin{itemize}
+  \item quantitative analysis of chatbot interaction
+  \item qualitative survey of habit interaction at the end of the study, and end of follow up study
+  \item automaticity test at beginning and end of study
+\end{itemize}
 
-\section{Introduction - old}
+\subsection*{Deliverables}
+This project will produce the following:\newline
 
-\subsection*{What is a Habit}
+\begin{itemize}
+  \item A chatbot that tracks habits and provides the above rewards
+  \item Analysis of the effectiveness of different modalities on habit automaticity
+  \item Design recommendations for building a habit formation chatbot
+\end{itemize}
 
-Habits are actions that are triggered automatically in response to a contextual cue. Associating the cue with performance and grounding the process with a reward encourages regular repetition, leading to automatic behaviour. For example, automatically washing your hands (action) after using the toilet (contextual cue) accomplish clean hands (reward). Once initiation of the action is transferred to external cues, dependence on concious attention or motivational processes is reduced. [cite : Experiences of habit formation: a qualitative study. Lally P, Wardle J, Gardner B. Psychol Health Med. 2011 Aug; 16(4):484-9. \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3505409/#b10}]
+\subsection*{Added value}
+The design recommendations will assist the HCI community for building habit forming chatbot systems. The user study will show how effective chatbots are and show how different types of reward deliveries through different modalities effect user habit automaticity.\newline
+\newline
+This research review looks at the literature around multi-modal rewards and habit formation, summarising with design guidelines and a project plan, to test if multi-modal rewards provided by a chatbot support habit formation.
 
-\subsection*{Positive Habits}
-
-Focus on Positive Habits
-
-Literature shows us the health principles with forming positive habits.[ cite 2. Lally P, Gardner B. Promoting habit formation. Health Psychol Rev. In press: DOI: 10.1080/17437199.2011.603640. \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3505409/#b12}] But this process of creating a habit takes on average 66 days [cite 66 day person ] of repetitive use, and requires a methodical process, starting with a trigger and ending with a reward.
-
-\subsection*{What are Habit Rewards}
-
-:\newline
-:
-
-\subsection*{What has technology got to do with this?}
-
-Technology can change peoples behaviour and encourage them to form a habit by guiding users through a series of experiences. Trigger, Action and Reward. Theories have explored different methods of providing people with rewards, however, literature shows that these implementations are never as affective as the theory states.
-
-\subsection*{What are some of the techniques technology uses?}
-
-:\newline
-:
-
-\subsubsection*{Gamification}
-Succeed better w gamification, look at dependancy w other things, clash royale
-Technology can support habit formation. Gamification is a popular technique to accomplish this. [cite : Gamification Definition, \url{http://gamification-research.org/wp-content/uploads/2011/04/01-Deterding-Sicart-Nacke-OHara-Dixon.pdf}]
-
-\subsubsection*{More modalities}
-TODO find reason why this should be here
-
-
-\subsection*{Current state of technology usage}
-
-A recent review of current technology suggest that the implementations differ from the theory as all fail to support development of automaticity. [cite : Kathys, Beyond self-tracking and reminders, designing smartphone apps that support habit formation.]
-- Dependency on systems
-- Event based cues are better!
-
-\subsection*{Why Build a System / Contributions / Added value}
-
-- And focus on reward delivery [ cite kathys study, wasnt affective ]
-This project aims to use technology to develop a habit forming system that provides the ability to perform a positive habit as if it was as automatic as washing your hands after using the toilet. // This project focuses on habit reward systems and how theoretical methods of sustaining habits are put into practice. This project aims to implement different types of reward deliveries through different modalities and also provides a set of design recommendation for building habit forming systems.
-
-\subsection*{Summary}
-
-:\newline
-:
-
-\subsubsection*{Motivation}
-Maintaining habit behaviour when the system is removed is difficult! We try to counter this and we can feasibly find a way for people to adopt a habit without relying on a system.
-
-
-\subsubsection*{Project Type}
-In this paper, we propose and evaluate three configurations for habit adoption.
-The proposed project is split 40/60 between researching different configurations and implementing three configurations.
-
-
-\subsubsection*{Aims and Objectives}
-The aim is to achieve habit adoption when a configuration is removed.
-
-
-\subsubsection*{Methodology}
-Prior research into different habit adoption systems will refine the design requirements for three system configurations. System A, B and C.\newline
-Will use design requirements from \cite{article_dont_forget_your_pill}.
-These systems will be constructed using a staggered approach to optimise the use of time.
-After testing of each system configuration, each individual system will be evaluated and the results will be compared to produce a set of implications for the design of a system.
-
-
-\subsubsection*{Deliverables}
-Three evaluated systems to adopt habits. Design requirements from the results of testing these three systems.
-
-
-\subsubsection*{Added Value}
-Results of studies and design requirements.
-
-
-\subsection*{Old}
-Old: Systems to assist with habit adoption are intended to start new behaviours and try to maintain the same behaviour even when users disengage with the system. Existing systems aimed at improving habit adoption use single modality constructs to enforce habit behaviour, like visual cues or vibrating alarm reminders. However, prior research has established a dependency between on-going habit adoption system use and lasting change. In this paper, we propose and evaluate three systems that use different modality configurations for habit adoption in conjunction with gamification. The aim is for users to keep engaged with the habit adoption when the system is removed. A 30 day user study will be conducted to evaluate the use of each system and test how users compliance with conducting the habit improves when the system is in place and then again when the system is removed. We conclude with an implementation and evaluation of the three proposed systems for habit adoption and present a set of implications for the design of a system in this domain.
+\newpage
 

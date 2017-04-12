@@ -2,155 +2,189 @@
 
 
 \section{Habit Formation}
-  - What is a habit\newline
-  - What does it mean to form a habit\newline
-    - Examples\newline
+
+  \subsection*{What is a habit}
+
+
+
+  - What does it mean to form a habit
+    - Examples
   \subsection{Benifits}
-    - How can we benefit from knowing how to form this?\newline
-    - How does CS benefit\newline
-      - Health benefits\newline
+    - How can we benefit from knowing how to form this?
+    - How does CS benefit
+      - Health benefits
       - Problems with forgetting thing @TODO kathy
   \subsection{Theory}
-    - General theory for forming habits\newline
+    - General theory for forming habits
     - Time to form, 66 days, @lally
   \subsubsection{Trigger}
-      - What is this\newline
+      - What is this
       - Kathys research
   \subsubsection{Action}
-      - List of habits\newline
-      - Types of habits that are effective\newline
+      - List of habits
+      - Types of habits that are effective
         - Using this?
   \subsubsection{Reward}
-      - General info\newline
-      - Types\newline
+      - General info
+      - Types
     - When users stop doing this automaticity is reduced
   \subsubsection{Automaticity}
-      - What is it\newline
-      - Why is it needed\newline
+      - What is it
+      - Why is it needed
     - Big up needing technology for this process, 'if only we could do this automatically'
+
+\newpage
+
   \subsection{Technology}
     - How can we use tech for this problem
+
+
   \subsubsection{State}
-      - Current apps available\newline
+      - Current apps available
       - Kathys Research
+
   \subsubsection{Problems}
       \subsubsection{- Not grounded in science}
         - Kathys research, state
       \subsubsection{- Lack of automaticity}
-        - Doesnt develop when you remove the system
+        - Doesn't develop when you remove the system
       \subsubsection{- Dependant on tech}
         - To do with lack of automaticity
+        - However, chatbots are not dependant on tech, as everyone will have a messaging platform, e.g. fb messenger
+
   \subsubsection{Existing Research}
       - Trigger, Action, [Reward]
-      \subsubsection{- Kathys Resaerch}
+      \subsubsection{- Kathys Research}
         - Design requirements
       \subsubsection{- Taxonomy of...}
         - Reward focused
+
+
+\newpage
+
   \subsubsection{Requirements for Habit Reward system}
-      - List of combined requirments\newline
-      - However still lack of retention, but, there is hope,\newline
-      <\newline
-        table of requirements\newline
-        - Foucs on just rewards\newline
-        - I will use kathys reqs for tracking requirements\newline
-      >\newline
-      - @TODO multimodal research says using multiplemodalieis improves retention / automaticity
+      - List of combined requirements
+      - However still lack of retention, but, there is hope,
+      <
+        table of requirements
+        - Foucs on just rewards
+        - I will use kathys reqs for tracking requirements
+      >
+      - @TODO multimodal research says using multiple modalities improves retention / automaticity
+
+\newpage
 
 \section{Multi-Modal}
-  - What is a Modalitiy\newline
-  - Research into how multiple modalities improve retention\newline
+  - What is a Modalitiy
+  - Research into how multiple modalities improve retention
   - Different types, most common and @TODO research says these are most effective
   \subsection{Types}
   \subsubsection{Audio}
-      - What is it\newline
-      - Why are we choosing it\newline
+      - What is it
+      - Why are we choosing it
       - Examples
       \subsubsection{- Why is it good?}
-        - What does it give to us\newline
+        - What does it give to us
         - @TODO research
       \subsubsection{- Reward}
         - Cross check with my requirements
   \subsubsection{Visual}
-      - What is it\newline
-      - Why are we choosing it\newline
+      - What is it
+      - Why are we choosing it
       - Examples
       \subsubsection{- Why is it good?}
         - @TODO research
       \subsubsection{- Reward}
-        - Cross check with my requirments
+        - Cross check with my requirements
   \subsubsection{Vibration}
-      - What is it\newline
-      - Why are we chosing it\newline
-      - Examples\newline
+      - What is it
+      - Why are we chosing it
+      - Examples
       - Wearables, Fitbit
     \subsubsection{Why is it good?}
         - @TODO research
     \subsubsection{Reward}
         - Cross check with requirements
+
+\newpage
   \subsection{Table of multimodal reward implementation strategies}
-    - Table of requirements matched with modalities\newline
+    - Table of requirements matched with modalities
     - If you could implement this, you could increase users automaticity for habits
 
+\newpage
 \section{Building the System}
   \subsection{Design Implications}
-    - Trigger:\newline
-        - Either A, certain configured time of the day\newline
-        -        B: No trigger\newline
-        -        C: Around a specific time\newline
-    - Action:\newline
-      - Choose habit from list of habits\newline
-      - Perform\newline
-      - Use app to track the action\newline
-    - Reward:\newline
-      - You get one of these rewards, based on modalitiy selected\newline
-      - Vision\newline
-        - Through Web app\newline
-        - Could be: App, or message\newline
-      - Audatory\newline
-        - Through phone\newline
-        - Could be: App\newline
-      - Tactic\newline
-        - Through wearable\newline
+    - Setup:
+      - Setup the bot via a messaging platform, such as fb messenger
+    - Trigger:
+        - Either A, certain configured time of the day
+        -        B: No trigger
+        -        C: Around a specific time
+    - Action:
+      - Choose habit from list of habits
+      - Perform
+      - Use app to track the action
+    - Reward:
+      - You get one of these rewards, based on modalitiy selected
+      - Vision
+        - Through message, of an image or gif
+        - Could be: App, or message, gif
+      - Audatory
+        - Through phone via bot, link to mp3/spotify/apple music
         - Could be: App
+      - Tactic
+        - Through wearable
+        - Could be: App, bot triggers wearbale alarm
+
+
+
   \subsubsection{Example user flow}
-      - Pre-Start\newline
-        - Choose daily habit type from list of X, e.g. 1 press up before breakfast\newline
-        - Enable notifications or fitbit if chosen\newline
-        - Time action / reward, variable rewards, e.g. then work out average time to send, or none\newline
-      - Start:\newline
-        - New day\newline
-        - @ trigger time, send reminder, if set, notification\newline
-        - Open notification, do habit, press tracked\newline
+      - Pre-Start
+        - Choose daily habit type from list of X, e.g. 1 press up before breakfast
+        - Enable notifications or fitbit if chosen
+        - Time action / reward, variable rewards, e.g. then work out average time to send, or none
+      - Start:
+        - New day
+        - @ trigger time, send reminder, if set, notification
+        - Open notification, do habit, press tracked
         - Get reward type
+
+\newpage
   \subsection{Implementation}
-    - Web app chosen because easiest and achievable
+    - Web app could be chosen because its easiest and achievable, however the ease of use with a chatbot, integrated into fb messenger means everyone can use it on multiple devices. The addition, means that people get used to the UI.
   \subsubsection{Technology}
-      - React JS\newline
-      - Android/iOS specific notifications from web app\newline
+      - 3 Types:
+        1. specific apps
+          - Bad cuz takes a long time
+        2. Web Apps
+          - Still another app
+        3. Chatbot
+          - Good useful
+      - Android/iOS/chatbot specific notifications from web app
       - Save to home screen
   \subsubsection{Reward Modality implementations}
-      - Vision\newline
-        - Send notification\newline
-        - Show nice visuals\newline
-      - Audio\newline
-        - Send notification\newline
-        - Play uplifting music\newline
-      - Tactic\newline
-        - A.P.I. sets wearable alarm\newline
+      - Vision
+        - Send notification
+        - Show nice visuals
+      - Audio
+        - Send notification
+        - Play uplifting music
+      - Tactic
+        - A.P.I. sets wearable alarm
         - Wearable (fitbit) issues and tracks alarm times
     \subsection{Component overview}
-      [app] -------> (Database) -----> at certain time ---> Send notification to trigger type of reward\newline
-      [ big button that says track]\newline
+      [app] -------> (Database) -----> at certain time ---> Send notification to trigger type of reward
+      [ big button that says track]
       taskname textbox
 
-
+\newpage
 \section{Implementation old}
 
-Habit formation, Don't Kick the Habit \cite{article_dont_kick_habit}, stopping the behaviour when one stops using behaviour change apps.\newline
-Measuring Habit strength \cite{article_habit_strength} \cite{article_habit_measurement}.\newline
-\newline
-Multi-Modal interaction, using multiple modalities for habit formation \cite{}, using wearable devices, such as a Fitbit device is plausible for a study \cite{article_wearable_good}.\newline
-\newline
-Gamification elements \cite{f2p_games_how_to}, can we use any elements from Free-To-Play games?\newline
-\newline
+Habit formation, Don't Kick the Habit \cite{article_dont_kick_habit}, stopping the behaviour when one stops using behaviour change apps.
+Measuring Habit strength \cite{article_habit_strength} \cite{article_habit_measurement}.
+
+Multi-Modal interaction, using multiple modalities for habit formation \cite{}, using wearable devices, such as a Fitbit device is plausible for a study \cite{article_wearable_good}.
+
+Gamification elements \cite{f2p_games_how_to}, can we use any elements from Free-To-Play games?
+
 
