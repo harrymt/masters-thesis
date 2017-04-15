@@ -34,21 +34,14 @@
     \pagenumbering{gobble}
 
     \maketitle
+    \newpage
 
-
-    \afterpage{\blankpage}
-
-    \include{0_acknowledgements}
-
+    \import{./chapters/}{0_acknowledgements}
     \newpage
 
     \import{./chapters/}{1_abstract}
 
-
-    % \newgeometry{top=2.5cm,bottom=2.5cm} % set margins to be smaller so we can fit contents onto a single page
     \tableofcontents
-    \restoregeometry
-
     \newpage
 
     % Set styles after the title, abstract and toc
@@ -67,7 +60,9 @@
     % https://www.cs.bris.ac.uk/project/MSc/
     \import{./chapters/}{2_introduction.tex}
 
-    \import{./chapters/}{3_survey.tex}
+    \import{./chapters/}{3_habit.tex}
+    \import{./chapters/}{3_multimodal.tex}
+    \import{./chapters/}{3_thechatbot.tex}
 
     \import{./chapters/}{4_evaluation.tex}
 

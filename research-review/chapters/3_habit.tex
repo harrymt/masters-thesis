@@ -1,0 +1,227 @@
+\newpage
+
+\section{Habit Formation}
+To understand how to build a system that supports habit formation, we must discuss how people fundamentally form habits.\newline
+\newline
+To change a persons behaviour an action needs to be repeated performed to turn into a habit and ensure that the behaviour persists in the future.
+
+\subsection{What are Habits}
+Within Psychology, Habits are learned automatic cue-response actions, such actions that will perform automatically in response to another action or trigger that has been actioned repeatedly in the past \cite{article_the_habitual_consumer}.
+
+\subsection{Forming Habits}
+Studies have shown people must keep to strict strategies and perform an action repeatedly before it turns into a action that occurs with little concious thought \cite{article_promoting_habit_formation}.
+
+\subsection{Three Elements of Habit Formation}
+Forming a habit occurs similarly to how a person changes their behaviour. Research \cite{article_beyond_self_tracking_designing_apps} shows that using these 3 elements ensures an action becomes permanent.
+
+\begin{enumerate}
+  \item Repetition
+  \item Contextual Cues
+  \item Positive Reinforcement
+\end{enumerate}
+
+\subsection*{Repetition}
+Lally et al. (2010) states that the process of creating a new habit takes on average up to 66 days of repetitive use. The easier the action, the shorter time before the action turns into a habit, from drinking water (18 days), to going to the gym (254 days) \cite{article_how_habits_formed_modelling_habit_formation}. Although repeating an action is not enough to form a habit.
+
+\subsection*{Contextual Cues}
+Contextual Cues are actions attached to a context. These act as trigger events to push the person onto performing the action. For example, if you wanted to adopt a stretching habit, you could attach it onto an existing context like brushing your teeth. The contextual cue of brushing your teeth will trigger you to stretch. Literature \cite{article_beyond_self_tracking_designing_apps} shows that attaching habits onto existing event-based cues are easier to remember, when compared with time-based habits, e.g. stretch every 4 hours. These help connect the contextual cue with the habit and builds habit automaticity (CITE: In Beyond self tracking, ref 12.). Further research into the design implications of contextual cues shows how multi-cue routines are more effective that a single cue \cite{article_understanding_use_contextual_cues_design_impl}.
+
+\subsection*{Positive Reinforcement}
+Rewarding a person with positive reinforcement after the action, builds the habit by giving the feeling of satisfaction. Rewards that benefit the person with satisfaction (intrinsic rewards) should be used over monetary gains (extrinsic rewards), due to issues with extrinsic rewards hindering motivation \cite{article_beyond_self_tracking_designing_apps}.
+
+\subsection{Technology}
+There has been little research into how systems can support habit formation and behaviour change. A large number of habit-forming systems are mobile apps. Studies into the effectiveness of these apps has been recently conducted \cite{article_beyond_self_tracking_designing_apps} revealing that although most of these apps are rated highly, they do not ground themselves in behaviour change theory, with research into some of these apps showing that habits are not sustained when the app is removed, due to the lack of habit automaticity built.\newline
+\newline
+However there is hope. Two piece of literature both discuss different concrete strategies for building habit-forming mobile apps that do ground themselves in theory \cite{article_beyond_self_tracking_designing_apps}, \cite{article_taxonomy_motivational_affordances_meaningful}. Katarzyna et al. (2015) presents formal requirements for building habit-forming apps, based on the above three elements of habit-formation, that aim to build habit automaticity. Paul et al. (2015) states that `motivation is a key requirement for behaviour change' presenting habit-forming requirements focusing on rewards, motivational needs and implementation about the mechanics of habit-formation apps. This project will build upon both of these requirements, combing them into a new set of design requirements for a system that supports habit-formation focuses on rewards.
+
+\subsection{Requirements}
+Combining information from these following 2 sources, produces the following list of methods to build a habit forming app.\newline
+\newline
+The system must have:
+
+\begin{enumerate}
+  \item A structured, personalised strategy.
+  \item Improvement insights.
+  \item Reminders about strategy changes.
+  \item Rewards.
+  \item Disable reminders when behaviour is routine.
+  \item Checks if habit has already happened.
+\end{enumerate}
+
+\subsubsection*{Katarzyna et al. (2015)}
+
+  Presents us with 6 requirements for habit-formation apps.
+
+  \begin{enumerate}
+
+    \item Help users define a good remembering strategy
+      \begin{itemize}
+        \item Clearly defined multi-cue routines are the most effective.
+      \end{itemize}
+
+    \item Provide examples of good remembering strategies
+      \begin{itemize}
+        \item People do not always know what constitutes a good strategy.
+      \end{itemize}
+
+    \item Provide suggestions for strategy improvements and support changes
+      \begin{itemize}
+        \item Finding the right cues takes time and is a result of trial and error.
+      \end{itemize}
+
+    \item Remind about cues and remembering strategies
+      \begin{itemize}
+        \item Reminders can effectively support prospective memory in the short term.
+      \end{itemize}
+
+    \item Disable cue reminders when the behaviour becomes a part of a routine
+      \begin{itemize}
+        \item Relying on reminders in the long term can hinder habit development.
+      \end{itemize}
+
+    \item Help users check whether the habit has already happened
+      \begin{itemize}
+        \item It is easy to forget whether a task done automatically has been completed.
+    \end{itemize}
+
+  \end{enumerate}
+
+\subsubsection*{A Taxonomy of Motivational Affordances for Meaningful Gamified and Persuasive Technology}
+
+  Presents us with 5 design principles and 6 Mechanics or Interaction requirements between user and the system. The paper also discusses reward mechanics, such as quests, goals and virtual points. However, these are extrinsic rewards and shouldn't be used as they hinder motivation \cite{article_beyond_self_tracking_designing_apps}.
+
+  \subsubsection*{5 Design Principles}
+
+    \begin{enumerate}
+
+    \item Offer meaningful suggestions
+      \begin{itemize}
+        \item Make users aware of behaviour that is harmful to achieving their goal
+        \item Offer meaningful alternatives to their current behaviour that doesn't align with their goal
+      \end{itemize}
+
+    \item Support User Choice
+      \begin{itemize}
+        \item Give users chance to set their own goals (or not even set a single goal)
+        \item Be careful about users feeling patronized if 1 form of behaviour is available.
+      \end{itemize}
+
+    \item Provide User Guidance
+      \begin{itemize}
+        \item Give users clear, structured information to help identify the desired outcome and supporting users by suggesting how they can achieve it.
+      \end{itemize}
+
+    \item Provide personalized experience
+      \begin{itemize}
+        \item Let users express their identity.
+      \end{itemize}
+
+    \item Design for every stage of behaviour change
+      \begin{itemize}
+        \item System should provide ways to collect, integrate and reflect on behaviour-related data, such that the user is aware of problematic behaviour.
+      \end{itemize}
+
+    \end{enumerate}
+
+  \subsubsection*{6 Mechanic Requirements}
+
+    \begin{enumerate}
+      \item Feedback
+        \begin{itemize}
+          \item Tactile, Visual or auditory information about the users current state.
+          \item Hard to determine when to give users feedback.
+          \item Instant feedback creates a stronger link between behaviour and its consequences.
+          \item Accumulated feedback with historical comparison, helps with self-monitoring and aids with making users aware of their behaviour.
+        \end{itemize}
+
+      \item User Education
+      \begin{itemize}
+        \item Provides advice on what tasks users should perform.
+        \item Best in early stages of behaviour change.
+        \item 'You must do x' will have little impact on behaviour change, because it lacks contextual information.
+      \end{itemize}
+
+      \item Challenges
+      \begin{itemize}
+        \item Give users little difficult tasks
+        \item Users with no goals, will find these effective
+        \item Gives user ability to split up task into smaller chunks
+        \item Provide reasonable default challenges, as little people deviate from defaults
+      \end{itemize}
+
+      \item Rewards
+      \begin{itemize}
+        \item A good form of external motivation because they don't change the ability to perform a behaviour, unless the reward itself is a tool that increases ability
+        \item Provide strong motivational source, but like all extrinsic motivators, these are less effective for changing behaviour in the long run, because externally motivated behaviour lasts as long as the external motivator exists.
+        \item Identifying methods that enable internalization of externally motivated behaviour is TBC.
+      \end{itemize}
+
+      \item Competition \& Comparison
+      \begin{itemize}
+        \item Increase motivation in people who are naturally competitive
+        \item Although be careful as when different skill levels compete, it can have a negative affect!
+      \end{itemize}
+
+      \item Cooperation
+      \begin{itemize}
+        \item Appeals to relatedness
+        \item Effective in settings where users are naturally social and have diverse levels of knowledge
+        \item Anonymous team cooperation is less effective
+      \end{itemize}
+
+    \end{enumerate}
+
+\subsection{Requirements Detailed Overview}
+
+The combined requirements based on methods from \cite{article_beyond_self_tracking_designing_apps} and \cite{article_taxonomy_motivational_affordances_meaningful} create a list grounded in habit-formation theory and focused on rewards. Each requirement provides detailed breakdown about why it's used and what mechanics it relates to from theory.
+
+
+\subsubsection*{1. Help users define a good remembering strategy}
+  \begin{itemize}
+    \item Make personalized, well defined, structured multi-cue routines \& also support users choice of not setting remembering strategies
+    \item Provide examples of some
+  \end{itemize}
+
+\subsubsection*{1a. Give users little difficult tasks (challenges)}
+  \begin{itemize}
+    \item Assignments: Turn the bigger habit into smaller assignments to make it more joyful. Careful to not make them forced.
+    \item Quests: Same as assignments, but optional
+    \item Goals: User specified to support user autonomy. Should be specific and challenging to get better results
+  \end{itemize}
+
+\subsubsection*{1b. Give them Competition \& Comparison \& Cooperation}
+  \begin{itemize}
+    \item Friends, teams \& groups
+    \item Leader-boards and collections
+  \end{itemize}
+
+\subsubsection*{2. Give insights for strategy improvements and support changes.}
+  \begin{itemize}
+    \item Make them meaningful instant feedback \& accumulated feedback
+  \end{itemize}
+
+\subsubsection*{3. Remind them about cues and remembering strategies.}
+  \begin{itemize}
+    \item Reminders can effectively support prospective memory in the short term.
+    \item Educate them about what they should perform
+  \end{itemize}
+
+\subsubsection*{4. Rewards}
+  \begin{itemize}
+    \item A good form of external motivation because they don't change the ability to perform a behaviour, unless the reward itself is a tool that increases ability
+    \item Provide strong motivational source, but like all extrinsic motivators, these are less effective for changing behaviour in the long run, because externally motivated behaviour lasts as long as the external motivator exists.
+    \item Identifying methods that enable internalization of externally motivated behaviour is TBC.
+    \item Achievements and badges
+  \end{itemize}
+
+\subsubsection*{5. Disable cue reminders when behaviour is routine.}
+  \begin{itemize}
+    \item Relying on reminders in the long term can hinder habit development.
+    \item Ease off from reminders later
+  \end{itemize}
+
+\subsubsection*{6. Check if habit has already happened}
+  \begin{itemize}
+    \item Easy to forget whether a task done automatically, completed.
+  \end{itemize}
+
