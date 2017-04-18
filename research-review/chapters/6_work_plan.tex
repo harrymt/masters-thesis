@@ -1,70 +1,113 @@
 
 \newpage
 \section{Work Plan}
-
-For this project there are X number of milestones to achieve.
-
-
-\subsection*{Scope}
-% Scope	and	is	the	relevance	of	the	reviewed	work	to	the	 project	is	always	made	clear?
-
-\subsection*{Expected Timeline}
-
-The app is to be built, then two 30 day user studies will test the effectiveness of the app techniques.
+For this project there are four milestones that split into two parts, Building and Testing.
 
 
-% \begin{verbatim}
-% % App: building | testing  | evaluating |            |
-% % System B:          | building | testing    | evaluating |
-% % System C:          |          | building   | testing    | evaluating
-% \end{verbatim}
+\subsection{Milestones}
+
+\begin{enumerate}
+  \item Building
+  \begin{itemize}
+    \item 1.1 Build the Chatbot.
+    \item 1.2 Build delivery of rewards from 3 modalities, Visual, Auditory and Tactile.
+  \end{itemize}
+  \item Testing
+  \begin{itemize}
+    \item 2.1 Conduct 30 User Study.
+    \item 2.2 Conduct 7 day Follow up study.
+  \end{itemize}
+\end{enumerate}
+
+\subsection{Tasks}
+
+\subsubsection*{1. Building}
+Tasks for building the chatbot are to implement:
+
+\begin{enumerate}
+  \item Interaction between a user and our system via the Facebook Messenger platform.
+  \item Question-response statements for the chatbot.
+  \item Training the chatbot on these responses.
+  \item Reminder component for habit triggers.
+  \item Visual rewards.
+  \item Auditory rewards.
+  \item Tactile rewards by integrating with FitBit.
+  \item On-boarding for new users to get started with the chatbot.
+\end{enumerate}
+
+\subsubsection*{2. Testing}
+
+\begin{enumerate}
+ \item Test the chatbot using a unit-test harness, to increase the quality of the chatbot.
+ \item Write 30 day user study.
+ \item Write 7 day follow up study.
+ \item Conduct 30 day user study, users will use the chatbot daily to track a habit and perform a habit automaticity test before the study starts and after it has finished.
+ \item Conduct 7 day follow up study, users will stop using the chatbot, after 7 days will be contacted to perform a habit automaticity test and present how often they performed their habit in the 7 days.
+ \item Analyse study results.
+\end{enumerate}
+
+\newgeometry{left=2cm,right=8mm,top=3cm,bottom=3cm}
+
+\begin{figure}[ht]
+\noindent\resizebox{400pt}{!}{
+    \begin{ganttchart}[hgrid, vgrid]{1}{18}
+
+      \gantttitle{2017, Academic Weeks}{18} \\
+      \gantttitlelist{24,...,41}{1} \\
+
+      \ganttgroup{Building}{1}{8} \\
+      \ganttbar{Task 1.1}{1}{1} \ganttnewline
+      \ganttlinkedbar{Task 1.2}{2}{2} \ganttnewline
+      \ganttlinkedbar{Task 1.3}{2}{2} \ganttnewline
+      \ganttlinkedbar{Task 1.4}{3}{3} \ganttnewline
+      \ganttlinkedmilestone{Milestone 1.1. Chatbot}{3} \ganttnewline
 
 
-@TODO find a way to add a title, and 'week' label
-@TODO only have 1 user study, but have 1 added week as a follow up study with no system interaction
-@TODO Say only 18/30 day user study as task is easy! Because \cite{article_how_habits_formed_modelling_habit_formation}. See Beyond self tracking page 2, bottom left.
+      \ganttbar{Task 1.5}{4}{4} \ganttnewline
+      \ganttlinkedbar{Task 1.6}{4}{4} \ganttnewline
+      \ganttlinkedbar{Task 1.7}{4}{6} \ganttnewline
+      \ganttlinkedbar{Task 1.8}{6}{6} \ganttnewline
 
-\newgeometry{left=2cm,right=10mm,top=3cm,bottom=3cm}
+      \ganttlinkedmilestone{Milestone 1.2. Reward Delivery}{6} \ganttnewline
 
-\noindent\resizebox{450pt}{!}{
+      \ganttgroup{Testing}{9}{17} \\
+      \ganttbar{Task 2.1}{9}{9} \ganttnewline
+      \ganttlinkedbar{Task 2.2}{9}{9} \ganttnewline
+      \ganttlinkedbar{Task 2.3}{10}{10} \ganttnewline
+      \ganttlinkedbar{Task 2.4}{11}{14} \ganttnewline
+      \ganttlinkedmilestone{Milestone 2.1. 30 Day Study}{14} \ganttnewline
 
-    \begin{ganttchart}[hgrid, vgrid]{1}{20}
-
-      \gantttitle{2017}{20} \\
-      \gantttitlelist{24,...,43}{1} \\
-
-      \ganttgroup{Implementing Chatbot}{1}{3} \\
-      \ganttbar{Tracking Logic}{1}{1} \ganttnewline
-      \ganttlinkedbar{UI}{2}{2} \ganttnewline
-      \ganttlinkedbar{Testing}{3}{3} \ganttnewline
-
-      \ganttmilestone{Milestone 1. Chatbot Built}{3}  \ganttnewline
-
-      \ganttgroup{Testing Chatbot}{4}{9} \\
-      \ganttbar{Writing User Study Survey}{4}{4} \ganttnewline
-      \ganttlinkedbar{4 week User Study}{5}{8} \ganttnewline
-      \ganttlinkedbar{1 week Follow up Study}{8}{8} \ganttnewline
-      \ganttlinkedbar{Writeup Study}{9}{9} \ganttnewline
-      \ganttmilestone{Milestone 2. User Study Completed}{9}  \ganttnewline
-
-      \ganttgroup{Write up}{9}{16} \\
-      \ganttbar{Write Up Implementation}{9}{13} \ganttnewline
-      \ganttlinkedbar{Evaluate}{14}{15} \ganttnewline
-      \ganttlinkedbar{Poster}{16}{16} \ganttnewline
-      \ganttmilestone{Milestone 3. Finish Thesis}{16} \ganttnewline
+      \ganttbar{Task 2.5}{15}{15} \ganttnewline
+      \ganttlinkedbar{Task 2.6}{16}{17} \ganttnewline
+      \ganttlinkedmilestone{Milestone 2.2. 7 Day Study}{17} \ganttnewline
 
     \end{ganttchart}
 }
+\caption{Gantt Chart of estimated project timeline. Starts 02/05/17, ends 01/09/17}
+\end{figure}
 \restoregeometry
 
-\subsection*{Deliverables}
-% Expected	Timeline	clearly	described	and	jus;fied	with	well-defined	tasks, milestones and	deliverables	clearly	linked	to	the	project?
-
-% - general waterfall model
-% - design
-% - implementation
-% - testing
-
 \subsection{Risk Analysis}
+Problems that might occur in the project are summarised below with contingency plans and risk mitigation techniques.
 
-Table of risks and mitigation techniques.
+\renewcommand{\arraystretch}{1.5} % Increase line height of the following tables
+
+\begin{center}
+\begin{tabular}{ |p{1.5cm}|p{1.9cm}|p{2.3cm}|p{3.3cm}|p{5cm}| }
+  \hline \multicolumn{5}{|c|}{Main Project Risks} \\ \hline % Title
+  \textbf{Severity} & \textbf{Likelihood} & \textbf{Risk} & \textbf{Prevention} & \textbf{Contingency} \\ \hline % Row
+  5 & 1 & Chatbot could break during user study. & A unit-test harness will be constructed to increase the quality of the prototype before the user study. & Design recommendations can still be used from chatbot construction and if the chatbot doesn't completely break, the modalities that work can be tested against users. \\ \hline
+  4 & 4 & Low sample size of users with wearable devices. & A popular wearable device has been chosen for integration to increase the number of users. & Additional wearable device integrations will be added, such as Jawbone, to increase pool of users. \\ \hline
+  4 & 2 & Low sample size for user study. & Participants will be recruited ahead of time and University resources will be utilised. & Qualitative feedback will be gathered and focused upon, rather than quantitative to gleam a better understanding of design recommendations.\\ \hline
+  3 & 2 & Under-estimate task length. & Overestimation of project tasks allows for task slippage. & Modification of project objectives allows for a focus on HCI design recommendations for building chatbots that support habit formation. \\ \hline
+\end{tabular}
+\end{center}
+
+\subsection{Deliverables}
+To summarise, these are the key deliverables the project will deliver.
+
+\begin{itemize}
+  \item Chatbot that supports habit formation.
+  \item Analysis about how rewards from different modalities affect habit automaticity.
+  \item Design recommendations for building a habit formation chatbot.
+\end{itemize}
