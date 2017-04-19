@@ -1,18 +1,25 @@
 
 \newpage
 \section{Design}
+`Mobile phone adoption presents us with highly available, contextually aware and interactive platforms' \cite{article_mhealth}. Research into designing systems for mobile behaviour change technology, presents us with some implementation design requirements. Implementing a chatbot using these design considerations produces a solid ground for building this system.
 
-\subsection*{Existing Systems}
-- Current design papers
-- Gamification elements
+\subsection*{Design Process}
+Current mobile systems use apps to interact with users, but a recent study (2013) showed apps fall into a low behavioural theory adherence scale \cite{article_mhealth}. Research into how to build systems that are theory-based, suggest four main stages for designing mobile health solutions. Conceptualisation, Formative Research and Pretesting, Pilot trails and Evaluation trials \cite{article_mhealth}. The first two stages use the Behaviour Change Wheel \cite{article_behaviour_change_wheel} (a framework for planning health behaviour interventions), to understand the behaviour, better define the characteristics and form the mobile concept into a prototype. The pilot trials tests the prototype before it moves to a finalised app with the commitment of a full trail. The final stage tests the finalised app with a wider range of participants. This project will use these four stages as design steps to build the prototype.
+
+\subsection*{Gamification Elements}
+- Gamification elements \cite{article_free_to_play_making_money_from_games_you_give_away}
+- Designing outstanding feedback loops \cite{website_how_to_design_feedback_loops}
+
 
 \subsection{Implementing Rewards}
 - Vision
   - Send notification
   - Show nice visuals
+
 - Audio
   - Send notification
   - Play uplifting music
+
 - Tactic
   - A.P.I. sets wearable alarm
   - Wearable (fitbit) issues and tracks alarm times
@@ -35,6 +42,27 @@ Web app could be chosen because its easiest and achievable, however the ease of 
   [ big button that says track]
   taskname textbox
 
+Flow diagram style
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\begin{tikzpicture}[node distance=2cm]
+  \node (user) [startstop] {User};
+  \node (fbmsgr) [process] {Messenger};
+  \node (chatbot) [process] {Chatbot};
+  \node (responses) [process, right of=chatbot, xshift=2cm] {Responses};
+  \node (userend) [startstop] {User};
+
+  \draw [arrow] (user) -- node[anchor=east] {Opens} (fbmsgr);
+  \draw [arrow] (fbmsgr) -- node[anchor=east] {Message} (chatbot);
+  \draw [arrow] (chatbot) -- node[anchor=south] {Message} (responses);
+  \draw [arrow] (responses) -- node[anchor=north] {Response} (chatbot);
+  \draw [arrow] (responses) -- node[anchor=east] {Response} (userend);
+
+\end{tikzpicture}
 
 \subsection{Chatbots}
 
