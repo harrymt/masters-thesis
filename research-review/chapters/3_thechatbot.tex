@@ -38,9 +38,9 @@ Current mobile systems use apps to interact with users, but a recent study (2013
 Web app could be chosen because its easiest and achievable, however the ease of use with a chatbot, integrated into fb messenger means everyone can use it on multiple devices. The addition, means that people get used to the UI.
 
 \subsection{Components}
-  [app] -------> (Database) -----> at certain time ---> Send notification to trigger type of reward
-  [ big button that says track]
-  taskname textbox
+  % [app] -------> (Database) -----> at certain time ---> Send notification to trigger type of reward
+  % [ big button that says track]
+  % taskname textbox
 
 Flow diagram style
 \tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
@@ -51,17 +51,16 @@ Flow diagram style
 
 \begin{tikzpicture}[node distance=2cm]
   \node (user) [startstop] {User};
-  \node (fbmsgr) [process] {Messenger};
-  \node (chatbot) [process] {Chatbot};
-  \node (responses) [process, right of=chatbot, xshift=2cm] {Responses};
-  \node (userend) [startstop] {User};
+  \node (fbmsgr) [process, below of=user] {Messenger};
+  \node (chatbot) [process, below of=fbmsgr] {Chatbot};
+  \node (responses) [process, right of=chatbot, xshift=4cm] {Responses};
+  \node (userend) [startstop, below of=chatbot] {User};
 
   \draw [arrow] (user) -- node[anchor=east] {Opens} (fbmsgr);
   \draw [arrow] (fbmsgr) -- node[anchor=east] {Message} (chatbot);
   \draw [arrow] (chatbot) -- node[anchor=south] {Message} (responses);
   \draw [arrow] (responses) -- node[anchor=north] {Response} (chatbot);
-  \draw [arrow] (responses) -- node[anchor=east] {Response} (userend);
-
+  \draw [arrow] (chatbot) -- node[anchor=east] {Notification} (userend);
 \end{tikzpicture}
 
 \subsection{Chatbots}
