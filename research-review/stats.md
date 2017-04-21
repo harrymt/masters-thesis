@@ -4,9 +4,9 @@ Information about the directory 'chapters'.
 
 ## Actual count
 
-1391 words in the main text
+4380 words in the main text
  in the footnotes
-1391 total
+4380 total
 
 ## wc
- 1846 total
+ 5932 total
