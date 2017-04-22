@@ -46,14 +46,19 @@ Tasks for building the chatbot are to implement:
  \item Analyse study results.
 \end{enumerate}
 
-\newgeometry{left=2cm,right=8mm,top=2cm,bottom=3cm}
-@TODO horizontal, add dates to week numbers
-\begin{figure}[ht]
-\noindent\resizebox{460pt}{!}{
-    \begin{ganttchart}[hgrid, vgrid, x unit=.8cm]{1}{16}
+\pagebreak[4]\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 90}
+\begin{landscape}
 
-      \gantttitle{2017, Academic Weeks}{16} \\
-      \gantttitlelist{24,...,39}{1} \\
+\begin{figure}[ht]
+    \begin{ganttchart}[hgrid, vgrid, y unit chart=.6cm, x unit=1cm]{1}{20}
+
+      \gantttitle{2017, Academic Weeks}{20} \\
+      \gantttitle{May}{5}
+      \gantttitle{June}{4}
+      \gantttitle{July}{5}
+      \gantttitle{August}{4}
+      \gantttitle{September}{2} \\
+      \gantttitlelist{24,...,43}{1} \\
 
       \ganttgroup{Building}{1}{6} \\
       \ganttbar{Task 1.1}{1}{1} \ganttnewline
@@ -87,13 +92,13 @@ Tasks for building the chatbot are to implement:
       \ganttlinkedbar{Task 2.6}{14}{15} \ganttnewline
       \ganttlinkedmilestone{
         Milestone 2.2. 7 Day Study.
-      }{15} \ganttnewline
+      }{15}
 
     \end{ganttchart}
-}
-\caption{Gantt Chart of estimated project timeline. Starts 02/05/17, ends 21/08/17}
+\caption{Gantt Chart of estimated project timeline. Starts 01/05/17, ends 21/08/17}
 \end{figure}
-\restoregeometry
+\end{landscape}
+\pagebreak[4]\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 0}
 
 \subsection{Risk Analysis}
 Problems that might occur in the project are summarised below with contingency plans and risk mitigation techniques.
