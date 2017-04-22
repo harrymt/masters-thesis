@@ -2,18 +2,22 @@
 
 A document to describe the feasibility of the MSc project.
 
-### TODO
+## Quality
 
-- Review meeting notes
-- Write design section
-  - Peer review design section
-  - Check that ive hit all references
-- Review document with [quetext](http://www.quetext.com/) before submission
+Document has been peer reviewed by several people and automatically using the following tech:
+
+- [Quetext](http://www.quetext.com/)
+- [Grammarly](https://www.grammarly.com/)
 
 
-[word counts](stats.md).
+## Build
 
-## How to Build
-
-- Install [`Latexing`](http://docs.latexing.com/stable/introduction.html) and install [`texlive`](http://www.tug.org/texlive/acquire-netinstall.html)
+- Install [`Latexing`](http://docs.latexing.com/stable/introduction.html)
+- Install [`texlive`](http://www.tug.org/texlive/acquire-netinstall.html)
 - Use SublimeText `build project` to generate the PDF
+
+## Generate Stats
+
+[Word counts](stats.md) from `wc` and actual word counts after removing latex commands, simply use the [`makefile`](makefile).
+
+- `make`
