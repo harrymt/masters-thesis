@@ -4,9 +4,14 @@ Information about the directory 'chapters'.
 
 ## Actual count
 
-4380 words in the main text
+5726 words in the main text
  in the footnotes
-4380 total
+5726 total
 
-## wc
- 5932 total
+## Words with Latex Commands
+
+ 6241 total
+
+## TODOs Left
+
+18
