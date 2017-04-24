@@ -1,7 +1,7 @@
 % -*- root: main.tex -*-
-\documentclass{article}
+\documentclass[11pt]{article}
 
-\usepackage[a4paper, top=3cm, bottom=3cm]{geometry}
+\usepackage[a4paper]{geometry}
 \usepackage{fancyhdr} % Customise style
 % ERROR MEANS WE NEED TO GET RID OF EMPTY LINE \\'s
 \usepackage{hyperref}
@@ -38,14 +38,19 @@
 
     % Stop page numbering until we say again
     \pagenumbering{gobble}
-
+    \newgeometry{top=4cm, bottom=2.5cm, left=2cm, right=2cm} % Title geometry
     \maketitle
+    \newgeometry{top=2.4cm, bottom=2.5cm, left=2cm, right=2cm}
+
     \newpage
 
     \import{./chapters/}{0_acknowledgements}
     \newpage
 
+\newgeometry{top=2.3cm, bottom=2.4cm, left=1.9cm, right=2cm} % abstract margins
     \import{./chapters/}{1_abstract}
+
+\newgeometry{top=2.4cm, bottom=2.5cm, left=2cm, right=2cm}
     \tableofcontents
     \newpage
 
