@@ -1,18 +1,6 @@
 
-# LaTeX Research Review writeup
-research-review/main.synctex.gz
-research-review/output/*
-research-review/chapters/output/
+# LaTeX output files
+thesis/main.synctex.gz
+thesis/output/*
+thesis/chapters/output/
 *.log
-
-
-# Android App ignores
-Habit/*.iml
-Habit/.gradle
-Habit/local.properties
-Habit/.idea/workspace.xml
-Habit/.idea/libraries
-Habit/.DS_Store
-Habit/build
-Habit/captures
-Habit/.externalNativeBuild
