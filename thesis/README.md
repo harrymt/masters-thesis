@@ -1,6 +1,6 @@
-# Research Review
+# Thesis
 
-A document to describe the feasibility of the MSc project.
+Built in Latex, rendered as [PDF](main.pdf).
 
 ## Quality
 
