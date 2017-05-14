@@ -98,16 +98,17 @@ Tasks for building the chatbot are to implement:
 \caption{Gantt Chart of estimated project timeline. Starts 01/05/17, ends 21/08/17}
 \end{figure}
 \end{landscape}
-% \pagebreak[4]\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 0}
+\pagebreak[4]\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 0}
 
 \subsection{Risk Analysis}
 Problems that might occur in the project are summarised below with contingency plans and risk mitigation techniques.
 
+\begin{landscape}
 \renewcommand{\arraystretch}{1.5} % Increase line height of the following tables
 
 \begin{figure}[ht]
 \begin{center}
-\begin{tabular}{ |p{1.35cm}|p{1.8cm}|p{2.3cm}|p{3.7cm}|p{5.1cm}| }
+\begin{tabular}{ |p{1.35cm}|p{1.8cm}|p{4cm}|p{4.7cm}|p{7cm}| }
   \hline \multicolumn{5}{|c|}{Main Project Risks} \\ \hline % Title
   \textbf{\small{Severity}} & \textbf{\small{Likelihood}} & \textbf{\small{Risk}} & \textbf{\small{Prevention}} & \textbf{\small{Contingency}} \\ \hline % Row
   5 & 1 & Chatbot could break during evaluation trial. & A unit-test harness will be constructed to increase the quality of the prototype. & Design recommendations can still be used from chatbot construction and if the chatbot doesn't completely break, the modalities that work can be tested against users. \\ \hline
@@ -118,3 +119,4 @@ Problems that might occur in the project are summarised below with contingency p
 \end{center}
 \caption{Table showing project risks and mitigation techniques.}
 \end{figure}
+\end{landscape}
