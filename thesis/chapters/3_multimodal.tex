@@ -1,13 +1,27 @@
 
 \newpage
 
-\section{Multimodal}
-Habit formation research~\cite{article_understanding_use_contextual_cues_design_impl} shows multiple contextual cues better support behaviour change, compared with a single mode. If we combine this with research~\cite{article_natural_cross_modal_mappings} into crossmodal interaction, i.e. the process of signals we receive through a single sense affecting how we process information perceived through a different sense. We can map habit rewards across different modalities, enabling us to present users with the same type of reward on different modalities. This allows us to test the different types of modalities and how they effect behaviour change. The next section discusses methods of interaction in practice.
+\section{Modalities}
+Habit formation research~\cite{article_understanding_use_contextual_cues_design_impl} shows multiple contextual cues better support behaviour change, compared with a single mode.
+If we combine this with research~\cite{article_natural_cross_modal_mappings} into crossmodal interaction,
+i.e. the process of signals we receive through a single sense affecting how we process information perceived through a different sense.
+We can map habit rewards across different modalities, enabling us to present users with the same type of reward on different modalities.
+This allows us to test the different types of modalities and how they effect behaviour change.
+The next section discusses methods of interaction in practice.
 
-\subsection{Why Multimodal Interaction}
-`Multimodal systems are required for user interaction'~\cite{article_user_centred_multimodal_reminders} states research into comparing unimodal reminders systems with multimodal. They suggests a need for `highly flexible and contextualised multimodal and multi-device reminder systems'~\cite{article_user_centred_multimodal_reminders}. Although this study focused on the elderly, so the need to multiple modalities was important because some peoples sensory modalities decline with age, this principle still holds true for general case reminder systems. The study presents design guidelines for reminder systems. These are mainly focused on users needing a choice of modalities for interacting with users, as users want a highly configurable system. These aspects will be implemented into our project and adapted for delivering rewards.\newline
+\subsection{Why Interaction from Different Modalities}
+`Multi-modal systems are required for user interaction'~\cite{article_user_centred_multimodal_reminders} states research into comparing unimodal reminders systems with multimodal.
+They suggests a need for `highly flexible and contextualised multimodal and multi-device reminder systems'~\cite{article_user_centred_multimodal_reminders}.
+Although this study focused on the elderly, so the need to multiple modalities was important because some peoples sensory modalities decline with age,
+this principle still holds true for general case reminder systems. The study presents design guidelines for reminder systems.
+These are mainly focused on users needing a choice of modalities for interacting with users, as users want a highly configurable system.
+These aspects will be implemented into our project and adapted for delivering rewards.\newline
 \newline
-Research into designing multimodal reminders for the home, states that `Good reminder systems should be multimodal, because they provide alternative ways to interact with a user'~\cite{article_designing_multimodal_reminders_for_home}. Multimodal interaction increases the likelihood that the information users are receiving are more pleasant to them, and decreases the chance the interaction will be disruptive or annoying~\cite{article_designing_multimodal_reminders_for_home}. Habit rewards should not be annoying, they should give users a feeling of satisfaction, therefore reducing the chance of disruption is another justification for using multiple modalities.
+Research into designing reminder systems for the home that interact with users in different modalities, states that
+`Good reminder systems should use different modalities, because they provide alternative ways to interact with a user'~\cite{article_designing_multimodal_reminders_for_home}.
+Using different modalities for interaction increases the likelihood that the information users are receiving are more pleasant to them,
+and decreases the chance the interaction will be disruptive or annoying~\cite{article_designing_multimodal_reminders_for_home}.
+Habit rewards should not be annoying, they should give users a feeling of satisfaction, therefore reducing the chance of disruption is another justification for using multiple modalities.
 
 \subsection{Modality Types}
 Next we look at literature discussing the three main modality types and how they change peoples behaviour.
@@ -16,10 +30,22 @@ Next we look at literature discussing the three main modality types and how they
 One study looked at improving habit consistency for how often patients took medication, by using a visual display device that gave constant feedback~\cite{article_realtime_feedback_improving_medication_taking}. They found that this feedback improved consistency of the habit and increasing rating of self-efficacy. But when the device was removed, their performance dropped (from a 2-month follow up study), because users integrated the feedback display with their routines. This habit-forming system used visual feedback to encourage consistency, however, this system shouldn't integrate visual cues into the system, otherwise users will become dependent on the technology. Users should instead build these cues outside of the system to build performance longevity after removing the system.
 
 \subsubsection*{Auditory}
-Another key paper, discussed their need for multimodal applications when designing for the elderly~\cite{article_movipill_improving_medication_elders}, combing different sounds with high visual contrast to suit their needs, given deteriorating senses due to age. The study showed that multimodal interaction gives a means of communication to people with varying levels of sense ability. But studies have also shown people need a choice of mode when designing for multimodal interaction~\cite{article_user_centred_multimodal_reminders}, and thus the design requirements produced from this study can be applied to general multimodal applications, such as this project. The design guidelines discuss the need for interaction consistency, such as using similar audio interaction. Therefore the mapping between the visual, auditory and tactile vibration will be mapped identifying a pattern across the modalities.
+Another key paper, discussed their need for different modalities when designing for the elderly~\cite{article_movipill_improving_medication_elders},
+combing different sounds with high visual contrast to suit their needs, given deteriorating senses due to age.
+The study showed that using different modalities for interaction gives a means of communication to people with varying levels of sense ability.
+But studies have also shown people need a choice of mode when designing for interaction~\cite{article_user_centred_multimodal_reminders},
+and thus the design requirements produced from this study can be applied to general applications that use multiple modalities, such as this project.
+The design guidelines discuss the need for interaction consistency, such as using similar audio interaction.
+Therefore the mapping between the visual, auditory and tactile vibration will be mapped identifying a pattern across the modalities.
 
 \subsubsection*{Tactile Vibration}
-The majority of electronic activity monitors have behaviour change techniques and these monitors present a medium which behaviour change interventions could occur~\cite{article_wearable_good}. This provides us with a final modality to explore reward delivery techniques, implemented with a wearable device using vibration. A survey on activity monitors~\cite{article_wearable_good} ranked Fitbit devices `Good vehicles for behaviour change techniques'. Thus, the Fibit, will be the primary platform for integrating tactile vibration for rewards.
+The majority of electronic activity monitors have behaviour change techniques and these monitors present a medium which behaviour change interventions could occur~\cite{article_wearable_good}.
+This provides us with a final modality to explore reward delivery techniques, implemented with a wearable device using vibration.
+A survey on activity monitors~\cite{article_wearable_good} ranked Fitbit devices `Good vehicles for behaviour change techniques'.
+Thus, the Fibit, will be the primary platform for integrating tactile vibration for rewards.
 
 \subsection{Reward Types}
-Rewards will be delivered from each modality, with the content based on requirements created in Chapter 2. Visual rewards will present the user with a photo that gives users satisfaction after completing the action, auditory rewards will provide a similar result but via the auditory mode, finally vibration patterns will represent the tactile mode. The next section discusses design recommendations for delivery methods for these rewards.
+Rewards will be delivered from each modality, with the content based on requirements created in Chapter 2.
+Visual rewards will present the user with a photo that gives users satisfaction after completing the action,
+auditory rewards will provide a similar result but via the auditory mode, finally vibration patterns will represent the tactile mode.
+The next section discusses design recommendations for delivery methods for these rewards.
