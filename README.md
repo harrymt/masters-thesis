@@ -7,12 +7,12 @@ An evaluation trial tests this chatbot using real-world participants that will u
 
 ### Chatbot
 
-A [chatbot](chatbot) tracks users habits and rewards them from different modalities.
+A [chatbot](https://github.com/harrymt/habit-reward-chatbot) tracks users habits and rewards them from different modalities.
 
 
 ### Research Overview
 
-- See a [research review](https://github.com/harrymt/habit-reward-system/releases/tag/0.1) the for a review on the relevant material.
+- See a [research review](https://github.com/harrymt/habit-reward-thesis/releases/tag/0.1) the for a review on the relevant material.
 
 
 
