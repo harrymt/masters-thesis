@@ -35,7 +35,6 @@
 
 \begin{document}
 
-
     % Stop page numbering until we say again
     \pagenumbering{gobble}
     \newgeometry{top=4cm, bottom=2.5cm, left=2cm, right=2cm} % Title geometry
@@ -44,11 +43,11 @@
 
     \newpage
 
-    \import{./chapters/}{0_acknowledgements}
+    \import{./chapters/}{acknowledgements}
     \newpage
 
 \newgeometry{top=2.3cm, bottom=2.4cm, left=1.9cm, right=2cm} % abstract margins
-    \import{./chapters/}{1_abstract}
+    \import{./chapters/}{0_abstract}
 
 \newgeometry{top=2.4cm, bottom=2.5cm, left=2cm, right=2cm}
     \tableofcontents
@@ -68,17 +67,14 @@
 
     % https://www.cs.bris.ac.uk/Teaching/Resources/COMSM2202/review.html
     % https://www.cs.bris.ac.uk/project/MSc/
-    \import{./chapters/}{2_introduction.tex}
+    \import{./chapters/}{1_introduction.tex}
 
-    \import{./chapters/}{3_habit.tex}
+    \import{./chapters/}{2_habit.tex}
     \import{./chapters/}{3_multimodal.tex}
-    \import{./chapters/}{3_thechatbot.tex}
-
-    \import{./chapters/}{4_evaluation.tex}
-
-    \import{./chapters/}{5_conclusion.tex}
-
-    \import{./chapters/}{6_work_plan.tex}
+    \import{./chapters/}{4_design.tex}
+    \import{./chapters/}{5_implementation.tex}
+    \import{./chapters/}{6_evaluation.tex}
+    \import{./chapters/}{7_conclusion.tex}
 
     \cleardoublepage
     \bibliographystyle{ieeetr}
