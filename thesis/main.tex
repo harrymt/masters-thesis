@@ -18,6 +18,10 @@
 \usepackage{multirow} % Tables
 \usepackage{tikz} % For diagrams
 \usepackage{lscape} % For landscape
+\usepackage{pifont} % Check marks
+
+\newcommand{\cmark}{\ding{51}} % So we can use \cmark instead of \ding{51}
+\newcommand{\xmark}{\ding{55}}
 
 \usetikzlibrary{shapes.geometric, arrows} % For diagrams
 
@@ -75,6 +79,7 @@
     \import{./chapters/}{5_implementation.tex}
     \import{./chapters/}{6_evaluation.tex}
     \import{./chapters/}{7_conclusion.tex}
+    % \import{./chapters/}{5_implementation.tex}
 
     \cleardoublepage
     \bibliographystyle{ieeetr}
