@@ -15,7 +15,7 @@ wc:
 
 todos:
 	printf "\n## TODOs Left\n\n" >> $(OUTPUT) &&\
-	cat main.tex $(DIRECTORY)/*.tex | grep -c @TODO >> $(OUTPUT)
+	cat $(DIRECTORY)/*.tex | grep -c "TODO" >> $(OUTPUT)
 
 setup:
 	printf "# Statistics\n\n" > $(OUTPUT) &&\
