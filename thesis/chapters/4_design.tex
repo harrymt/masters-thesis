@@ -2,11 +2,9 @@
 \newpage
 \section{Prototype Design}
 
-\subsection{The Mobile Platform}
-
-`Mobile phone adoption presents us with highly available, contextually aware and interactive platforms'~\cite{article_mhealth}.
-Research into designing systems for mobile behaviour change technology, presents us with some implementation design requirements.
-Implementing a prototype using these design considerations produces a solid ground for building this system.
+To verify the effectiveness of each modality, a experiment was needed to test a reward on a large sample.
+To accompany the experiment a tool was constructed to send users rewards from different modalities and help users track habits. The platform for the tool needed to be highly available for participants, interactive and time effective to build.
+A system on a mobile device grants us access to a `highly available, contextually aware and interactive platform'~\cite{article_mhealth} and will be based on previous design recommendations for behaviour change mobile systems.
 
 \subsection{Design Considerations}
 
@@ -17,9 +15,9 @@ Pilot trials and Evaluation trials~\cite{article_mhealth}. The first two stages 
 The pilot trials tests the prototype before it moves to a finalised app with the commitment of a full trial. The final stage tests the finalised app with a wider range of participants.
 This project will use these four stages as design steps to build the prototype.
 
-\subsection{Prototype Medium}
+\subsection{Mobile Concept to Prototype}
 
-This section explores different mediums to develop a prototype, looking into if there is a better method to interact with users than a mobile app. Concludes with developing a Facebook Messenger Chatbot.\newline
+This first stage explores different mediums to develop a prototype upon and to decide if there is a better method to interact with users than a mobile app. We conclude with a series of implementation options and choosing the path of a Chatbot.\newline
 \newline
 When it comes to mobile phones, users have plenty of options for interaction. A popular choice that has revisited the market are Chatbots, applications that parse questions using Natural Language Processing (NLP) to provide a response, acting as a user interface to expose data. These programs have conversations with users to achieve a goal and are not new inventions. Since 1966~\cite{article_eliza}, Eliza by Joesphs Weizenbaum, used simple expression matching to return a certain response for user trials. In the present day, these applications (commonly referred to as bots, sometimes chatbots), are found integrated into many different apps on the majority of users mobile phones. For example, Facebook Messenger (a popular messaging application) encourages developers to create bots to interact with their users. These bots act as a real person with similar interaction flow, plus a few additional features, such as \textit{Quick Replies} for revealing a list of options to a user. `Quick Replies provide a way to present buttons to the user in response to a message.'~\cite{doc_fb_quick_replies}. However, these bots would not reply like a real person, but rather would only reply if that question was pre-trained using machine learning algorithms. This technology requires the bot to be trained on a large set of data and the majority of use cases would have to be accounted for.\newline
 \newline
@@ -60,9 +58,9 @@ Chatbot decided as best method to interact with lots of people easily, after tab
 
 \begin{figure}[H] % ht
     \centering
-    \includegraphics[width=2.5in]{../resources/existing-bots/healthy-bot.png}
+    \includegraphics[width=3.5in]{../resources/existing-bots/healthy-bot.png}
     \caption{Healthy Bot: A Slack bot for forming new positive habits.}
-    \label{fig:poncho}
+    \label{fig:healthy_bot}
 \end{figure}
 
 Facebook Messenger looks like an attractive option for user interaction:
