@@ -19,7 +19,7 @@ This project will use these four stages as design steps to build the prototype.
 
 This first stage explores different mediums to develop a prototype upon and to decide if there is a better method to interact with users than a mobile app. We conclude with a series of implementation options and choosing the path of a Chatbot.\newline
 \newline
-When it comes to mobile phones, users have plenty of options for interaction. A popular choice that has revisited the market are Chatbots, applications that parse questions using Natural Language Processing (NLP) to provide a response, acting as a user interface to expose data. These programs have conversations with users to achieve a goal and are not new inventions. Since 1966~\cite{article_eliza}, Eliza by Joesphs Weizenbaum, used simple expression matching to return a certain response for user trials. In the present day, these applications (commonly referred to as bots, sometimes chatbots), are found integrated into many different apps on the majority of users mobile phones. For example, Facebook Messenger (a popular messaging application) encourages developers to create bots to interact with their users. These bots act as a real person with similar interaction flow, plus a few additional features, such as \textit{Quick Replies} for revealing a list of options to a user. `Quick Replies provide a way to present buttons to the user in response to a message.'~\cite{doc_fb_quick_replies}. However, these bots would not reply like a real person, but rather would only reply if that question was pre-trained using machine learning algorithms. This technology requires the bot to be trained on a large set of data and the majority of use cases would have to be accounted for.\newline
+When it comes to mobile phones, users have plenty of options for interaction. A popular choice that has revisited the market are Chatbots---applications that parse questions using Natural Language Processing (NLP) to provide a response. Bots act as a user interface to expose data and would use online services to parse the response, such as Amazon lex \url{https://aws.amazon.com/lex/}. These programs have conversations with users to achieve a goal and are not new inventions. Since 1966~\cite{article_eliza}, Eliza by Joesphs Weizenbaum, used simple expression matching to return a certain response for user trials. In the present day, these applications (commonly referred to as bots, sometimes chatbots), are found integrated into many different apps on the majority of users mobile phones. For example, Facebook Messenger (a popular messaging application) encourages developers to create bots to interact with their users. These bots act as a real person with similar interaction flow, plus a few additional features, such as \textit{Quick Replies} for revealing a list of options to a user. `Quick Replies provide a way to present buttons to the user in response to a message.'~\cite{doc_fb_quick_replies}. However, these bots would not reply like a real person, but rather would only reply if that question was pre-trained using machine learning algorithms. This technology requires the bot to be trained on a large set of data and the majority of use cases would have to be accounted for.\newline
 \newline
 NLP would enable users to chat to the bot and get a friendly understandable reply. But, would this interaction develop a dependence on the user-chatbot interaction? Would it lead to losing automaticity if the chatbot supported habit formation? NLP will not be used to avoid these potential problems, and instead of natural language processing, the location of the bot (i.e. inside of an existing messaging app), ease of interaction and the additional features (quick replies) will help us easily communicate with a user.\newline
 \newline
@@ -47,14 +47,11 @@ Finally, a chatbot integrated into a popular messaging platform is easily availa
 
 \end{figure}
 
-From the table above the best method forward is a chatbot. It is already integrated into an existing app users are familer with and (as long as the messaging app is available) works on all platforms.
+From the table above the best method forward is a chatbot. It is already integrated into an existing app users are familiar with and (as long as the messaging app is available) works on all platforms.
 
 \subsection{Chatbot Platform}
 
-Discussion about the platform the chatbot should lie onto. Amazon lex \url{https://aws.amazon.com/lex/}. Telegram
-
-
-Chatbot decided as best method to interact with lots of people easily, after table of pros and cons. Now the real question becomes, would users be able to develop habits with a conversational user interface. Discussion about other types of chatbots, e.g. SMS bot, or Slack bot.
+Again, similarly there are lots of options about what platform to build the chatbot into. For example, Slack bots provide additional functionality, such as habit track, into the popular workplace communication service.
 
 \begin{figure}[H] % ht
     \centering
@@ -63,11 +60,31 @@ Chatbot decided as best method to interact with lots of people easily, after tab
     \label{fig:healthy_bot}
 \end{figure}
 
-Facebook Messenger looks like an attractive option for user interaction:
+However, if our main aim is to interact with lots of people easily, we need to target existing platforms that a lot of people are using.
 
-- Installed on the top 90\% of peoples phones
-- Embedded into a service users already use
-- Quick replies allows for easy interaction
+\begin{figure}[H] % ht
+\begin{center}
+\begin{tabular}{ |p{3.8cm}|p{2.5cm}|p{4cm}|p{2.5cm}|p{2cm}| }
+ \hline
+ \textbf{} & \textbf{Facebook Messenger} & \textbf{WhatsApp} & \textbf{SMS} & \textbf{Telegram} & \textbf{Slack} \\ \hline
+ High Availability & \cmark & \cmark & \cmark & \xmark & \xmark \\ \hline
+ Interactive & \cmark & \cmark & \xmark & \cmark & \cmark \\
+ Additional Features & \cmark & \xmark & \xmark & \cmark & \cmark \\
+ \hline
+\end{tabular}
+\end{center}
+    \caption{Comparing different chatbot platforms.}
+    \label{fig:chatbot_platform_table}
+
+\end{figure}
+
+Facebook Messenger looks like the attractive option for user interaction with the ease of additional features, such as Quick Replies and with the benefit of:
+
+\begin{itemize}
+  \item 1,200 Million active users per month (as of April 2017)~\cite{fb_messenger_stats}
+  \item Embedded into a service users already use
+  \item Quick replies allows for easy interaction
+\end{itemize}
 
 But, will users differentiate between a bot and a person? Will the text interaction put people off? This thesis aims to answer those questions.
 
@@ -155,10 +172,19 @@ Talk about issues with looping sounds\newline
 
 Full user interaction from setup to completing a reward.
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=2.1in]{../resources/design/media/1.png}
+  \hspace{10px}
+  \includegraphics[width=2.1in]{../resources/design/media/2.png}
+  \caption{The screens initial users will see.}
+  \label{fig:setup_media_1}
+\end{figure}
+
 \begin{itemize}
   \item \textbf{Setup}
   \begin{itemize}
-    \item Setup the bot via a messaging platform, such as Facebook messenger.
+    \item Setup the bot via the Facebook Messenger platform.
     \item User chooses an existing habit they would like to develop.
     \item User supplies an existing context to integrate their new habit into.
     \item User supplies a time the existing context occurs.
@@ -180,6 +206,16 @@ Full user interaction from setup to completing a reward.
     \item Visual and Audio: A video with sound
   \end{itemize}
 \end{itemize}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=2.1in]{../resources/design/media/5.png}
+  \hspace{10px}
+  \includegraphics[width=2.1in]{../resources/design/media/3.png}
+  \caption{The screens initial users will see.}
+  \label{fig:setup_media_2}
+\end{figure}
 
 
 \newpage
