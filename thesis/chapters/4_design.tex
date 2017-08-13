@@ -151,7 +151,7 @@ Discussion about how the rewards will be delivered to the users. In-line verses 
 
 The types of rewards are separated into three categories, visual, auditory and combined visual-auditory. Different types of these rewards will be experimented with,
 and test if they provide user satisfaction. These rewards will be displayed to the user within the chatbot after they complete their habit.
-For a playful prototype, visual rewards will be light-hearted gifs and auditory rewards will be selected to match the gifs.
+For a playful prototype, visual rewards will be light-hearted gifs and auditory rewards were selected to match the gifs.
 
 \begin{figure}[H]
   \centering
@@ -162,11 +162,21 @@ For a playful prototype, visual rewards will be light-hearted gifs and auditory 
   \label{fig:rewards_consistency}
 \end{figure}
 
-\subsection{Technical Limitations}
-Vibration discussion: - A.P.I. sets wearable alarm - Wearable (fitbit) issues and tracks alarm times
-Audio autoplay limitations:
-Talk about issues with looping sounds\newline
- Talk about Fitbit issues with alarm integration
+To ensure consistency with the reward types, a standard method was deigned to deliver the reward to users.
+Instead of sending the rewards in-line with the messages, a \textit{webview} was used to display a website where users opened their reward.
+This meant we could get out of the sandbox that the bot lives in, and use HTML5 elements to display the content in the same way, ensuring consistency across devices.
+Although this was not without its limitations.
+
+\subsection{Design Limitations}
+
+Auto-playing an audio track was not available when sending the audio in-line. But using a webview we could use the \textit{HTML5} audio element to enable auto-play.
+But, for auto-play elements, the HTML5 standard needs a button press before it starts (TODO footnote, this is for a good reason, to stop people spamming you with audio when visiting sites, see more mozilla reference autoplay).
+This required another button to create a JavaScript hook to auto-play.
+However, during tests on low mobile data speeds, users found that they would have to press the button multiple times before the audio played.
+This was because the audio would only play after it had loaded and created a lengthy delay, along with seemingly broken display.
+To create a better user experience, the button disappeared when pressed, using CSS that would execute even if the audio hadn't loaded, and even on a poor connection.
+Then JavaScript would execute after the page had fully loaded and play the audio if the button had already been pressed from the CSS, but if it hadn't then it would create a hook to play the audio after it had been pressed.
+This ensured a seemly experience when using rewards for all levels of connection.
 
 \subsection{User Flow}
 
