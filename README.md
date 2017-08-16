@@ -1,4 +1,7 @@
-## How Rewards from different modalities effect Habit-Formation
+## Harry's Habits: Investigating Habit Rewards
+
+Written at the University of Bristol.
+
 
 My [thesis](thesis/main.pdf) measures how rewards from different modalities effects peoples habit strength, using a chatbot to track habits by sending notifications to reminder users and delivering rewards from three modalities.
 
