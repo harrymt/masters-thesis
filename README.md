@@ -3,7 +3,7 @@
 Written at the University of Bristol.
 
 
-My [thesis](thesis/main.pdf) measures how rewards from different modalities effects peoples habit strength, using a chatbot to track habits by sending notifications to reminder users and delivering rewards from three modalities.
+My MSc [thesis](thesis/main.pdf) measures how rewards from different modalities effects peoples habit strength, using a chatbot to track habits by sending notifications to reminder users and delivering rewards from three modalities.
 
 An evaluation trial tests this chatbot using real-world participants that will use the bot to track any simple habit over 30 days.
 
