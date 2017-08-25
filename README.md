@@ -15,7 +15,7 @@ A [chatbot](https://github.com/harrymt/habit-reward-chatbot) tracks users habits
 
 ### Research Overview
 
-- See a [research review](https://github.com/harrymt/habit-reward-thesis/releases/tag/0.1) the for a review on the relevant material.
+A [research review](https://github.com/harrymt/habit-reward-thesis/releases/tag/0.1) the for a review on the relevant material.
 
 
 
