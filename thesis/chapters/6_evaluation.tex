@@ -11,6 +11,10 @@ to properly consider the systems effectiveness. The validated Behaviour Change W
 Evaluating the system with validated behaviour change techniques from multiple domains. This project will use this framework to evaluate the chatbot with evaluation trials.
 These will test the long-term effect and efficiency of the bot, with information from two fields of study, HCI and health psychology.
 
+\subsection{Hypothesis}
+
+Aslo talk about bot success as a third hypothesis
+
 \subsection{Evaluation Trial Overview}
 Evaluation trials are the final part of the Behaviour Change Wheel Framework~\cite{article_behaviour_change_wheel}.
 HCI research that focuses on health interventions~\cite{article_mhealth}, demonstrates the importance of evaluation trials for evaluating mobile health systems.
@@ -213,6 +217,101 @@ Stretch had the highest streak (18), meditation (15). However, overall, for all 
 
 \subsubsection*{Failed snoozes}
 Visual and sound had the most number of failed snoozes (10, split over 6 people, 1 person had 5 failed snoozes). Then it was sound by 4.
+
+
+
+\subsubsection{Automaticity}
+Automaticity was used to measure the habit strength based on the reward used. SRBAI scores for each condition are presented in figure~\ref{fig:habit_4_item_survey1_v_survey2}.
+Participants (N = 15, 41\%) completed the SRBAI (4-questions) at the end of the 3-week period. Most participants (N = 10, 27\%) completed the full 12-question SRHI 1-week later. Comparing the difference between the first questionnaire and the second: Auditory and visual rewards combined increased the most (9.4\%) from 32 SRBAI (mean = 16, SD = 2.828) to 35 SRBAI (mean = 17.5 (9.4\% increase), SD = 3.536). But, visual rewards had the highest score in both questionnaires, 73 SRBAI (mean = 14.6, SD = 4.336) for the first and 79 SRBAI (mean = 15.8, SD = 3.701) for the second (8.2\% increase). Finally, the auditory rewards had the least increase 15 SRBAI (mean = 15, SD = 0.0) to 16 SRBAI (mean = 15, SD = 0.0) (6.7\% increase) and the control group (without rewards) increased from 27 SRBAI (mean = 13.5, SD = 4.950) to 29 SRBAI (mean = 14.5, SD = 6.364) (7.4\% increase).
+
+%         S 1   S 2   Increase
+% NONE      27    29    7.4%
+% AUDITORY    15    16    6.7%
+% VISUAL    73    79    8.2%
+% COMBINED    32    35    9.4%
+% N: SD     4.950 6.364
+% A: SD     0   0
+% VISUAL:SD   4.336 3.701
+% COMBINED:SD 2.828 3.536
+% N: MEAN   13.5  14.5  7.4%
+% A: MEAN   15    15    0.0%
+% V: MEAN   14.6  15.8  8.2%
+% C: MEAN   16    17.5  9.4%
+
+\begin{figure}
+  \centering
+ \begin{tikzpicture}
+   \begin{axis}[
+      width  = 0.45*\textwidth,
+      height = 7cm,
+      major x tick style = transparent,
+      ybar=2*\pgflinewidth,
+      bar width=12pt,
+      ymajorgrids = true,
+      symbolic x coords={None,Visual,Auditory,Combined},
+      xtick = data,
+      scaled y ticks = false,
+      enlarge x limits=0.20,
+      ymin=0,
+      legend cell align=left,
+      legend style={at={(0.5,-0.12)},anchor=north},
+%       x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+%       y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
+%       xlabel={$u$ unemployment},
+      ylabel={Habit Strength},
+   ]
+      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
+          coordinates {
+          (None, 27) += (0,4.950) -= (0,4.950)
+          (Visual, 73) += (0,3.701) -= (0,3.701)
+          (Auditory, 15) += (0,0.5) -= (0,0.5)
+          (Combined, 32) += (0,2.828) -= (0,2.828)
+          };
+
+      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
+           coordinates {
+           (None, 29) += (0,6.364) -= (0,6.364)
+           (Visual, 79) += (0,3.701) -= (0,3.701)
+           (Auditory, 16) += (0,0.5) -= (0,0.5)
+           (Combined, 35) += (0,3.536) -= (0,3.536)
+           };
+
+      \legend{Week-3, Week-4}
+
+  \end{axis}
+  \end{tikzpicture}
+  \caption{Comparing Habit strength verses reward type using the SRHI questionnaire for each modality.}~\label{fig:habit_4_item_survey1_v_survey2}
+\end{figure}
+
+
+
+\subsection{Other Results}
+(NOTE: I am not sure if I should include any of these)
+
+\subsubsection{What was users habit context?}
+31 participants (86\%) chose one of the contexts that were listed as examples, some with a slight change in before and after wording, e.g. before getting home from work, rather than after getting home from work. The remaining 5 people chose the following context: 'Having a snack', 'Sitting in bed', 'Early morning', 'during breakfast' and 'Before sleeping'.
+
+Suggested habit contexts (by the bot):(todo insert table: morning, afternoon, evening habit context)
+
+Morning:
+  - waking up
+  - eating breakfast
+  - arriving at work
+
+  Afternoon:
+  - eating lunch
+  - leaving work
+
+  Evening:
+  - leaving work
+  - eating dinner
+  - getting ready for bed
+
+  Morning: 100: 7 (early) + 66 (mid) + 27 (late)
+  Afternoon: 54: 7 + 4 + 43
+  Evening: 32: 6 + 15 + 11
+
+
 
 
 \subsection*{Key results}
