@@ -24,12 +24,12 @@ Abstract implementation overview of user and chatbot discussion.
     \label{fig:prototype_component_overview}
 \end{figure}
 
-\subsection{Platform}
+\subsection{Deployment}
 
 Language consideration, nodejs, java, other types, talk about heroku, hosting provider. Hosting provider.
 Database provider discussion, integration, airtable,
 
-\subsection{Detailed Overview}
+\subsection*{Detailed Overview}
 
 \begin{figure}[H]
     \centering
@@ -44,7 +44,7 @@ Implementaiton limitations about timezone with the scheduler\newline
 Scheduler\newline
 Free text input issues\newline
 
-\subsection{Implementation Issues}
+\subsection*{Technical Issues}
 (Go through all meetings and list implementation issues here.)
 
 Throughout the implementation process different techniques were explored to implement the design.
@@ -61,7 +61,7 @@ But, this approach relied on the fitness tracker to sync with the phone after th
 Another issue occured with stopping the audio after it had been played during a reward. If a user closed the reward box, there was no way to stop the audio, unless a user waited until it had finished. This limitation was very minor, but also showed how difficult it is to seemly connect a webview and a bot.
 
 
-\subsection{Testing the chatbot}
+\subsection{Testing}
 
 Test harness, tested the full functionality programatically. Hooking into Travis CI and other continuous integration services.
 A pilot trial tested the basic chatbot functionality. Preparing for the full evaluation trails.

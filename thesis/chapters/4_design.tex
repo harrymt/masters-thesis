@@ -5,16 +5,15 @@
 To verify our hypotheses a prototype was constructed to track habits and deliver rewards. The platform for the tool needed to be highly available for participants, interactive and time effective to build.
 A system on a mobile device grants us access to a highly available, contextually aware and interactive platform~\cite{article_mhealth}. We will base the design on previous recommendations for building behaviour change systems.
 
-\subsection{Design Considerations}
+\subsection{Existing Technology}
 
 Current habit forming systems use apps to interact with users, but a recent study of these systems revealed most of them fall into a low behavioural theory adherence scale~\cite{article_mhealth}.
-Research into how to build systems that are theory-based, suggest four main stages for designing mobile health solutions. Conceptualisation, Formative Research and Pretesting,
-Pilot trials and Evaluation trials~\cite{article_mhealth}. The first two stages use the Behaviour Change Wheel~\cite{article_behaviour_change_wheel}
-(a framework for planning health behaviour interventions), to understand the behaviour, better define the characteristics and form the mobile concept into a prototype.
-The pilot trials tests the prototype before it moves to a finalised app with the commitment of a full trial. The final stage tests the finalised app with a wider range of participants.
-This project uses these four stages as design steps to build the prototype.
+Research into how to build systems that are theory-based, suggest four main stages for designing health technology solutions. Conceptualisation, Formative Research and Pretesting,
+Pilot trials and Evaluation trials~\cite{article_mhealth}. The first two stages use the Behaviour Change Wheel framework~\cite{article_behaviour_change_wheel}
+(method for planning health behaviour interventions). This framework allows us to understand the behaviour, better define the characteristics and form the mobile concept into a prototype.
+Pilot trials test the prototype before it is production-ready without the commitment of a full trial. The final stage evaluates the finalised prototype with a wider range of participants. Next, conceptualisation and design phases are discussed for design steps to build the prototype.
 
-\subsection{Mobile Concept to Prototype}
+\subsection{Concept to Prototype}
 
 This first stage explores different mediums to develop a prototype upon and to decide if there is a better method to interact with users than a mobile app. We conclude with a series of implementation options and choosing the path of a Chatbot.\newline
 \newline
@@ -48,7 +47,7 @@ Finally, a chatbot integrated into a popular messaging platform is easily availa
 
 From the table above the best method forward is a chatbot. It is already integrated into an existing app users are familiar with and (as long as the messaging app is available) works on all platforms.
 
-\subsection{Chatbot Platform}
+\subsection{Platform}
 
 Again, similarly there are lots of options about what platform to build the chatbot into. For example, Slack bots provide additional functionality, such as habit track, into the popular workplace communication service.
 
@@ -87,7 +86,7 @@ Facebook Messenger looks like the attractive option for user interaction with th
 
 But, will users differentiate between a bot and a person? Will the text interaction put people off? This thesis aims to answer those questions.
 
-\subsection{Facebook Messenger}
+\subsection*{Facebook Messenger}
 
 \begin{figure}[H] % ht
     \centering
@@ -114,7 +113,7 @@ Discussion about the additional features fb messenger has with discussion about 
 \end{figure}
 
 
-\subsection{Supporting Habit Formation}
+\subsection*{Supporting Habit Formation}
 
 Discussion about how we can support habit formation using a chatbot in reality.
 
@@ -126,7 +125,7 @@ Justify the type of habits chosen: Because the evaluation trial is shorter, the 
 
 
 
-\subsection{Delivering Rewards}
+\subsection*{Delivering Rewards}
 
 \begin{figure}[H]
   \centering
@@ -166,7 +165,7 @@ Instead of sending the rewards in-line with the messages, a \textit{webview} was
 This meant we could get out of the sandbox that the bot lives in, and use HTML5 elements to display the content in the same way, ensuring consistency across devices.
 Although this was not without its limitations.
 
-\subsection{Design Limitations}
+\subsection*{Design Limitations}
 
 Auto-playing an audio track was not available when sending the audio in-line. But using a webview we could use the \textit{HTML5} audio element to enable auto-play.
 But, for auto-play elements, the HTML5 standard needs a button press before it starts (TODO footnote, this is for a good reason, to stop people spamming you with audio when visiting sites, see more mozilla reference autoplay).
