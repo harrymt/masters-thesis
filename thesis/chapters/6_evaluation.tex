@@ -35,74 +35,6 @@ automaticity index~\cite{article_4q_SRBAI}. This will show the impact each modal
 Participants will fill out the questionnaires~\cite{article_habit_strength, article_4q_SRBAI} at three stages: half-way through the trial (at 2-weeks),
 after the trial has finished and after the follow up trial.
 
-\begin{figure}
-  %         S 1   S 2   Increase
-  % NONE      27    29    7.4%
-  % AUDITORY    15    16    6.7%
-  % VISUAL    73    79    8.2%
-  % COMBINED    32    35    9.4%
-  % N: SD     4.950 6.364
-  % A: SD     0   0
-  % VISUAL:SD   4.336 3.701
-  % COMBINED:SD 2.828 3.536
-  % N: MEAN   13.5  14.5  7.4%
-  % A: MEAN   15    15    0.0%
-  % V: MEAN   14.6  15.8  8.2%
-  % C: MEAN   16    17.5  9.4%
-
-  \centering
- \begin{tikzpicture}
-   \begin{axis}[
-      width  = 0.45*\textwidth,
-      height = 7cm,
-      major x tick style = transparent,
-      ybar=2*\pgflinewidth,
-      bar width=12pt,
-      ymajorgrids = true,
-      symbolic x coords={None,Visual,Auditory,Combined},
-      xtick = data,
-      scaled y ticks = false,
-      enlarge x limits=0.20,
-      ymin=0,
-      legend cell align=left,
-      legend style={at={(0.5,-0.12)},anchor=north},
-  %       x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
-  %       y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
-  %       xlabel={$u$ unemployment},
-      ylabel={Habit Strength},
-   ]
-      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
-          coordinates {
-          (None, 27) += (0,4.950) -= (0,4.950)
-          (Visual, 73) += (0,3.701) -= (0,3.701)
-          (Auditory, 15) += (0,0.5) -= (0,0.5)
-          (Combined, 32) += (0,2.828) -= (0,2.828)
-          };
-
-      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
-           coordinates {
-           (None, 29) += (0,6.364) -= (0,6.364)
-           (Visual, 79) += (0,3.701) -= (0,3.701)
-           (Auditory, 16) += (0,0.5) -= (0,0.5)
-           (Combined, 35) += (0,3.536) -= (0,3.536)
-           };
-
-      \legend{Week-3, Week-4}
-
-  \end{axis}
-  \end{tikzpicture}
-  \caption{Comparing Habit strength verses reward type using the SRHI questionnaire for each modality.}~\label{fig:habit_4_item_survey1_v_survey2}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.47\columnwidth]{resources/figures/reminder.png}
-  \hspace{5px}
-  \includegraphics[width=0.47\columnwidth]{resources/figures/reward-visual.png}
-  \caption{Prototype delivering a visual reward after a user has marked their habit as completed.}~\label{fig:setup}
-\end{figure}
-
-
 
 \subsection{Hypotheses}
 The study tests two hypotheses, the effect of the rewards and the effect of multiple modes versus singular modes. They are measured by habit performance and habit automaticity.
@@ -133,14 +65,11 @@ Breifly talk about Ethics approval, Kathys PHD 5.3.\newline
 \subsubsection{Method}
 The study aims to test the hypotheses comparing how well people form new habits based on the rewards and how the bot-delivered rewards effect participants habit formation.
 
-\subsubsection*{Bot}
-The bot was designed to track participants habits and deliver the rewards. The bot was built into an existing social network participants were used to, therefore the social scaffolding around the interaction helped reinforce the response to notifications as participants are more likely to respond because participants perceive the bot as a real person because it is located next to other real people.
-
 \subsubsection{Participants}
-60 participants were recruited on social networks (using the landing page: \url{www.[redacted].com}), and were mostly University students and staff. They were instructed to connect with the bot via Facebook Messenger and pick a series of options to set-up their habit tracking.
+60 participants were recruited on social networks (using the landing page: \url{www.harrymt.com/harryshabits}), and were mostly University students and staff. They were instructed to connect with the bot via Facebook Messenger and pick a series of options to set-up their habit tracking.
 
-How participants were recruited, screenshots of all adverts\newline
-Creating the adverts\newline
+TODO: insert screenshots! How participants were recruited, screenshots of all adverts\newline
+Creating the adverts. Website hosted on github\newline
 Photo of website\newline
 Photo of Screens users would see, facebook post, website, get started, Setup (Link to full setup screens in appendix), recieving reminder message, reward, snoozed lots messages, end of study messages.\newline
 
@@ -173,7 +102,7 @@ The bot will collect the amount of habits participants complete versus their rew
   \begin{tabular}{l l l}
     % \toprule
     {\small\textit{Modality}} & {\small \textit{Reward}} & {\small \textit{No. Participants}}\\
-    \midrule
+    \midrule \hline \\
     Visual & 15s gif & 15 \\
     Auditory & 15s audio & 15 \\
     Visual \& Auditory & 15s gif and audio & 15 \\
@@ -205,14 +134,14 @@ After 3 weeks of participants interacting with the bot, all participants who com
 
 Discussion of what the expected behaviour of the participant should be, bullet point list.\newline
 Transcript/screenshot of end of study messages.\newline
-
+Also include habit survey and modalitiy survey screenshots
 
 \subsection{Results}
 60 participants connected with the bot by pressing \textit{'Get Started'} in Facebook Messenger on the following platforms: 25 browser, iOS 18 and Android 12. 14 participants (23\%) dropped out of the study at various stages (see figure~\ref{fig:study_dropout}): 54 participants (90\%) continued interacting with the bot and started the set-up. 39 participants (65\%) completed the set-up and out of these 39 participants, 3 participants just ignored all messages from the bot during the trial. Leaving 36 participants (66\%) that are considered active throughout and included in the final analysis. These 36 participants are 18-63 years old, (mean: 27 years old, SD: 12), 23 (64\%) male, 11 (30\%) female and 2 (6\%) didn't say. These 36 remaining participants are split into the following modalities: 14 participants (93\%) visual, 9 participants (60\%) visual-auditory, 7 participants (46\%) auditory and 6 participants (40\%) had no rewards (control group). 28 participants volunteered for an interview and 7 were carried out.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
-  \includegraphics[width=.75\columnwidth]{resources/figures/study-flow.pdf}
+  \includegraphics[width=.4\columnwidth]{resources/figures/study-flow.pdf}
   \caption{Participant drop-out during the 4-week study.}~\label{fig:study_dropout}
 \end{figure}
 
@@ -223,7 +152,7 @@ Transcript/screenshot of end of study messages.\newline
 General discussion about how the results were analysed. Technology used. Security.\newline
 'Does giving users too much personalisation effect the study?'\newline
 
-
+TODO: Add charts for the below results
 
 Comparing the number of participants who dropped out of the study versus their reward modality, shows that 7 participants who blocked the bot had 27 visual rewards in total (mean = 3.85). 2 participants had 4 total auditory rewards (mean = 2) and 2 participants had 2 visual-auditory combined (mean = 6.5). These visual-auditory participants that dropped out had the highest amount of snoozes (24 total snoozes, 6 and 18 individually, mean = 12), compared with visual 10 total (mean = 2), and auditory with 0 snoozes.
 
@@ -333,15 +262,80 @@ Visual and sound had the most number of failed snoozes (10, split over 6 people,
 
 A one-way between-groups analysis of variance with planned comparisons was conducted to explore the effect of rewards on the number of habits completed, compared with the control group (see figure~\ref{fig:m1_h1}). Participants were divided into two groups according to their reward mode (Group 1: visual rewards, auditory rewards, visual-auditory rewards; Group 2: control group). There was a statistically significant difference at the p < .005 level in both groups for 2\/3 of the Weeks: Week 1, F (1, 23.20) = 9.48, p = .005, Week 2, F (1, 33.35) = 4.46, p = 0.42 and Week 3, F (1, 50) = 17.01, p < 0.005. The effect size for Week 1, Week 2 and Week 3 are large, calculated using eta squared, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
 
+
+\begin{figure}[H]
+  %         S 1   S 2   Increase
+  % NONE      27    29    7.4%
+  % AUDITORY    15    16    6.7%
+  % VISUAL    73    79    8.2%
+  % COMBINED    32    35    9.4%
+  % N: SD     4.950 6.364
+  % A: SD     0   0
+  % VISUAL:SD   4.336 3.701
+  % COMBINED:SD 2.828 3.536
+  % N: MEAN   13.5  14.5  7.4%
+  % A: MEAN   15    15    0.0%
+  % V: MEAN   14.6  15.8  8.2%
+  % C: MEAN   16    17.5  9.4%
+
+  \centering
+ \begin{tikzpicture}
+   \begin{axis}[
+      width  = 0.5*\textwidth,
+      height = 7cm,
+      major x tick style = transparent,
+      ybar=2*\pgflinewidth,
+      bar width=12pt,
+      ymajorgrids = true,
+      symbolic x coords={None,Visual,Auditory,Combined},
+      xtick = data,
+      scaled y ticks = false,
+      enlarge x limits=0.20,
+      ymin=0,
+      legend cell align=left,
+      legend style={at={(0.5,-0.12)},anchor=north},
+  %       x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+  %       y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
+  %       xlabel={$u$ unemployment},
+      ylabel={Habit Strength},
+   ]
+      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
+          coordinates {
+          (None, 27) += (0,4.950) -= (0,4.950)
+          (Visual, 73) += (0,3.701) -= (0,3.701)
+          (Auditory, 15) += (0,0.5) -= (0,0.5)
+          (Combined, 32) += (0,2.828) -= (0,2.828)
+          };
+
+      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
+           coordinates {
+           (None, 29) += (0,6.364) -= (0,6.364)
+           (Visual, 79) += (0,3.701) -= (0,3.701)
+           (Auditory, 16) += (0,0.5) -= (0,0.5)
+           (Combined, 35) += (0,3.536) -= (0,3.536)
+           };
+
+      \legend{Week-3, Week-4}
+
+  \end{axis}
+  \end{tikzpicture}
+  \caption{Comparing Habit strength verses reward type using the SRHI questionnaire for each modality.}~\label{fig:habit_4_item_survey1_v_survey2}
+\end{figure}
+
+
+
+
 \subsubsection*{M1H2: multiple modalities versus singular mode}
 A one-way between-groups analysis of variance with planned comparisons was conducted to explore the effect of multiple modalities and singular modalities on the number of habits completed (see figure~\ref{fig:m1_h2}). Participants were divided into two groups according to their mode (Group 1: visual rewards, auditory rewards; Group 2: visual-auditory rewards). There was a statistically significant difference at the p < .005 level in Week 2 and Week 3, and lots in all groups: Week 1, F (1, 50) = 0.69, p = .410, Week 2, F (1, 50) = 23.04, p < .005 and Week 3, F (1, 50) = 8.85, p = .005. The effect size for Week 1, Week 2 and Week 3 are large, calculated using eta squared, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
 
 
-\begin{figure}
+
+
+\begin{figure}[H]
   \centering
  \begin{tikzpicture}
    \begin{axis}[
-      width  = 0.4*\textwidth,
+      width  = 0.5*\textwidth,
       height = 6cm,
       major x tick style = transparent,
       ybar=2*\pgflinewidth,
@@ -400,11 +394,11 @@ statistically significant difference for the two groups at SRBAI 1: F (1, 9) = 0
 
 
 
-\begin{figure}
+\begin{figure}[H]
   \centering
  \begin{tikzpicture}
    \begin{axis}[
-      width  = 0.4*\textwidth,
+      width  = 0.5*\textwidth,
       height = 6cm,
       major x tick style = transparent,
       ybar=2*\pgflinewidth,
@@ -449,21 +443,17 @@ A one-way between-groups analysis of variance with planned comparisons was condu
 impact of multiple modalities on habit automaticity, compared with singular modes as measured by the SRBAI 1 and 2 (see figure~\ref{fig:m2_h2}). Participants were divided into two groups according to their reward mode (Group 1: visual rewards, auditory rewards; Group 2: visual-auditory combined rewards). There was not a
 statistically significant difference for the two groups at SRBAI 1: F (1, 9) = 1.04, p = .33, and SRBAI 2: F (1, 9) = 0.64, p = .44. In addition, the difference in mean scores between the groups had, at SRBAI 1: a medium effect with an effect size of .11, and at SRBAI 2: a large effect, with an effect size of .17, both calculated using eta squared.
 
-\section{Discussion}
-This research aimed to understand more about rewards from different modalities and their role in habit formation. Participants receiving bot-delivered rewards completed more habits than the control group without rewards. There was a significant correlation between the habit formation method and habit automaticity. However, this was contradicted during participant interviews (N = 7) where all participants found a drop in habit performance after 1-week without the prototype. Detailed interview discussion and results compare the two hypotheses with each measurement below.
-
-
 
 
 %       S1 Mean S2 Mean S1 SD   S2 SD
 % Control 13.5  14.5  4.949747468 6.363961031
 % Rewards 14.33 15.22 3.840572874 4.294699576
 
-\begin{figure}
+\begin{figure}[H]
   \centering
  \begin{tikzpicture}
    \begin{axis}[
-      width  = 0.4*\textwidth,
+      width  = 0.5*\textwidth,
       height = 6cm,
       major x tick style = transparent,
       ybar=2*\pgflinewidth,
@@ -499,6 +489,12 @@ This research aimed to understand more about rewards from different modalities a
   \end{tikzpicture}
   \caption{M2H1: The rewards effect on habit automaticity. Comparing mean habit automaticity for rewards versus control group.}~\label{fig:m2_h1}
 \end{figure}
+
+
+\section{Discussion}
+This research aimed to understand more about rewards from different modalities and their role in habit formation. Participants receiving bot-delivered rewards completed more habits than the control group without rewards. There was a significant correlation between the habit formation method and habit automaticity. However, this was contradicted during participant interviews (N = 7) where all participants found a drop in habit performance after 1-week without the prototype. Detailed interview discussion and results compare the two hypotheses with each measurement below.
+
+
 
 
 
@@ -614,20 +610,22 @@ Mostly participants chose existing routines that were suggested to them. For exa
 
 
 \subsection*{Feedback}
-  - Add a 'before' or 'after' option to avoid sythetic awkwardness (erasmo)
+Two reviews were publicly left on the bot. They echoed interviewees feelings towards the bot.
+
+\textit{`'2\/5 I felt a bit like I was being nagged, and I don't like being nagged. The rewards were a bit odd. Would be nice to actually set a time to be asked about the habit.'}
+
+
+\textit{'4\/5 Interesting project but I did not ultimately feel motivated, the reminders became more of a chore than something I wanted to do.'}
+
+
+
+
+ - Add a 'before' or 'after' option to avoid sythetic awkwardness (erasmo)
   - Liked music rewards.
   - If you tell the bot they haven't done their habit after their context, when they snooze it isnt going to be their context anymore!!! e.g. lunch at 5pm. The solution is to remove habit context from snoozed reminders.
   - TODO insert images\newline
 
-Bot Reviews\url{https://developers.facebook.com/apps/319599908473430/messenger/bot-ratings/}
 
-
-> I felt a bit like I was being nagged, and I don't like being nagged. The rewards were a bit odd. Would be nice to actually set a time to be asked about the habit.
-
-> Interesting project but I did not ultimately feel motivated, the reminders became more of a chore than something I wanted to do.
-
-\subsection*{Issues}
-Issues with study results and general issues with implementation.
 Development issues:
 
 From the change to different database it was hard to test all aspects of the bot. For example the logic to send end of day messages was altered but not fixed.
