@@ -1,13 +1,19 @@
 
 \section{Prototype Implementation}
 
-TODO: Add database relational diagram
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5.1in]{../resources/diagrams/database-diagram.pdf}
+    \caption{Database Entity Relationship Diagram}
+    \label{fig:db_diagram}
+\end{figure}
 
 Interaction with current habit formation systems is often via a mobile app. This creates a notable difference in the person when the system is removed~\cite{article_my_phone_is_part_of_my_soul}.
 This is also the case with many mobile feedback systems that aid with behaviour change.
 When we remove the system any improved performance is lost~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. To build a system for mobile devices that meets our requirements we must review all available options.\newline
 \newline
-Table~\ref{table:prototype_table} summarises the available choices for developing a system for our requirements. A mobile app can supply notifications, but for each platform a completely separate app would need to be built and users would need to download the app before it would be available to them.\newline
+Figure~\ref{fig:prototype_table} summarises the available choices for developing a system for our requirements. A mobile app can supply notifications, but for each platform a completely separate app would need to be built and users would need to download the app before it would be available to them.\newline
 A single cross-platform app could be constructed to reduce development time and complexity, but still users would need to download the app to start using it.\newline
 A web app has the advantage of being available to all users with a web browser (with users being able to save the site to home screen), but without notifications on all platforms (iOS), it won't meet our requirements.\newline
 Finally, a chatbot integrated into a popular messaging platform is easily available (if you have the messaging app already installed), simple (the user interface is already supplied), cross-platform and has notifications built in.
@@ -50,7 +56,13 @@ Free text input issues\newline
 Throughout the implementation process different techniques were explored to implement the design.
 Some of the research areas were not used in the final prototype due to technical issues and limitations with the approach.
 
-(TODO insert vibration screenshot here!)
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=2.5in]{../resources/design/vibration-reward.png}
+    \caption{Vibration reward issue.}
+    \label{fig:vibration_reward_issue}
+\end{figure}
+
 
 Using vibration as a modality would've been a great additional modality to use.
 Unfortunately the chatbot sandbox meant that the vibration ability in the phone could not be used, so another device would be used in combination with the bot.
