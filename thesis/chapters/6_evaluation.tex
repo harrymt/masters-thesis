@@ -57,7 +57,7 @@ Calculated from two Self-Report Behavioural Automaticity Index~\cite{article_4q_
 \item \textit{M2H2: Multiple modes versus singular on habit automaticity}
 \end{itemize}
 
-\subsection{Study: Comparing Different Rewards}
+\subsection{Study: Comparing Different Rewards} \label{study_comparing_rewards}
 To explore the influence of different modalities on habit formation, a situated study was conducted, followed by semi-structured interviews. For the purpose of the study a chatbot was developed to help users form healthy habits by providing different types of positive reinforcement. The study and the bot itself are described below.
 
 Breifly talk about Ethics approval, Kathys PHD 5.3.\newline
@@ -258,69 +258,10 @@ Visual and sound had the most number of failed snoozes (10, split over 6 people,
 
 
 \subsubsection{M1: Habit Performance}
-\subsubsection*{M1H1: The rewards effect on habit performance}
-
-A one-way between-groups analysis of variance with planned comparisons was conducted to explore the effect of rewards on the number of habits completed, compared with the control group (see figure~\ref{fig:m1_h1}). Participants were divided into two groups according to their reward mode (Group 1: visual rewards, auditory rewards, visual-auditory rewards; Group 2: control group). There was a statistically significant difference at the p < .005 level in both groups for 2\/3 of the Weeks: Week 1, F (1, 23.20) = 9.48, p = .005, Week 2, F (1, 33.35) = 4.46, p = 0.42 and Week 3, F (1, 50) = 17.01, p < 0.005. The effect size for Week 1, Week 2 and Week 3 are large, calculated using eta squared, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
 
 
 \begin{figure}[H]
-  %         S 1   S 2   Increase
-  % NONE      27    29    7.4%
-  % AUDITORY    15    16    6.7%
-  % VISUAL    73    79    8.2%
-  % COMBINED    32    35    9.4%
-  % N: SD     4.950 6.364
-  % A: SD     0   0
-  % VISUAL:SD   4.336 3.701
-  % COMBINED:SD 2.828 3.536
-  % N: MEAN   13.5  14.5  7.4%
-  % A: MEAN   15    15    0.0%
-  % V: MEAN   14.6  15.8  8.2%
-  % C: MEAN   16    17.5  9.4%
-
-  \centering
- \begin{tikzpicture}
-   \begin{axis}[
-      width  = 0.5*\textwidth,
-      height = 7cm,
-      major x tick style = transparent,
-      ybar=2*\pgflinewidth,
-      bar width=12pt,
-      ymajorgrids = true,
-      symbolic x coords={None,Visual,Auditory,Combined},
-      xtick = data,
-      scaled y ticks = false,
-      enlarge x limits=0.20,
-      ymin=0,
-      legend cell align=left,
-      legend style={at={(0.5,-0.12)},anchor=north},
-  %       x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
-  %       y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
-  %       xlabel={$u$ unemployment},
-      ylabel={Habit Strength},
-   ]
-      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
-          coordinates {
-          (None, 27) += (0,4.950) -= (0,4.950)
-          (Visual, 73) += (0,3.701) -= (0,3.701)
-          (Auditory, 15) += (0,0.5) -= (0,0.5)
-          (Combined, 32) += (0,2.828) -= (0,2.828)
-          };
-
-      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
-           coordinates {
-           (None, 29) += (0,6.364) -= (0,6.364)
-           (Visual, 79) += (0,3.701) -= (0,3.701)
-           (Auditory, 16) += (0,0.5) -= (0,0.5)
-           (Combined, 35) += (0,3.536) -= (0,3.536)
-           };
-
-      \legend{Week-3, Week-4}
-
-  \end{axis}
-  \end{tikzpicture}
-  \caption{Comparing Habit strength verses reward type using the SRHI questionnaire for each modality.}~\label{fig:habit_4_item_survey1_v_survey2}
-
+\centering
  \begin{tikzpicture}
    \begin{axis}[
       width  = 0.5*\textwidth,
@@ -358,40 +299,7 @@ A one-way between-groups analysis of variance with planned comparisons was condu
   \end{axis}
   \end{tikzpicture}
   \caption{M1H1: The rewards effect on habit performance. The sum of habits completed by participants with rewards versus the control group during 3-week study period.}~\label{fig:m1_h1}
-\end{figure}
 
-
-
-\subsubsection*{M1H2: multiple modalities versus singular mode}
-A one-way between-groups analysis of variance with planned comparisons was conducted to explore the effect of multiple modalities and singular modalities on the number of habits completed (see figure~\ref{fig:m1_h2}). Participants were divided into two groups according to their mode (Group 1: visual rewards, auditory rewards; Group 2: visual-auditory rewards). There was a statistically significant difference at the p < .005 level in Week 2 and Week 3, and lots in all groups: Week 1, F (1, 50) = 0.69, p = .410, Week 2, F (1, 50) = 23.04, p < .005 and Week 3, F (1, 50) = 8.85, p = .005. The effect size for Week 1, Week 2 and Week 3 are large, calculated using eta squared, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
-
-
-
-
-
-
-
-\subsubsection{M2: Habit Automaticity}
-11 participants completed both SRBAI questionnaires, 2 control group, 2 auditory, 5 visual and 2 visual-auditory. A paired-samples t-test was conducted to evaluate the change of habit automaticity between the first SRBAI questionnaire (after week 3) and the second (after week 4). There was a statistically significant increase in automaticity scores from SRBAI 1 (mean = 14.18, SD = 3.78) to SRBAI 2 (mean = 15.09, SD = 4.34), t (10) = 2.469, p < .005 (two-tailed). The mean increase in SRBAI scores was 0.90 with a 95\% confidence interval ranging from 0.08 to 1.72. The eta squared statistic (.37) indicated a large effect size.
-
-
-\subsubsection*{M2H1: the rewards effect on habit automaticity}
-An independent-samples t-test was conducted to compare the habit automaticity scores
-for rewards and control at both SRBAI 1 and SRBAI 2 (see figure~\ref{fig:m2_h1}). For SRBAI 1, there was also no significant differences in scores for rewards (mean = 14.33, SD = 3.84) and control (mean = 13.50, SD = 4.94; t (9) = 0.224, p = .85,
-two-tailed). The magnitude of the differences in the means (mean difference = .83,
-95\% CI: \-29.43 to 27.76) was very small (eta squared = .005). For SRBAI 2, there was no significant difference in scores for rewards
-(mean = 15.22, SD = 4.29) and control (mean = 14.50, SD = 6.36; t (9) = 0.202, p = .84,
-two-tailed). The magnitude of the differences in the means (mean difference = .72,
-95\% CI: \-8.80 to 7.36) was very small (eta squared = .004).
-
-
-A one-way between-groups analysis of variance with planned comparisons was also conducted to explore the impact of rewards on habit automaticity, as measured by the SRBAI 1 and 2. Participants were divided into two groups (Group 1: visual rewards, auditory rewards, visual-auditory rewards combined; Group 2: control group. There was not a
-statistically significant difference for the two groups at SRBAI 1: F (1, 9) = 0.02, p = .88, and SRBAI 2: F (1, 9) = 0.07, p = .78. In addition, the difference in mean scores between the groups had, at SRBAI 1: a medium effect with an effect size of .11, and at SRBAI 2: a large effect, with an effect size of .17, both calculated using eta squared.
-
-
-
-\begin{figure}[H]
-  \centering
  \begin{tikzpicture}
    \begin{axis}[
       width  = 0.5*\textwidth,
@@ -428,17 +336,29 @@ statistically significant difference for the two groups at SRBAI 1: F (1, 9) = 0
 
   \end{axis}
   \end{tikzpicture}
+
   \caption{M1H2: Multiple modes versus singular on habit performance. Sum of completed habits for multiple modalities compared with singular modes.}~\label{fig:m1_h2}
 \end{figure}
 
 
+\subsubsection*{M1H1: The rewards effect on habit performance}
+
+A one-way between-groups analysis of variance with planned comparisons was conducted to explore the effect of rewards on the number of habits completed, compared with the control group (see figure~\ref{fig:m1_h1}). Participants were divided into two groups according to their reward mode (Group 1: visual rewards, auditory rewards, visual-auditory rewards; Group 2: control group). There was a statistically significant difference at the p < .005 level in both groups for 2\/3 of the Weeks: Week 1, F (1, 23.20) = 9.48, p = .005, Week 2, F (1, 33.35) = 4.46, p = 0.42 and Week 3, F (1, 50) = 17.01, p < 0.005. The effect size for Week 1, Week 2 and Week 3 are large, calculated using eta squared, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
 
 
-\subsubsection*{M2H2: multiple modes versus singular mode on habit automaticity}
-A one-way between-groups analysis of variance with planned comparisons was conducted to explore the
-impact of multiple modalities on habit automaticity, compared with singular modes as measured by the SRBAI 1 and 2 (see figure~\ref{fig:m2_h2}). Participants were divided into two groups according to their reward mode (Group 1: visual rewards, auditory rewards; Group 2: visual-auditory combined rewards). There was not a
-statistically significant difference for the two groups at SRBAI 1: F (1, 9) = 1.04, p = .33, and SRBAI 2: F (1, 9) = 0.64, p = .44. In addition, the difference in mean scores between the groups had, at SRBAI 1: a medium effect with an effect size of .11, and at SRBAI 2: a large effect, with an effect size of .17, both calculated using eta squared.
 
+
+\subsubsection*{M1H2: multiple modalities versus singular mode}
+A one-way between-groups analysis of variance with planned comparisons was conducted to explore the effect of multiple modalities and singular modalities on the number of habits completed (see figure~\ref{fig:m1_h2}). Participants were divided into two groups according to their mode (Group 1: visual rewards, auditory rewards; Group 2: visual-auditory rewards). There was a statistically significant difference at the p < .005 level in Week 2 and Week 3, and lots in all groups: Week 1, F (1, 50) = 0.69, p = .410, Week 2, F (1, 50) = 23.04, p < .005 and Week 3, F (1, 50) = 8.85, p = .005. The effect size for Week 1, Week 2 and Week 3 are large, calculated using eta squared, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
+
+
+
+
+
+
+
+\subsubsection{M2: Habit Automaticity}
+11 participants completed both SRBAI questionnaires, 2 control group, 2 auditory, 5 visual and 2 visual-auditory. A paired-samples t-test was conducted to evaluate the change of habit automaticity between the first SRBAI questionnaire (after week 3) and the second (after week 4). There was a statistically significant increase in automaticity scores from SRBAI 1 (mean = 14.18, SD = 3.78) to SRBAI 2 (mean = 15.09, SD = 4.34), t (10) = 2.469, p < .005 (two-tailed). The mean increase in SRBAI scores was 0.90 with a 95\% confidence interval ranging from 0.08 to 1.72. The eta squared statistic (.37) indicated a large effect size.
 
 
 %       S1 Mean S2 Mean S1 SD   S2 SD
@@ -484,45 +404,12 @@ statistically significant difference for the two groups at SRBAI 1: F (1, 9) = 1
   \end{axis}
   \end{tikzpicture}
   \caption{M2H1: The rewards effect on habit automaticity. Comparing mean habit automaticity for rewards versus control group.}~\label{fig:m2_h1}
-\end{figure}
-
-
-\section{Discussion}
-This research aimed to understand more about rewards from different modalities and their role in habit formation. Participants receiving bot-delivered rewards completed more habits than the control group without rewards. There was a significant correlation between the habit formation method and habit automaticity. However, this was contradicted during participant interviews (N = 7) where all participants found a drop in habit performance after 1-week without the prototype. Detailed interview discussion and results compare the two hypotheses with each measurement below.
-
-
-
-
-
-\subsection{Interview Feedback}
-
-The interview transcripts were analysed and participants were anonymised following a thematic approach~\cite{thematic_analysis_qualatitive_data}. Below, we consider the role of each participants during the process of interacting with the chatbot and reflect how their interaction may of had a meaningful impact to their formation of a new habit.
-
-\subsubsection*{Questions}
-
-\begin{itemize}
-  \item General questions about rewards
-  \item Habit formation insight
-  \item Chabot interaction
-  \item Modality interaction
-  \item Are you still doing that habit?
-  \item Why did you pick that habit?
-  \item Do you want it back?
-\end{itemize}
-
-
-7 interviews with participants outlined their experience with their habit performance after the prototype bot was removed. Participants picked habits they wanted to perform, but when the bot stopped notifying them, they lacked motivation to completed their habit. Some participants enjoyed the rewards at the beginning, but most participants disliked them after the first week.
-
-Participants discussed how they picked their habit, they chose because they had wanted to start for the particular habit for a long time, it was \textit{'not too much effort'} and \textit{'something successful people do'}. They wanted \textit{'to be more active'}, \textit{'relieve stress'} and wanted a habit that was \textit{'less time consuming'}. Throughout, participants mostly completed their habits, but, some participants would put the message off and eventually get their performance would get \textit{'worse and worse'}, until they stopped all together. However, after the bot was removed all interviewed participants (N = 7) found it difficult to continue with their habit. They \textit{'kept forgetting'}, found it \textit{'harder to remember'} and lacked motivation, not performing the action if it had \textit{'been a long day'}. Some tried to do it \textit{'every now and again'}, but usually they would only complete it if \textit{'they remembered'}. This reveals the dependency between technology and habits, suggesting that the bot did not increase habit automaticity, or that the existing routine participants chose was not suitable for new habits, or that they were not given enough time to develop automaticity.
-
 
 %       S1 Mean S2 Mean S1 SD S2 SD
 % Visual  14.6  15.8  4.336 3.701
 % Auditory  12    11.5  4.243 6.364
 % V-A   16    17.5  2.828 3.536
 
-\begin{figure}
-  \centering
  \begin{tikzpicture}
    \begin{axis}[
       width  = 0.44*\textwidth,
@@ -564,6 +451,57 @@ Participants discussed how they picked their habit, they chose because they had 
   \caption{M2H2: Multiple modes versus singular on habit performance. Comparing mean habit automaticity for each group.}~\label{fig:m2_h2}
 \end{figure}
 
+
+\subsubsection*{M2H1: the rewards effect on habit automaticity}
+An independent-samples t-test was conducted to compare the habit automaticity scores
+for rewards and control at both SRBAI 1 and SRBAI 2 (see figure~\ref{fig:m2_h1}). For SRBAI 1, there was also no significant differences in scores for rewards (mean = 14.33, SD = 3.84) and control (mean = 13.50, SD = 4.94; t (9) = 0.224, p = .85,
+two-tailed). The magnitude of the differences in the means (mean difference = .83,
+95\% CI: \-29.43 to 27.76) was very small (eta squared = .005). For SRBAI 2, there was no significant difference in scores for rewards
+(mean = 15.22, SD = 4.29) and control (mean = 14.50, SD = 6.36; t (9) = 0.202, p = .84,
+two-tailed). The magnitude of the differences in the means (mean difference = .72,
+95\% CI: \-8.80 to 7.36) was very small (eta squared = .004).
+
+
+A one-way between-groups analysis of variance with planned comparisons was also conducted to explore the impact of rewards on habit automaticity, as measured by the SRBAI 1 and 2. Participants were divided into two groups (Group 1: visual rewards, auditory rewards, visual-auditory rewards combined; Group 2: control group. There was not a
+statistically significant difference for the two groups at SRBAI 1: F (1, 9) = 0.02, p = .88, and SRBAI 2: F (1, 9) = 0.07, p = .78. In addition, the difference in mean scores between the groups had, at SRBAI 1: a medium effect with an effect size of .11, and at SRBAI 2: a large effect, with an effect size of .17, both calculated using eta squared.
+
+\subsubsection*{M2H2: multiple modes versus singular mode on habit automaticity}
+A one-way between-groups analysis of variance with planned comparisons was conducted to explore the
+impact of multiple modalities on habit automaticity, compared with singular modes as measured by the SRBAI 1 and 2 (see figure~\ref{fig:m2_h2}). Participants were divided into two groups according to their reward mode (Group 1: visual rewards, auditory rewards; Group 2: visual-auditory combined rewards). There was not a
+statistically significant difference for the two groups at SRBAI 1: F (1, 9) = 1.04, p = .33, and SRBAI 2: F (1, 9) = 0.64, p = .44. In addition, the difference in mean scores between the groups had, at SRBAI 1: a medium effect with an effect size of .11, and at SRBAI 2: a large effect, with an effect size of .17, both calculated using eta squared.
+
+
+
+
+\subsection{Discussion}
+This research aimed to understand more about rewards from different modalities and their role in habit formation. Participants receiving bot-delivered rewards completed more habits than the control group without rewards. There was a significant correlation between the habit formation method and habit automaticity. However, this was contradicted during participant interviews (N = 7) where all participants found a drop in habit performance after 1-week without the prototype. Detailed interview discussion and results compare the two hypotheses with each measurement below.
+
+
+
+
+
+\subsubsection{Interview Feedback}
+
+The interview transcripts were analysed and participants were anonymised following a thematic approach~\cite{thematic_analysis_qualatitive_data}. Below, we consider the role of each participants during the process of interacting with the chatbot and reflect how their interaction may of had a meaningful impact to their formation of a new habit.
+
+\subsubsection*{Questions}
+
+\begin{itemize}
+  \item General questions about rewards
+  \item Habit formation insight
+  \item Chabot interaction
+  \item Modality interaction
+  \item Are you still doing that habit?
+  \item Why did you pick that habit?
+  \item Do you want it back?
+\end{itemize}
+
+
+7 interviews with participants outlined their experience with their habit performance after the prototype bot was removed. Participants picked habits they wanted to perform, but when the bot stopped notifying them, they lacked motivation to completed their habit. Some participants enjoyed the rewards at the beginning, but most participants disliked them after the first week.
+
+Participants discussed how they picked their habit, they chose because they had wanted to start for the particular habit for a long time, it was \textit{'not too much effort'} and \textit{'something successful people do'}. They wanted \textit{'to be more active'}, \textit{'relieve stress'} and wanted a habit that was \textit{'less time consuming'}. Throughout, participants mostly completed their habits, but, some participants would put the message off and eventually get their performance would get \textit{'worse and worse'}, until they stopped all together. However, after the bot was removed all interviewed participants (N = 7) found it difficult to continue with their habit. They \textit{'kept forgetting'}, found it \textit{'harder to remember'} and lacked motivation, not performing the action if it had \textit{'been a long day'}. Some tried to do it \textit{'every now and again'}, but usually they would only complete it if \textit{'they remembered'}. This reveals the dependency between technology and habits, suggesting that the bot did not increase habit automaticity, or that the existing routine participants chose was not suitable for new habits, or that they were not given enough time to develop automaticity.
+
+
 Participants had mixed feelings about the rewards. Some \textit{'did not like the [visual] rewards'}, skipping over them after the first few, they \textit{'just wanted to get rid of the notification dot'}. Another participant said \textit{'some of them [visual-auditory rewards] were funny'}, but they did not like them overall and mentioned the auditory rewards were \textit{'too random'}. One participant thought they did not give them an incentive towards their habit, just a \textit{'nice little extra'}. They also discussed including time-sensitive rewards, as they did not want to listen to music before going to bed. This shows the importance of using an appropriate modality at particular times, e.g. not having auditory rewards at certain times of the day. Finally, an upbeat participant talked about \textit{'always wanting to open them'} and \textit{'the combination was perfect'}. However, they said they also found them \textit{'repetitive'}.
 
 
@@ -572,7 +510,7 @@ Participants were asked about how they found the chatbot as the method of intera
 
 Mostly participants wanted the prototype to come back with a few modifications: \textit{'enclosed with Fitbit so it is all in a single place'}, \textit{'fine without rewards'} (2 participants mentioned this), \textit{'more interaction'} and \textit{'with statistics about my progress'}. Participants wanted the bot as more of a \textit{'constant persistent reminder'} with additional tracking elements to remind them to perform their habit to fit into their busy schedule. Participants (N = 5) mentioned the \textit{headspace} app (\url{www.headspace.com}), mentioning that they wanted a combination of the bot and headspace. It prompted another participant to download the headspace app. They wanted the bot to keep on track of their habit and they would use the headspace app to help them perform their mindfulness.
 
-\subsection*{M1: Habit Performance}
+\subsubsection*{M1: Habit Performance}
 The results found that participants are more likely to complete their habit if given one of the rewards and participants completed more habits with visual or auditory rewards than visual-auditory rewards.
 
 \subsubsection*{M1H1: The Rewards effect on Habit Performance}
@@ -582,7 +520,7 @@ There was a statistically significant drop in habit performance for the control 
 There is a significant difference between the visual-auditory modes on the number of completed habits. But the result appears to be different to the initial hypotheses, with more participants completing habits with singular mode rewards than multiple. This contradicts the belief that multiple modalities benefits task completion, however these results only impact the particular rewards delivered by this bot. Therefore, it is inconclusive whether multiple modalities rewards in the general sense impact habit performance.
 
 
-\subsection*{M2: Habit Automaticity}
+\subsubsection*{M2: Habit Automaticity}
 It is inconclusive whether the rewards or the combined modalities effected habit automaticity.
 
 \subsubsection*{M2H1: The Rewards effect on Habit Automaticity}
@@ -595,7 +533,7 @@ Participants with visual-auditory combined reward had higher habit automaticity 
 % Under half the participants completed the modality survey (N = 12, 40\%). These had the following rewards: visual rewards had the highest score (the higher, the more participants preferred the reward) (mean = 12, SD = 3.347), visual and auditory rewards were slightly below (mean = 10.75, SD = 1.893).
 % TODO: Compare these results to people not using the chatbot, e.g.. people signing up to the gym, new years resolution
 
-\subsection{Prototype Success}
+\subsubsection{Prototype Success}
 The prototype was somewhat successful at running a research trail. There were several issues and various limitations with development. However, it was generally liked by participants and managed to easily gather a lot of useful data.
 
 Participants had mixed feelings towards the bot. Their performance shows that the number of snoozes over time decreased, but the number of total habits completed per day also decreased for all reward types (including the control group). However, participant streaks over time increased and 36 participants manage to use it for 3-weeks.
@@ -607,13 +545,13 @@ Participants gave additional feedback by simply messaging the bot. They asked in
 Mostly participants chose existing routines that were suggested to them. For example, during the pilot trials when asking for an existing routine, users were confused, so examples of habit contexts were provided. The results found, 31 (84\%) participants chose one of the contexts that were listed as examples, some with a slight change in before and after wording, e.g. \textit{before} getting home from work, rather than \textit{after} getting home from work. The remaining 5 participants chose the following context: \textit{'Having a snack'}, \textit{'Sitting in bed'}, \textit{'Early morning'}, \textit{'During breakfast'} and \textit{'Before sleeping'}. A participant also pointed out that changing the time their existing routine occurred was prompted to them, but the description about it, was not.
 
 
-\subsection*{Feedback}
+\subsubsection*{Feedback}
 Two reviews were publicly left on the bot. They echoed interviewees feelings towards the bot.
 
-\textit{`'2\/5 I felt a bit like I was being nagged, and I don't like being nagged. The rewards were a bit odd. Would be nice to actually set a time to be asked about the habit.'}
+\textit{'2/5 I felt a bit like I was being nagged, and I don't like being nagged. The rewards were a bit odd. Would be nice to actually set a time to be asked about the habit.'}
 
 
-\textit{'4\/5 Interesting project but I did not ultimately feel motivated, the reminders became more of a chore than something I wanted to do.'}
+\textit{'4/5 Interesting project but I did not ultimately feel motivated, the reminders became more of a chore than something I wanted to do.'}
 
 
 
@@ -650,7 +588,7 @@ Discussion about the issues I had w the bot
 
 
 
-\subsection*{Dependence}
+\subsubsection*{Dependence}
 Streaks could have been better used to give insight to participants progress and challenged them to maintain it, using loss aversion~\cite{loss_aversion} to compare the impact of their broken streak with the gain of keeping it. However, all participants interviewed (N = 7) struggled with maintaining habit performance after the bot was removed. This suggests a dependence between the technology and the habit as participants depended on bot notifications to continue repeating the desired action.
 
 
