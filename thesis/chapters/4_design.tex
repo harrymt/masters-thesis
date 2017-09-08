@@ -1,22 +1,42 @@
 
+\subsection{Hypotheses} \label{hypothese}
+A review of current research into habit formation rewards from different modalities reveals a gap in the HCI and behaviour change domains.
+Two hypotheses are presented to answer the questions to complete this gap.
+
+\subsubsection*{Hypothesis 1: What is the affect of rewards from multiple modalities on habit formation}
+Rewards from the following modalities will be tested: visual, auditory and visual-auditory. They will be delivered using a prototype chatbot to different groups of participants. They will be compared against two measurements: habit automaticity and habit performance. Previous studies~\cite{article_habit_strength, article_4q_SRBAI} demonstrate the strength of a habit is based on how automatic the action is. In addition, how regular the habit is performed in another good indicator of habit strength~\cite{article_promoting_habit_formation, article_experiences_of_habit_formation}.
+
+\begin{itemize}
+  \item \textit{M1: The rewards affect on habit performance}
+  \item \textit{M2: The rewards affect on habit automaticity}
+\end{itemize}
+
+\subsubsection*{Hypothesis 2: What is the affect of combined modalities compared with singular modes on habit formation.}
+Multiple modalities combined has been shown to improve task performance in some studies. This hypothesis will test how this affects habit performance and habit automaticity.
+
+\begin{itemize}
+  \item \textit{M1: Multiple modes versus singular affect on habit performance}
+  \item \textit{M2: Multiple modes versus singular affect on habit automaticity}
+\end{itemize}
+
+In addition to these two hypotheses, the success of the prototype will also be evaluated with user interviews.
+
 \newpage
 \section{Design}
-
-To verify our hypotheses, a prototype was constructed to track habits and deliver rewards. The platform for the tool needed to be highly available for participants, interactive and time effective to build.
+To verify our hypotheses, a prototype was constructed to track habits and deliver rewards, based on the guidelines (Section~\ref{recommendations}). The platform for the tool needed to be highly available for participants, interactive and time effective to build.
 A system on a mobile device grants us access to a highly available, contextually aware and interactive platform~\cite{article_my_phone_is_part_of_my_soul, article_mhealth}. We will base the design on previous recommendations for building behaviour change systems.
 
 \subsection{Existing Technology}
 Interaction with current habit formation systems is often via a mobile app. This creates a notable difference in the person when the system is removed~\cite{article_my_phone_is_part_of_my_soul}.
 This is also the case with many mobile feedback systems that aid with behaviour change.
 When we remove the system any improved performance is lost~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. Surveys of current habit formation systems~\cite{survey_on_apps_2,survey_on_current_apps_of_steel, article_mhealth} revealed most of them fall into a low behavioural theory adherence scale.
-Research into how to build systems that are theory-based, suggest four main stages for designing health technology solutions. Conceptualisation, Formative Research and Pretesting,
-Pilot trials and Evaluation trials~\cite{article_mhealth}. The first two stages use the Behaviour Change Wheel framework~\cite{article_behaviour_change_wheel}
-(method for planning health behaviour interventions). This framework allows us to understand the behaviour, better define the characteristics and turn concept into prototype.
+Research into how to build systems that are theory-based, suggest four main stages for designing health technology solutions. Conceptualisation, Formative Research,
+Pilot trials and Evaluation trials~\cite{article_mhealth}. The first two stages use the Behaviour Change Wheel framework~\cite{article_behaviour_change_wheel}---method for planning health behaviour interventions. This framework allows us to understand the behaviour, better define the characteristics and turn concept into prototype.
 Pilot trials test the prototype before it is production-ready without the commitment of a full trial. The final stage evaluates the finalised prototype with a wider range of participants. Next, conceptualisation and design phases are discussed for design steps to build the prototype.
 
 \subsection*{Conceptualisation and Formative Research}
 
-This first stage explores different mediums to develop a prototype upon and different methods of user interaction. We conclude with a series of implementation options discussion about how the chatbot was chosen.\newline
+These two stages explore different mediums for developing a prototype and different methods of user interaction. We conclude with a series of implementation options and discussion about how the chatbot was chosen.\newline
 \newline
 When it comes to mobile phones, users have plenty of options for interaction. A popular choice that has revisited the market are \textit{chatbots}. Chatbots are applications that parse questions using Natural Language Processing (NLP) to provide a response. Bots act as a user interface to expose data and would use online services to parse the response, such as Amazon lex (\url{https://aws.amazon.com/lex/}). These programs have conversations with users to achieve a goal and are not new inventions. Since 1966~\cite{article_eliza}, Eliza by Joesphs Weizenbaum, used simple expression matching to return a certain response for user trials. In the present day, these applications (commonly referred to as bots or chatbots), are found integrated into many different apps on the majority of users mobile phones. For example, Facebook Messenger, a popular messaging application (\url{www.messenger.com}) encourages developers to create bots to interact with their users. These bots act as a real person with similar interaction flow, plus a few additional features, such as \textit{Quick Replies}~\cite{doc_fb_quick_replies} for revealing a list of options to a user. Quick Replies provide a way to present buttons to the user in response to a message. However, these bots would not reply like a real person, but rather would only reply if that question was pre-trained using machine learning algorithms. This technology requires the bot to be trained on a large set of data and the majority of use cases would have to be accounted for.
 NLP would enable users to chat to the bot and get a friendly understandable reply. However, this interaction may build a dependence on the user-chatbot interaction and could lead to losing automaticity. NLP will not be used to limit the scope of this project and avoid these potential problems.
