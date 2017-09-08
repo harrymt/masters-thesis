@@ -1,128 +1,40 @@
 
 \section{Introduction}
 
-Habits are automatic actions that require little effort. A simple action such as turning on the light to a room happens automatically, even if the light is already on.
-Forming new positives habit needs three elements: contextual cues, positive
-reinforcement and repetition.
-The contextual cue acts as a trigger and the positive reinforcement rewards the
-person encouraging them to perform the action again when triggered by the cue.
-A study measured repetition to show a habit takes on average,
-66 days to form~\cite{article_how_habits_formed_modelling_habit_formation}.
-However, people still fail at forming new positive habits and give up because
-they don't stick to a
-routine~\cite{article_promoting_habit_formation, article_the_habitual_consumer}.\newline
-\newline
-Mobile technology can help people stick to a routine by focusing on the three elements.
-Using reminders as triggers to repeat an action, helping us associate contextual
-information around the action and rewarding us with positive reinforcement.
-Yet most existing mobile systems aren't built on theory, leading to repetitive actions rather than habit automaticity.
-Therefore, people become dependent on technology and habit performance decreases when the system is eventually removed.\newline
-\newline
-Building habit automaticity removes this dependency.
-We can increase automaticity by building motivation to complete the action~\cite{article_a_self_efficacy, article_meta_analytic_review_intrinsic_motivation}
-We can encourage motivation by rewarding users with positive reinforcement by granting user's satisfaction after completing the action.
-However, reward type and delivery type are important. Giving money (extrinsic rewards) hinders motivation.
-Giving satisfaction (intrinsic rewards) benefits the person and should be preferred.
-The type of delivery should suit each individual user so a choice of delivery should be available.
-Different research~\cite{article_user_centred_multimodal_reminders} shows how interaction with users should span different modalities to suit the needs to users.
-This project combines knowledge from these two domains to focus on how intrinsic rewards from different modalities affect people's habit strength.\newline
-\newline
-This project uses the three elements of habit formation to build a mobile technology tool to deliver rewards from different modalities.
-These rewards are delivered using a chatbot instead of a mobile app to present a novel method of interacting with users.
-Chatbots are a method of communicating with a computer system using natural language, providing deeper integration into users mobile phone and
-can hook into messaging services users are familiar with, such as Facebook Messenger.
-The chatbot design is based on a combined set of theory-based design requirements;
-one for building habit formation apps that aim to increase habit automaticity and one for increasing motivation with intrinsic rewards.\newline
-\newline
-To evaluate our hypothesis we present a tool to help test it: a mobile technology chatbot to deliver rewards from different modalities.
-These rewards are delivered using the bot to present a novel behaviour change method for interacting with users.
-Chatbots are a method of communicating with a computer system using natural language, providing deeper integration into users mobile phone and be deployed into into messaging services users are familiar with, such as Facebook Messenger.
-The chatbot design is based on a combined set of theory-based design requirements;
-one for building habit formation apps that aim to increase habit automaticity and one for increasing motivation with intrinsic rewards.\newline
-\newline
-An evaluation trial tests the prototype during a 4-week controlled period to measure user's habit strength.
-36 participants engaged in daily activity with the bot for 3 weeks, then for a further 1-week all bot interaction was suspended to test if users continued with their chosen habit after removing the bot.
-The chatbot provides habit tracking with three combinations of rewards, visual, auditory and visual-auditory combined.
-Participants were split into four groups: one control group without rewards and three groups receiving different combinations.
-The evaluation trial tested the success of the chatbot by measuring reward modes compared with habit strength after the trail. These were compared with the results from the control group to prove the effectiveness of each reward mode.
+Understanding how to design systems that support behaviour change is important to human computer interaction (HCI) to ensure that designers build these systems to have the maximum impact~\cite{how_to_evaluate_tech_for_behaviour_change}. Habits play an important role in behaviour change by making the changed behaviour permanent~\cite{article_promoting_habit_formation}. However, the full habit formation process within the HCI domain needs further research due to the difficulties in evaluating the long-term effects of technology on habit formation~\cite{article_evaluate_tech_health_behaviour_change}. Therefore, the need for HCI researchers to design technology that encourages people to change their behaviour and form new habits is still a main focus.
 
+Habits are automatic actions that require little concious effort~\cite{article_the_habitual_consumer}. To develop new habits people must keep to a strict routine and perform the action repeatedly to strengthen the automaticity of the action~\cite{article_promoting_habit_formation}. When strong habits are developed the likelihood of behaviours persisting is higher~\cite{putting_habit_into_practice} and habits are more effectively developed when specific and measurable goals are set~\cite{habits_better_when_have_specific_and_measurable_goals}. Psychology defines habits as learned automatic cue-response actions. The action will perform automatically in response to a trigger that has been actioned repeatedly in the past~\cite{article_the_habitual_consumer}. The more automatic the response the higher habit automaticity. For example, a simple action such as turning on the light when you enter a room, happens automatically, even if the light is already on. However, forming a new habit is difficult and people are more likely to give up due to their lack of routine~\cite{article_promoting_habit_formation, article_the_habitual_consumer}.
 
-The project aims to deliver insight into how rewards from different modalities effect habit strength and opens up new research avenues for investigating the use of chatbots as
-vehicles for promoting behaviour change.
+Technology can help people stick to a routine by sending repeated messages~\cite{chi_crowd_designed_motivation} and encouraging people~\cite{positive_reinforcement_pro}. However, these techniques do not always work and may build repetitive actions rather than habit automaticity~\cite{coaching_not_that_good}. Therefore, technology should be designed to avoid building repetitive actions and instead build habit automaticity. Repetitive actions lead people to become dependent on technology and when the system is eventually removed, habit performance decreases~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. Habit automaticity is a measure of habit strength~\cite{article_4q_SRBAI} and is the key that removes this dependency~\cite{article_beyond_self_tracking_designing_apps}. Automaticity can be increased by building motivation to complete the action~\cite{article_a_self_efficacy, article_meta_analytic_review_intrinsic_motivation}.
+Motivation can be encouraged by giving people positive reinforcement rewards after they complete an action. However, how the reward is delivered and the type of reward used is also crucial to success.
 
-\subsection*{Background}
-People have goals they want to achieve that require repetitive actions, such as regular exercise or losing weight.
-Habits can be used to perform these actions with almost no conscious thought in a automatic-like way.
-Forming a positive habit increases the chance people can achieve these type of goals, by changing their behaviour~\cite{article_promoting_habit_formation}.
-Evidence~\cite{article_beyond_self_tracking_designing_apps} suggests there are three elements of habit formation: repetition, contextual cues and positive reinforcement.
-Associating the cue with performance and grounding the process with a reward encourages regular repetition, leading to automatic behaviour~\cite{article_experiences_of_habit_formation}.
-Building a new habit requires a contextual cue, to trigger the start of the habit (action), and a reward for
-positive reinforcement~\cite{article_beyond_self_tracking_designing_apps, article_how_habits_formed_modelling_habit_formation}.
-For example, a reminder on your phone (trigger) reminds you to stretch (action), relaxing you and removing back pain (reward).
-Studies have shown that the process of creating a new habit takes on average up to 66 days of repetitive use~\cite{article_how_habits_formed_modelling_habit_formation}.
-But, anyone who has ever made a new years resolution knows the difficulties in changing behaviour. People try to create new positive habits only to drop them a few days into their new routine.
+The method of delivery should suit each individual user and a choice of delivery should be available. For example, a survey on feedback systems~\cite{article_user_centred_multimodal_reminders} advised that delivery of interaction should span different modalities to increase retention and better suit the needs of users. Although interaction across modalities is important, this research does not have configurable feedback, but aims to compare how each type of feedback can affect motivation. Monetary (extrinsic) rewards can hinder motivation~\cite{article_meta_analytic_review_intrinsic_motivation}, whereas, satisfaction-based (intrinsic) rewards can be beneficial to motivation and should be preferred.
+This study uses a chatbot to deliver intrinsic positive reinforcement rewards from different modalities to see how participants habit automaticity and performance are affected.
 
-\subsection*{Motivation}
-
-\subsubsection*{Habit Formation}
-Technology can help solve this problem. Coaching us through a new routine until an action becomes a habit.
-Mobile technology provides us with an interactive platform that can help support habit formation. Issuing reminders and build motivation for repetitive tasks.
-Plenty of existing habit formation mobile systems use apps to guide users through a series of experiences to form a new habit.
-But the majority of these apps are unsuccessful because they don't ground themselves in habit formation theory~\cite{article_beyond_self_tracking_designing_apps, article_apps_of_steel}.
-These apps create a dependency on the technology and don't build the automatic reaction to a trigger (habit automaticity)~\cite{article_dont_kick_habit}.
-For example, the dependence is highlighted when the apps are removed as people stop the habit altogether.\newline
-\newline
-Research~\cite{article_understanding_use_contextual_cues_design_impl} shows that routine-based remembering strategies are good for building habit automaticity.
-Stawarz et al.~\cite{article_dont_forget_your_pill} produced a set of design requirements for building mobile apps grounded in habit formation theory that aim to build habit automaticity.
-Other literature~\cite{article_taxonomy_motivational_affordances_meaningful} shows how intrinsic rewards build habit automaticity, producing a set of real-world implementation requirements.
-Combined, these two requirements form a new set focused on rewards. This project uses these to build a tool to help measure the effect of rewards on habit automaticity.
-
-\subsubsection*{Chatbots}
-Interaction with current habit formation systems is often via a mobile app. This creates a notable difference in the person when the system is removed~\cite{article_my_phone_is_part_of_my_soul}.
-This is also the case with many mobile feedback systems that aid with behaviour change.
-When we remove the system any improved performance is lost~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}.\newline
-\newline
-Chatbots are a method of communicating with a computer system via a conversation using natural language.
-They hook into messaging services users are familiar with, providing a better mobile phone integration for users.
-When removing the system, instead of removing an app, users stop messaging a person (the chatbot).
-This project shows how a chabot to deliver reminders and rewards to users, acts as a novel tool to interact with users.
-
-\subsubsection*{Reward Modalities}
-Habit formation systems use reminders and rewards.
-Studies have shown that good reminder systems should use multiple modalities~\cite{article_designing_multimodal_reminders_for_home},
-that is providing alternative ways to interact with the user, either visual, auditory or both visual and auditory combined.
-This increases the likelihood that the delivery method is pleasant and satisfactory to the user.
-This project uses this idea for rewards, incorporating this technique into the chatbot by delivering rewards to users across multiple modalities.
-However, reminders are issued on a single mode (visual) to limit the scope of this project to test how rewards from different modalities effect peoples habit strength.
+This thesis is comprised of four main sections. First, existing literature into habit formation, behaviour change technologies and existing chatbots is reviewed to present three hypotheses. Second, a 4-week situated study is conducted to test the hypotheses with analysis of how each modality delivered by the chatbot, visual, auditory and visual-auditory, impacted participants habit automaticity and the number of habits participants marked as completed. Third, discussion of the results along with follow up interviews about how the bot-delivered rewards encourage people to stick to a routine and perform their habit. Finally, the affect of this habit tracking chatbot on participants and the success of the prototype for conducting research is evaluated against the hypotheses presented.
 
 \subsection{Aims and Objectives}
-This project aims to evaluate how users habit strength is effected by rewards from different modalities using a chatbot as the tool to deliver these rewards. The chatbot provides habit tracking with reminder messages as triggers, and rewards as positive reinforcement in two modalities: visual and auditory. The rewards provide the user with the satisfaction of completing the habit action and encourage them to build user habit automaticity.
-The visual reward is a gif and the auditory reward is an audio clip.
-Each reward mode content can be comparable with another, using mapping the content across each reward modality.
-For example, a visual picture of a bird would map to the sound (auditory) of a bird.
+The project aims to deliver insight into how rewards from different modalities affect habit automaticity and habit performance, opening up new research avenues for investigating the use of chatbots as vehicles for promoting behaviour change and aiding research trails.
 
-\subsection*{Methodology}
-The literature review enabled the construction of theory-based requirements that are focused on rewards for habit formation. Next a tool is built that uses these requirements, to ensure that the system is based on theory. A chatbot is constructed as a tool to track habits, deliver reminders as notifications and deliver rewards from two modalities, visual and auditory. The chatbot is built using a popular messaging platform, Facebook Messenger.\newline
-\newline
-A 3-week evaluation trial tests the success of the chatbot by evaluating the tool and the effectiveness of each modality on users habit strength using a validated questionnaire. Afterwards, chatbot interaction is removed during a 1-week follow up trial to test if users continue with the habit. Participants split into four groups, all groups receiving reminders, three groups receiving rewards each from a different modality, and one group (control group) don't receive any rewards.
+To achieve the aim the following objectives are followed.
 
-\subsection*{Deliverables}
-To summarise, these are the following key project deliverables.
+\begin{enumerate}
+    \item Present an overview of existing research into:
+      \begin{enumerate}
+        \item Habit formation and behaviour change techniques.
+        \item Different types of rewards and how they impact motivation within habit formation.
+        \item Visual, auditory and visual-auditory feedback on habit performance and habit automaticity.
+        \item Existing technology used to form habits.
+      \end{enumerate}
+    \item Construct theory-based guidelines that focus on rewards for habit formation.
+    \item Create a prototype that tracks habits and delivers rewards from visual, auditory and visual-auditory modalities, using these guidelines to ensure the prototype is based on theory.
+    \item Conduct and analyse a 4-week study to evaluate the success of the prototype and the impact of each modality on habit automaticity and habit performance.
+    \item Evaluate habit automaticity and habit performance for each mode. Finally, determining the success of Harry's Habits.
+\end{enumerate}
 
-\begin{itemize}
-  \item A chatbot to serve as a tool that tracks habits by delivering rewards from two modalities: visual and auditory.
-  \item Analysis about how rewards from different modalities effect habit strength.
-  \item Design recommendations for building chatbots that deliver rewards in different modalities.
-\end{itemize}
-
-\subsection*{Added value}
+\subsection{Added Value}
 Evaluation from real-users reveals positive and negative aspects of the requirements. The follow-up trail in determines if the requirements were effective for building habit automaticity and tests the validity of the hypothesis. If user's habit automaticity does not increase, the project still presents a novel method of interacting with users and track habits. A system evaluation provides value on how to build a chatbot to deliver rewards from different modalities to support habit formation. Finally, the project opens up new research avenues for investigating the use of chatbots as vehicles for promoting behaviour change.\newline
 \newline
 This thesis analyses literature around habit formation and rewards from different modalities, constructs a prototype to deliver rewards, conducts an evaluation trial and summarising with design guidelines and prototype analysis.
-
-
-
-
-Several systems were reviewed to test their feasibility as a prototype. A chatbot was implemented as it can easily send notifications, has a short development time, high availability with cross-platform and is simple, with the user interface (UI) already built for us. The rise of social media and increasing use of humorous memes was utilised to provide the motivating content of the rewards. This works well with the prototype integration into an existing social media messaging platform, \textit{Facebook Messenger} (\url{www.messenger.com}). Next we evaluate the effectiveness of the prototype against hypotheses in a 4-week study.
 
 \newpage
