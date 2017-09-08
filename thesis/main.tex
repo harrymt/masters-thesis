@@ -1,7 +1,9 @@
 % -*- root: main.tex -*-
 \documentclass[11pt]{article}
-
+\renewcommand{\baselinestretch}{1.1}
 \usepackage[a4paper]{geometry}
+\geometry{top=4cm, bottom=2.5cm, left=2cm, right=2cm} % Title
+
 \usepackage{fancyhdr} % Customise style
 % ERROR MEANS WE NEED TO GET RID OF EMPTY LINE \\'s
 \usepackage{hyperref}
@@ -23,13 +25,13 @@
 \newcommand{\xmark}{\ding{55}}
 \usepackage{pgfplots} % Graphs
 \pgfplotsset{compat=1.12}
+\hyphenchar\font=-1 % stop hypenation
+\emergencystretch 3em
 
-\usepackage[none]{hyphenat} % Dont hyphenate
 \bibliographystyle{unsrt} % Print bib in order
-
 \usetikzlibrary{shapes.geometric, arrows} % For diagrams
 
-\newcommand\blankpage{% Code for the blank page
+\newcommand\blankpage{ % Code for the blank page
     \null
     \thispagestyle{empty}
     \addtocounter{page}{-1}
@@ -42,22 +44,19 @@
 \include{chapters/_title}
 
 \begin{document}
-
-    % Stop page numbering until we say again
-    \pagenumbering{gobble}
-    \newgeometry{top=4cm, bottom=2.5cm, left=2cm, right=2cm} % Title geometry
+    \pagenumbering{gobble} % Stop page numbering until we say again
     \maketitle
-    \newgeometry{top=2.4cm, bottom=2.5cm, left=2cm, right=2cm}
 
+
+
+    % Acutal margins here
+    \newgeometry{top=2.4cm, bottom=2.5cm, left=2.2cm, right=2.2cm}
     \newpage
-
     \import{./chapters/}{acknowledgements}
     \newpage
 
-\newgeometry{top=2.3cm, bottom=2.4cm, left=1.9cm, right=2cm} % abstract margins
     \import{./chapters/}{0_abstract}
 
-\newgeometry{top=2.4cm, bottom=2.5cm, left=2cm, right=2cm}
     \tableofcontents
     \newpage
 
@@ -76,7 +75,6 @@
     % https://www.cs.bris.ac.uk/Teaching/Resources/COMSM2202/review.html
     % https://www.cs.bris.ac.uk/project/MSc/
     \import{./chapters/}{1_introduction.tex}
-
     \import{./chapters/}{2_habit.tex}
     \import{./chapters/}{3_multimodal.tex}
     \import{./chapters/}{4_design.tex}
@@ -87,7 +85,6 @@
     \cleardoublepage
     \bibliographystyle{ieeetr}
     \renewcommand*{\refname}{}
-
     \section{References}
     \bibliography{chapters/bibliography}
 
