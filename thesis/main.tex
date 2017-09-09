@@ -45,20 +45,25 @@
 
 \begin{document}
     \pagenumbering{gobble} % Stop page numbering until we say again
-    \maketitle
 
+    % For our custom title
+    % \maketitle
+    % \newpage
 
-
-    % Acutal margins here
+    % Actual margins here
     \newgeometry{top=2.4cm, bottom=2.5cm, left=2.2cm, right=2.2cm}
-    \newpage
     \import{./chapters/}{acknowledgements}
     \newpage
 
     \import{./chapters/}{0_abstract}
 
+    % Actual margins here
+    % TOC MARGINS ONLY
+    \newgeometry{top=1.9cm, bottom=2.1cm, left=2.2cm, right=2.2cm}
+    % END TOC MARGINS
     \tableofcontents
     \newpage
+    \newgeometry{top=2.4cm, bottom=2.5cm, left=2.2cm, right=2.2cm}
 
     % Set styles after the title, abstract and toc
     \fancypagestyle{plain} {
@@ -85,7 +90,7 @@
     \cleardoublepage
     \bibliographystyle{ieeetr}
     \renewcommand*{\refname}{}
-    \section{References}
+    \section*{References}
     \bibliography{chapters/bibliography}
 
     \newgeometry{top=2.5cm,bottom=2.5cm} % set margins to be smaller so we can fit appendix items onto a single page
