@@ -25,11 +25,13 @@
 \newcommand{\xmark}{\ding{55}}
 \usepackage{pgfplots} % Graphs
 \usepackage{pdfpages} % For importing the title pdf page
+ \usepackage[backend=bibtex,citestyle=numeric-comp,bibstyle=ieee,minbibnames=5,maxbibnames=5,defernumbers=true,giveninits=true]{biblatex}
+% Use biblatex
 \pgfplotsset{compat=1.12}
 \hyphenchar\font=-1 % stop hypenation
 \emergencystretch 3em
 
-\bibliographystyle{unsrt} % Print bib in order
+ \addbibresource{chapters/bibliography}
 \usetikzlibrary{shapes.geometric, arrows} % For diagrams
 
 \newcommand\blankpage{ % Code for the blank page
@@ -90,11 +92,10 @@
     \import{./chapters/}{7_conclusion.tex}
 
     \cleardoublepage
-    \bibliographystyle{ieeetr}
     \renewcommand*{\refname}{}
     \section*{References}
-    \bibliography{chapters/bibliography}
 
+\printbibliography
     \newgeometry{top=2.5cm,bottom=2.5cm} % set margins to be smaller so we can fit appendix items onto a single page
 
     \include{chapters/appendix}
