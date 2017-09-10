@@ -30,8 +30,8 @@
 \pgfplotsset{compat=1.12}
 \hyphenchar\font=-1 % stop hypenation
 \emergencystretch 3em
+\addbibresource{chapters/bibliography}
 
- \addbibresource{chapters/bibliography}
 \usetikzlibrary{shapes.geometric, arrows} % For diagrams
 
 \newcommand\blankpage{ % Code for the blank page
@@ -92,10 +92,15 @@
     \import{./chapters/}{7_conclusion.tex}
 
     \cleardoublepage
-    \renewcommand*{\refname}{}
-    \section*{References}
 
-\printbibliography
+    % Add bigger line spacing for each item
+    \begingroup
+        \renewcommand\bibname{References \vspace*{-10mm}}
+        \scriptsize
+        \setlength\bibitemsep{5pt}
+        \printbibliography
+    \endgroup
+
     \newgeometry{top=2.5cm,bottom=2.5cm} % set margins to be smaller so we can fit appendix items onto a single page
 
     \include{chapters/appendix}
