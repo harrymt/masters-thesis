@@ -24,6 +24,7 @@
 \newcommand{\cmark}{\ding{51}} % So we can use \cmark instead of \ding{51}
 \newcommand{\xmark}{\ding{55}}
 \usepackage{pgfplots} % Graphs
+\usepackage{pdfpages} % For importing the title pdf page
 \pgfplotsset{compat=1.12}
 \hyphenchar\font=-1 % stop hypenation
 \emergencystretch 3em
@@ -41,7 +42,7 @@
 \usepackage[toc,page]{appendix}
 
 % Add title setup/style.
-\include{chapters/_title}
+% \include{chapters/_title}
 
 \begin{document}
     \pagenumbering{gobble} % Stop page numbering until we say again
@@ -49,6 +50,7 @@
     % For our custom title
     % \maketitle
     % \newpage
+    \includepdf[pages={1-},scale=1]{./resources/title-page.pdf}
 
     % Actual margins here
     \newgeometry{top=2.4cm, bottom=2.5cm, left=2.2cm, right=2.2cm}
