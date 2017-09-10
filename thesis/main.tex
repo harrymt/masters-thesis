@@ -50,12 +50,13 @@
     \pagenumbering{gobble} % Stop page numbering until we say again
 
     % For our custom title
+    % \newgeometry{top=2.4cm, bottom=2.5cm, left=2.2cm, right=2.2cm}
     % \maketitle
     % \newpage
     \includepdf[pages={1-},scale=1]{./resources/title-page.pdf}
 
     % Actual margins here
-    \newgeometry{top=2.4cm, bottom=2.5cm, left=2.2cm, right=2.2cm}
+    % \newgeometry{top=2.4cm, bottom=2.5cm, left=2.2cm, right=2.2cm}
     \import{./chapters/}{acknowledgements}
     \newpage
 
@@ -81,8 +82,6 @@
     % Start page numbers
     \pagenumbering{arabic}
 
-    % https://www.cs.bris.ac.uk/Teaching/Resources/COMSM2202/review.html
-    % https://www.cs.bris.ac.uk/project/MSc/
     \import{./chapters/}{1_introduction.tex}
     \import{./chapters/}{2_habit.tex}
     \import{./chapters/}{3_multimodal.tex}
