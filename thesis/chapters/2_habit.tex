@@ -14,7 +14,7 @@ Context from information around the action, serves as a cue to trigger events to
 The process of creating a new habit takes on average 66 days of repetitive use~\cite{article_how_habits_formed_modelling_habit_formation}. The easier the action, the shorter time before the action turns into a habit, from drinking water (18 days), to going to the gym (254 days). However, existing routines and cues are needed before the action develops into a habit~\cite{habits_event_cues_1, habits_event_cues_2}. An existing routine acts as a trigger to motivate the desired action. Context from that routine serves as the cue for the trigger. For example, if you wanted to adopt a habit to weigh yourself every day, you could attach it onto an existing habit like brushing your teeth. The contextual cue of brushing your teeth will trigger you to weigh yourself. When designing behaviour change interventions, using different types of cues can be beneficial. Multi-cue routines have shown to be more effective than a single cue~\cite{article_understanding_use_contextual_cues_design_impl}. Attaching habits onto existing event-based cues are easier to remember~\cite{article_implementation_intentions_multicue} when compared with time-based habits, mainly due to change in time with change in environment, e.g. the weekend~\cite{coaching_not_that_good}. Event-based cues help connect the contextual information with the action and builds habit automaticity~\cite{article_implementation_intentions}.
 
 \subsubsection*{Rewards}
-Rewards give motivation, fuelling the belief in success and self-efficacy, which plays a large part in forming habits. Some researchers~\cite{article_a_self_efficacy} suggest it is the main part of behaviour change. Variable types of rewards have been shown to increase dopamine in a laboratory study on rats~\cite{variable_rewards_increases_dopamine}. This technique has proved to be an effective method of increasing repetition as shown in slot machines that vary their reward payout. But although variable rewards increase habit repetition, they hinder habit automaticity~\cite{variable_rewards_increases_dopamine}, which is key to creating permanent and long-lasting behaviour change. Rewards are a good form of external motivation because they don't change the ability to perform a behaviour, unless the reward itself is a tool that increases ability~\cite{article_taxonomy_motivational_affordances_meaningful}. Rewards provide a strong motivational source, but like all extrinsic motivators, these are less effective for changing behaviour in the long run, because externally motivated behaviour lasts as long as the external motivator exists~\cite{article_beyond_self_tracking_designing_apps}.
+Rewards give motivation, fuelling the belief in success and self-efficacy, which plays a large part in forming habits. Some researchers~\cite{article_a_self_efficacy} suggest it is the main part of behaviour change. Variable types of rewards have been shown to increase dopamine in a laboratory study on rats~\cite{variable_rewards_increases_dopamine}. This technique has proved to be an effective method of increasing repetition as shown in slot machines~\cite{programme_why_are_gambling_machines_addictive} that vary their reward payout. But although variable rewards increase habit repetition, they hinder habit automaticity~\cite{variable_rewards_increases_dopamine}, which is key to creating permanent and long-lasting behaviour change. Rewards are a good form of external motivation because they don't change the ability to perform a behaviour, unless the reward itself is a tool that increases ability~\cite{article_taxonomy_motivational_affordances_meaningful}. Rewards provide a strong motivational source, but like all extrinsic motivators, these are less effective for changing behaviour in the long run, because externally motivated behaviour lasts as long as the external motivator exists~\cite{article_beyond_self_tracking_designing_apps}.
 
 \subsection{Positive Reinforcement}
 Positive reinforcement rewards the person by encouraging them to perform the action again until it forms into a habit. Research~\cite{positive_reinforcement_pro} has shown that positive reinforcement significantly increases intrinsic motivation and increases the persons perception of their own performance. This paper discusses intrinsic positive reinforcement as the method of reward, rather than other types of rewards e.g. negative reinforcement. Rewarding a person with intrinsic positive reinforcement strengthens the habit by giving the feeling of satisfaction~\cite{article_promoting_habit_formation}, particularly in relation to interesting tasks~\cite{article_meta_analytic_review_intrinsic_motivation}. This study explores different types of positive reinforcement rewards and how they effect behaviour change.
@@ -30,11 +30,11 @@ Building habit automaticity requires the desired action to be built around an ex
 Strategies for designing habit formation systems show~\cite{article_beyond_self_tracking_designing_apps,article_taxonomy_motivational_affordances_meaningful} that rewards are a good form of external motivation because they don't change the ability to perform a behaviour, unless the reward itself is a tool that increases ability. These rewards provide a strong motivational source, but like all extrinsic motivators, these are less effective for changing behaviour in the long run, because externally motivated behaviour lasts as long as the external motivator exists. This project builds upon this set of requirements, combining them into a new set of design requirements for habit formation systems that focus on rewards.
 
 \subsection{Guidelines} \label{recommendations}
-The combined guidelines based on methods from~\cite{article_beyond_self_tracking_designing_apps, article_taxonomy_motivational_affordances_meaningful} create a list grounded in habit formation theory and focused on rewards. Each requirement provides detailed breakdown about why it's used and what mechanics it relates to from theory.
+The combined guidelines based on methods from~\cite{article_beyond_self_tracking_designing_apps, article_taxonomy_motivational_affordances_meaningful} create a list grounded in habit formation theory and focused on rewards (Appendix~\ref{app:guidelines}). Each item provides detailed breakdown about why it's used and what mechanics it relates to from theory.
 
 
 \textbf{1. Help users define a memorable strategy.}\newline
-Make personalized, well defined, structured multi-cue routines and support users choice of not setting remembering strategies. In addition, provide examples of some strategies to users.
+Make personalised, well defined, structured multi-cue routines and support users choice of not setting remembering strategies. In addition, provide examples of some strategies to users.
 
 
 \textbf{2. Give users small difficult tasks.}\newline
@@ -67,31 +67,3 @@ People find it easy to forget whether an automatic task was completed, check to 
 
 Using these recommendations for building habit formation systems that focus on delivering rewards, we decide what type of rewards are needed and discuss what modality would best suit positive reinforcement.
 
-\begin{landscape}
-% \newgeometry{top=2.3cm, bottom=2.4cm, left=1.9cm, right=2cm} % abstract margins
-\renewcommand{\arraystretch}{1.5} % Increase line height of the following tables
-\begin{figure}[ht] % ht
-    % \centering
-
-
-\begin{center}
-\begin{tabular}{ |p{7cm}|p{6cm}|p{6.5cm}| }
-  \hline
-  \textbf{Combined} & \textbf{Stawarz et al.~\cite{article_beyond_self_tracking_designing_apps}} & \textbf{Weiser et al.~\cite{article_taxonomy_motivational_affordances_meaningful}} \\ \hline % Row
-  1. Help users define a memorable strategy. & REQ 1. Help users define a good remembering strategy.\newline REQ 2. Provide examples of good remembering strategies & Design REQ 2. Support User Choice.\newline Design REQ 4. Provide personalized experience. \\ \hline
-  2. Give users small difficult tasks & N\/A & Mechanic REQ 3. Offer challenges\\ \hline
-  3. Enable competition, comparison and cooperation. & N\/A & Mechanic REQ 5. Competition \& Comparison.\newline Mechanic REQ 6. Cooperation\\ \hline
-  4. Show insights for improvements and support changes. & REQ 3. Provide suggestions for strategy improvements and support changes. & Design REQ 1. Offer meaningful suggestions.\newline Mechanic REQ 2. User Education. \\ \hline
-  5. Remind them about cues and remembering strategies. & REQ 4. Remind about cues and remembering strategies. & Design REQ 3. Provide User Guidance.\newline Mechanic REQ 2. User Education. \\ \hline
-  6. Reward users. & N\/A & Mechanic REQ 4. Rewards. \\ \hline
-  7. Disable cue reminders when behaviour is routine. & REQ 5. Disable cue reminders when the behaviour becomes a part of a routine. & Design REQ 5. Design for every stage of behaviour change. \\ \hline
-  8. Check if the action has already happened. & REQ 6. Help users check whether the habit has already happened. & Mechanic REQ 1. Feedback. \\ \hline
-\end{tabular}
-\end{center}
-
-    \caption{Guidelines for building habit formation systems that focus on rewards.}
-    \label{fig:reqtable}
-\end{figure}
-\newgeometry{top=2.4cm, bottom=2.5cm, left=2cm, right=2cm}
-\newpage
-\end{landscape}
