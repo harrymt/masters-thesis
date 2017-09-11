@@ -1,45 +1,13 @@
 
-\subsection{Hypotheses} \label{hypothese}
-A review of current research into habit formation rewards from different modalities reveals a gap in the HCI and behaviour change domains.
-Two hypotheses are presented to answer the questions to complete this gap.
-
-\subsubsection*{Hypothesis 1: What is the effect of rewards from multiple modalities on habit formation}
-Rewards from the following modalities will be tested: visual, auditory and visual-auditory. They will be delivered using a prototype chatbot to different groups of participants. They will be compared against two measurements: habit automaticity and habit performance. Previous studies~\cite{article_habit_strength, article_4q_SRBAI} demonstrate the strength of a habit is based on how automatic the action is. In addition, how regular the habit is performed in another good indicator of habit strength~\cite{article_promoting_habit_formation, article_experiences_of_habit_formation}.
-
-\begin{itemize}
-  \item \textit{M1: The rewards affect on habit performance}
-  \item \textit{M2: The rewards affect on habit automaticity}
-\end{itemize}
-
-\subsubsection*{Hypothesis 2: What is the effect of combined modalities compared with singular modes on habit formation.}
-Multiple modalities combined has been shown to improve task performance in some studies. This hypothesis will test how this affects habit performance and habit automaticity.
-
-\begin{itemize}
-  \item \textit{M1: Multiple modes versus singular affect on habit performance}
-  \item \textit{M2: Multiple modes versus singular affect on habit automaticity}
-\end{itemize}
-
-In addition to these two hypotheses, the success of the prototype will also be evaluated with user interviews.
-
-\newpage
-\section{Design}
-To verify our hypotheses, a prototype was constructed to track habits and deliver rewards, based on the guidelines (Section~\ref{recommendations}). The platform for the tool needed to be highly available for participants, interactive and time effective to build.
-A system on a mobile device grants us access to a highly available, contextually aware and interactive platform~\cite{article_my_phone_is_part_of_my_soul, article_mhealth}. We will base the design on previous recommendations for building behaviour change systems.
-
 \subsection{Existing Technology}
-Interaction with current habit formation systems is often via a mobile app. This creates a notable difference in the person when the system is removed~\cite{article_my_phone_is_part_of_my_soul}.
-This is also the case with many mobile feedback systems that aid with behaviour change.
-When we remove the system any improved performance is lost~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. Surveys of current habit formation systems~\cite{survey_on_apps_2,survey_on_current_apps_of_steel, article_mhealth} revealed most of them fall into a low behavioural theory adherence scale.
-Research into how to build systems that are theory-based, suggest four main stages for designing health technology solutions. Conceptualisation, Formative Research,
-Pilot trials and Evaluation trials~\cite{article_mhealth}. The first two stages use the Behaviour Change Wheel framework~\cite{article_behaviour_change_wheel}---method for planning health behaviour interventions. This framework allows us to understand the behaviour, better define the characteristics and turn concept into prototype.
-Pilot trials test the prototype before it is production-ready without the commitment of a full trial. The final stage evaluates the finalised prototype with a wider range of participants. These two stages explore different mediums for developing a prototype and different methods of user interaction. We conclude with a series of implementation options and discussion about how the chatbot was chosen.\newline
-\newline
-When it comes to mobile phones, users have plenty of options for interaction. A popular choice that has revisited the market are \textit{chatbots}. Chatbots are applications that parse questions using Natural Language Processing (NLP) to provide a response. Bots act as a user interface to expose data and would use online services to parse the response, such as Amazon lex (\url{https://aws.amazon.com/lex/}). These programs have conversations with users to achieve a goal and are not new inventions. Since 1966~\cite{article_eliza}, Eliza by Joesphs Weizenbaum, used simple expression matching to return a certain response for user trials. In the present day, these applications (commonly referred to as bots or chatbots), are found integrated into many different apps on the majority of users mobile phones. For example, Facebook Messenger, a popular messaging application (\url{www.messenger.com}) encourages developers to create bots to interact with their users. These bots act as a real person with similar interaction flow, plus a few additional features, such as \textit{Quick Replies}~\cite{doc_fb_quick_replies} for revealing a list of options to a user. Quick Replies provide a way to present buttons to the user in response to a message. However, these bots would not reply like a real person, but rather would only reply if that question was pre-trained using machine learning algorithms. This technology requires the bot to be trained on a large set of data and the majority of use cases would have to be accounted for.
-NLP would enable users to chat to the bot and get a friendly understandable reply. However, this interaction may build a dependence on the user-chatbot interaction and could lead to losing automaticity. NLP will not be used to limit the scope of this project and avoid these potential problems.
-Instead of natural language processing, the location of the bot (inside an existing messaging app) ease of interaction and the additional features (Quick Replies) help easily communicate with users.
+Research into how technology can support habit formation and behaviour change~\cite{survey_on_current_apps_of_steel}, shows a large number of habit forming systems are mobile apps. Studies into the effectiveness of these apps has been recently conducted~\cite{article_beyond_self_tracking_designing_apps, article_dont_kick_habit} revealing that although most of these apps are rated highly, they do not ground themselves in behaviour change theory. Further surveys of these apps~\cite{survey_on_apps_2} suggest that habit performance is not sustained when the app is removed, due to the lack of habit automaticity built during the habit tracking process. Using apps consistently to manage behaviour can create a notable difference in the person when the system is removed~\cite{article_my_phone_is_part_of_my_soul}.
+This is also the case with many behaviour change systems, when the system is removed any improved performance is lost~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. Building habit automaticity requires the desired action to be built around an existing routine~\cite{article_how_habits_formed_modelling_habit_formation, article_implementation_intentions_multicue}. Technology should help with routine creation by having additional checks to guard against changes in routine that remind people about their habit if their situation changes and issue post-completion notifications to check if the action has already happened~\cite{article_dont_forget_your_pill}. This is vital for sustaining performance and building habit automaticity.
+
+\subsubsection*{Choice of System}
+Although there has been lots of research using mobile apps for behaviour change interventions~\cite{survey_on_current_apps_of_steel}. There are plenty of other options available when designing be behaviour change interventions. One option that has been recently used for behaviour change interventions are \textit{chatbots}. They have been integrated into messaging apps, such as the \textit{Telegram} app to track food habits~\cite{telegram_bot_tracking_habits} and are seen as the next big thing in HCI~\cite{chatbots_and_new_world_of_hci}. Chatbots are applications that parse questions using Natural Language Processing (NLP) to provide a response and are platform independent. This means the bot can be accessed on mobile phones and desktops. Bots act as a user interface to expose data and would use online services to parse the response, such as Amazon lex (\url{https://aws.amazon.com/lex/}). These programs have conversations with users to achieve a goal and are not new inventions. Since 1966~\cite{article_eliza}, Eliza by Joesphs Weizenbaum, used simple expression matching to return a certain response for user trials. In the present day, these applications (commonly referred to as bots or chatbots), are found integrated into many different apps on the majority of users mobile phones. For example, Facebook Messenger, a popular messaging application (\url{www.messenger.com}) encourages developers to create bots to interact with their users. These bots act as a real person with similar interaction flow, plus a few additional features, such as \textit{Quick Replies}~\cite{doc_fb_quick_replies} for revealing a list of options to a user. Quick Replies provide a way to present buttons to the user in response to a message. However, these bots would not reply like a real person, but rather would only reply if that question was pre-trained using machine learning algorithms. This technology requires the bot to be trained on a large set of data and the majority of use cases would have to be accounted for. NLP would enable users to chat to the bot and get a friendly understandable reply. However, this interaction may build a dependence on the user-chatbot interaction and could lead to losing automaticity.
 
 
-Another design option is building a \textit{webapp}. However, the functionality is limited, due to the lack of notification features in current webapps. To allow notifications the webapp could be paired with another native app or use SMS (Short Message Service) notifications. However, because these technologies are separated it is hard to get users to respond. Another design option is a native mobile app as has the ability to supply notifications, but for each platform a completely separate app would need to be built and users would need to download the app before it would be available to them. A single cross-platform app could be constructed to reduce development time and complexity, but still users would need to download the app to start using it. A web app has the advantage of being available to all users with a web browser (with users being able to save the site to home screen), but without notifications on all platforms (iOS only), it won't meet our requirements. Finally, a chatbot integrated into a popular messaging platform is easily available (if you have the messaging app already installed), simple (the user interface is already supplied), works on any platform the messaging app is available on and has notifications built in. The table (Figure~\ref{fig:prototype_table}) summarises the available development choices for a system that meets the recommendations (Section~\ref{recommendations}).
+Another design option is building a \textit{webapp}. However, the functionality is limited, due to the lack of notification features in current webapps. To allow notifications the webapp could be paired with another native app or use SMS (Short Message Service) notifications. However, because these technologies are separated it is hard to get users to respond. Another design option is a native mobile app as has the ability to supply notifications, but for each platform a completely separate app would need to be built and users would need to download the app before it would be available to them. A single cross-platform app could be constructed to reduce development time and complexity, but still users would need to download the app to start using it. A web app has the advantage of being available to all users with a web browser (with users being able to save the site to home screen), but without notifications on all platforms (iOS only), it won't meet our requirements. Finally, a chatbot integrated into a popular messaging platform is easily available (if you have the messaging app already installed), simple (the user interface is already supplied), works on any platform the messaging app is available on and has notifications built in. The table (Figure~\ref{fig:prototype_table}) summarises the available development choices for a system that meets our aim.
 
 \renewcommand{\arraystretch}{1.5} % Increase line height of the following tables
 \begin{figure}[H] % ht
@@ -60,6 +28,8 @@ Another design option is building a \textit{webapp}. However, the functionality 
 
 
 \subsection{Platform}
+The platform for the tool needed to be highly available for participants, interactive and time effective to build.
+A chatbot provides us access to both the mobile platform and the desktop platform, granting us access to a highly available, contextually aware and interactive platform~\cite{article_my_phone_is_part_of_my_soul, article_mhealth}.
 
 There are lots of options about what platform to build the chatbot into. For example, \textit{Slack} (\url{www.slack.com}) bots (Figure~\ref{fig:healthy_bot_and_poncho}) provide additional functionality and can complete complex tasks such as habit tracking, into the popular workplace communication service. \textit{Whatsapp} (\url{www.whatsapp.com}) also provides interactive features with a large user base, however it lacks many additional features. \textit{Telegram} (\url{www.telegram.org}) and \textit{Facebook Messenger} (\url{www.messenger.com}) have these additional features, but only Facebook Messenger has the large user base. Therefore, because our main aim is to interact with lots of people easily, we need to target existing platforms that have high participant availability.
 
@@ -93,7 +63,7 @@ The success of the chatbot will depend on how people differentiate between the b
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=3.5in]{../resources/existing-bots/healthy-bot.png}
+  \includegraphics[width=3.4in]{../resources/existing-bots/healthy-bot.png}
   \hspace{10px}
   \includegraphics[width=1.9in]{../resources/existing-bots/poncho.jpg}
   \caption{Left: \textit{Healthy Bot} (\url{https://healthybot.io}): A Slack chatbot for forming new positive habits. Right: \textit{Poncho} (\url{https://poncho.is/}): An example of Facebook Messenger Weather Chatbot}
@@ -102,12 +72,9 @@ The success of the chatbot will depend on how people differentiate between the b
 
 
 \subsection*{Facebook Messenger}
+Interaction with Facebook Messenger chatbots is varied. Existing bots use three methods of interaction that utilise different Facebook Messenger UI paradigms.
 
-Interaction with Facebook Messenger chatbots is varied. Existing bots use three methods of interaction that utilise different Facebook Messenger UI paradigms. First, NLP is fully utilised. The bot sits patiently until it receives a message, then it sends the message off to a service that performs processing and returns the message breakdown. The bot then chooses an action based on the message. For example, the Poncho weather bot (\url{https://poncho.is/}) displays the forecast for Bristol if you message \textit{bristol forecast}. As previously discussed this method of interaction does not suit our needs because we do not require users to ask questions to the bot.
-
-
-
-Second, NLP is not used at all and Quick Replies are heavily utilised. Everist (\url{https://www.everist.ai/}) and Cleo (\url{https://meetcleo.com/}) bots use Quick Replies almost like a menu with a set of options. After users message the bot once, the set of quick replies returns to encourage users to only use these as the method of communication. Although this makes coding the prototype easier, it is difficult to get \textit{free text} from users. Finally, Joy (\url{http://www.hellojoy.ai/}) uses a combination of free text and quick replies to set-up users and interact with them every day. This is the combination that Harry's Habits will use to get free text from users and enable quick choice from a menu of actions.
+First, NLP is fully utilised. The bot sits patiently until it receives a message, then it sends the message off to a service that performs processing and returns the message breakdown. The bot then chooses an action based on the message. For example, the Poncho weather bot (\url{https://poncho.is/}) displays the forecast for Bristol if you message \textit{bristol forecast}. As previously discussed this method of interaction does not suit our needs because we do not require users to ask questions to the bot.
 
 \begin{figure}[H]
   \centering
@@ -116,87 +83,106 @@ Second, NLP is not used at all and Quick Replies are heavily utilised. Everist (
   \includegraphics[width=1.9in]{../resources/existing-bots/cleo.png}
   \hspace{10px}
   \includegraphics[width=1.9in]{../resources/existing-bots/joy-ai.png}
-  \caption{Examples of chatbots performing different actions}
+  \caption{Examples of existing chatbots that help track and form new habits with different methods of user interaction.}
   \label{fig:chatbots_examples}
 \end{figure}
 
 
-\subsection*{Supporting Habit Formation}
+Second, NLP is not used at all and Quick Replies are heavily utilised. Everist (\url{https://www.everist.ai/}) and Cleo (\url{https://meetcleo.com/}) bots use Quick Replies almost like a menu with a set of options. After users message the bot once, the set of quick replies returns to encourage users to only use these as the method of communication. Although this makes coding the prototype easier, it is difficult to get \textit{free text} from users. Finally, Joy (\url{http://www.hellojoy.ai/}) uses a combination of free text and quick replies to set-up users and interact with them every day. This is the combination that Harry's Habits will use to get free text from users and enable quick choice from a menu of actions.
+
+
+\subsubsection*{Supporting Habit Formation}
 Harry's Habits is built into an existing social network that people are used to and will track habits and deliver rewards. The social scaffolding around the interaction with the bot will help reinforce the response to notifications, as people are more likely to respond to the bot because they could perceive the bot as a real person as it is located in a list next to their other contacts. The bot will track simple actions of similar difficulty to reduce the amount of time needed before the action turns into a habit~\cite{article_how_habits_formed_modelling_habit_formation}. Other design methods to help people form new habits were looked at but will not be added to the prototype to limit the scope. Gamification, such as using gambling elements and engineering luck into games have been shown to encourage interaction~\cite{article_free_to_play_making_money_from_games_you_give_away}. Using monetary rewards to create a feedback loop where people keep coming back for the reward~\cite{website_how_to_design_feedback_loops}. Both of these elements can help with interaction but do not build habit automaticity, therefore leading to a drop in performance when the feedback is removed.
 
+
+
+\subsection{Design Requirements} \label{recommendations}
+After reviewing literature from habit formation design guidelines~\cite{article_beyond_self_tracking_designing_apps, article_taxonomy_motivational_affordances_meaningful}, modality task performance and existing habit formation technology. A new set of design requirements is created, for building a chatbot that is grounded in habit formation theory and focused on rewards (Appendix~\ref{app:guidelines}). Each item provides detailed breakdown about why it's used and what mechanics it relates to from theory.
+
+
+\textbf{REQ 1. Help users define a memorable strategy.}\newline
+Help users make personalised routines, providing examples of existing strategies.
+
+\textbf{REQ 2. Remind them about cues and remembering strategies.}\newline
+Reminders can effectively support prospective memory in the short-term, increase the logging of health data~\cite{the_power_of_logging_mobile_notifications} and educate them about what they should perform in the long-term.
+
+
+\textbf{REQ 3. Reward users.}\newline
+Rewards are a good form of external motivation because they don't change the ability to perform a behaviour, unless the reward itself is a tool that increases ability. These rewards provide a strong motivational source, but like all extrinsic motivators, these are less effective for changing behaviour in the long run, because externally motivated behaviour lasts as long as the external motivator exists.
+
+
+\textbf{REQ 4. Disable cue reminders when behaviour is routine.}\newline
+Relying on reminders in the long-term can hinder habit development, therefore ease off from reminders later.
+
+
+\textbf{REQ 5. Check if the action has already happened.}\newline
+People find it easy to forget whether an automatic task was completed, check to see if the action has already happened.
+
+
+\newpage
+\section{Design}
+A prototype was constructed to track habits and deliver rewards, based on the requirements (Section~\ref{recommendations}).
+
+
 \subsection*{Delivering Rewards}
-The types of rewards are separated into three categories, visual, auditory and visual-auditory. The content of these rewards are experimented with to test if they provide user satisfaction. The rise of social media and increasing use of humorous memes was utilised to provide the motivating content of the rewards. This works well with the prototype integration into an existing social media messaging platform. These rewards will be displayed to the user within the chatbot after they complete their habit. The modalities are mapped to identify a pattern across the modes before they are implemented and adapted for delivering rewards. The rewards were aimed at motivating participants to keep coming back every day and completing their habits. Several gifs and audio files were identified that categorised themselves as motivational and each gif file was vaguely matched and tweaked to match the audio frequency. The relationship between the audio and the visual is inferred, therefore this mapping is \textit{semi-congruent}.
+To answer all research questions and to reward users (REQ 3). Rewards from three different modalities are delivered by the bot: visual, auditory and visual-auditory. The content of these rewards are experimented with to test if they provide user satisfaction. Memes are an idea that is passed along from person to person via social media posts~\cite{meme_definition}. Humorous GIFs memes make people laugh and are very popular on some social media sites and are usually most engaging content~\cite{meme_gifs_are_good}. This works well with the prototype integration into an existing social media messaging platform.
+These rewards will be displayed to the user within the chatbot after they complete their habit (Figure~\ref{fig:delivering_reward}). The modalities are mapped to identify a pattern across the modes before they are implemented and adapted for delivering rewards. The rewards were aimed at motivating participants to keep coming back every day and completing their habits. Several GIFs and audio files were identified that categorised themselves as motivational and each GIF file was vaguely matched and tweaked to match the audio frequency. The relationship between the audio and the visual is inferred, therefore this mapping is \textit{semi-congruent}.
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=1.5in]{resources/figures/reminder.png}
   \hspace{10px}
   \includegraphics[width=1.5in]{resources/figures/reward-visual.png}
-  \caption{Harry's Habits delivering a back-up notification and a visual reward.}
-  \label{fig:setup_media_1}
+  \caption{Harry's Habits delivering a notification followed by a visual reward.}
+  \label{fig:delivering_reward}
 \end{figure}
 
 
-There are two different methods of delivering visual, auditory and visual-auditory rewards to users. First, gifs and audio sent as a message to the user (inline). This has the benefit of being native to Messenger, providing a better user experience and is faster to receive, requiring less buttons to be pressed. However, each reward was not displayed consistently. Visual rewards started as soon as they were delivered, but the auto reward had a \textit{play} button that had to be pressed before the audio started and the visual-auditory rewards also had a button that needed to be pressed. Inconsistency with delivery would make it difficult to evaluate the effectiveness of each reward. Therefore the second method is chosen to allow for consistency when delivering rewards.
+During the design phase two different methods are discovered for delivering visual, auditory and visual-auditory rewards to users. First, GIFs and audio sent as a inline message to the user (Figure~\ref{fig:rewards_inline}). Second, a consistent method displays them from a website that users are linked to (Figure~\ref{fig:rewards_consistency}). The first method (inline message) has the benefit of being native to Messenger, providing a better user experience, is faster to receive and requires less buttons to be pressed. However, each reward is not displayed consistently. Visual rewards started as soon as they were delivered, but the auto reward had a \textit{play} button that had to be pressed before the audio started and the visual-auditory rewards also had a button that needed to be pressed. Inconsistency with delivery would make it difficult to evaluate the effectiveness of each reward. Therefore the second method is chosen to allow for consistency when delivering rewards.
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=1.5in]{../resources/design/reward-audio-inline.png}
   \hspace{10px}
   \includegraphics[width=1.5in]{../resources/design/reward-visual-inline.png}
-  \caption{Auditory and visual inline rewards.}
+  \caption{Inconsistent design with auditory and visual rewards when sent as a inline message.}
   \label{fig:rewards_inline}
 \end{figure}
 
+To help users define a memorable strategy (REQ 1) they are allowed to personalise the experience slightly with their own routine and choice of habit with examples given during the setup phase (Figure~\ref{fig:setup_flow_screenshots}). Reminders are delivered around their routine to check if the action has already happened (REQ 5) and remind them about their cue (REQ 2).
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=1.5in]{../resources/design/reward-visual-2.png}
   \hspace{10px}
   \includegraphics[width=1.5in]{../resources/design/reward-audio.png}
-  \caption{Consistency between every reward, even across devices. Left, visual reward, right, auditory reward.}
+  \hspace{10px}
+  \includegraphics[width=1.7in]{../resources/design/reward-desktop-visual.png}
+  \caption{Consistency between every type of reward modality on all platforms, displayed by a website. Left, iOS, visual reward. Middle, Android, auditory reward. Right, browser, visual-auditory reward.}
   \label{fig:rewards_consistency}
 \end{figure}
 
-
-
-\newpage
-
-
 \subsection{User Flows} \label{user_flow}
-Full user interaction from setup to completing a reward was designed. This setup used a combination of Quick Replies and free text to gather demographic information and complete the setup for each user. Harry's Habits logo was design by the Noun Project by Yu luck (\url{https://thenounproject.com/term/custom/402041/}).
+Full user interaction from setup to completing a reward was designed. This setup used a combination of Quick Replies and free text to gather demographic information and complete the setup for each user.
 
-\begin{itemize}
-  \item \textbf{Setup}
-  \begin{itemize}
-    \item Press button that opens the bot in the Facebook Messenger app.
-    \item Answer a series of setup questions to the bot via the Facebook Messenger app.
-    \item User chooses an existing habit they would like to develop from a list.
-    \item User supplies an existing routine to integrate their new habit into.
-    \item User chooses a time the existing routine normally happens.
-    \item User finishes the setup and closes the Facebook Messenger app.
-  \end{itemize}
-  \item \textbf{Trigger}
-  \begin{itemize}
-    \item At the time of the existing routine the user performs their chosen habit.
-    \item The user receives a notification after the routine, asking if they managed to complete their habit or if they need more time.
-    \item If they need more time, the notification will \textit{snooze} for about an hour and be sent again.
-    \item If users regularly snooze they will be asked if the time of their existing routine has changed.
-    \item If users say they have completed their habit, they will be sent a message Quick Reply that leads to a reward.
-  \end{itemize}
-  \item \textbf{Reward}
-  \begin{itemize}
-    \item Users will press the reward button that will take them to a website that contains a link to open a reward. This allows the experience to be consistent for each reward modality.
-    \item User will receive a reward from one of the following modalities:
-    \begin{itemize}
-      \item Visual: video with no sound
-      \item Audio: soundtrack
-      \item Visual-Auditory: video with sound
-    \end{itemize}
-  \end{itemize}
-\end{itemize}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1in]{../resources/logo.png}
+  \caption{Harry's Habits logo was design by the Noun Project by Yu luck (\url{https://thenounproject.com/term/custom/402041/}).}
+  \label{fig:logo}
+\end{figure}
+
 
 \subsubsection{Setup Flow} \label{setup_flow}
+
+\begin{itemize}
+  \item Press button that opens the bot in the Facebook Messenger app.
+  \item Answer a series of setup questions to the bot via the Facebook Messenger app.
+  \item User chooses an existing habit they would like to develop from a list.
+  \item User supplies an existing routine to integrate their new habit into.
+  \item User chooses a time the existing routine normally happens.
+  \item User finishes the setup and closes the Facebook Messenger app.
+\end{itemize}
 
 \begin{figure}[H]
   \centering
@@ -241,7 +227,15 @@ Full user interaction from setup to completing a reward was designed. This setup
 \end{figure}
 
 
+
 \subsubsection{Trigger Flow} \label{trigger_flow}
+\begin{itemize}
+  \item At the time of the existing routine the user performs their chosen habit.
+  \item The user receives a notification after the routine, asking if they managed to complete their habit or if they need more time.
+  \item If they need more time, the notification will \textit{snooze} for about an hour and be sent again.
+  \item If users regularly snooze they will be asked if the time of their existing routine has changed.
+  \item If users say they have completed their habit, they will be sent a message Quick Reply that leads to a reward.
+\end{itemize}
 
 \begin{figure}[H]
   \centering
@@ -255,9 +249,20 @@ Full user interaction from setup to completing a reward was designed. This setup
 
 \subsubsection{Reward Flow} \label{reward_flow}
 
+
+\begin{itemize}
+  \item Users will press the reward button that will take them to a website that contains a link to open a reward. This allows the experience to be consistent for each reward modality.
+  \item User will receive a reward from one of the following modalities:
+  \begin{itemize}
+    \item Visual: video with no sound
+    \item Audio: soundtrack
+    \item Visual-Auditory: video with sound
+  \end{itemize}
+\end{itemize}
+
 \begin{figure}[H]
   \centering
-  \includegraphics[width=2in]{resources/design/reward-visual-1.png}
+  \includegraphics[width=1.8in]{resources/design/reward-visual-1.png}
 \end{figure}
 \begin{figure}[H]
   \centering

@@ -1,35 +1,52 @@
 
 \section{Introduction}
-Understanding how to design systems that support behaviour change is important to human computer interaction (HCI)---the field of computer science that studies how people interact with computers---to ensure that designers build these systems to have the maximum impact~\cite{article_evaluate_tech_health_behaviour_change}. Habits play an important role in behaviour change by making the changed behaviour permanent~\cite{article_promoting_habit_formation}. However, the full habit formation process within the HCI domain needs further research due to the difficulties in evaluating the long-term effects of technology on habit formation~\cite{article_evaluate_tech_health_behaviour_change}. Therefore, the need for HCI researchers to design technology that encourages people to change their behaviour and form new habits is still a main focus.
+Understanding how to design systems that support behaviour change is important to human computer interaction (HCI) --- the field of computer science that studies how people interact with computers --- to ensure that designers build these systems to have the maximum impact~\cite{article_evaluate_tech_health_behaviour_change}. Habits play an important role in behaviour change by making the changed behaviour permanent~\cite{article_promoting_habit_formation}. However, the full habit formation process within the HCI domain needs further research due to the difficulties in evaluating the long-term effects of technology on habit formation~\cite{article_evaluate_tech_health_behaviour_change}. Therefore, the need for HCI researchers to design technology that encourages people to change their behaviour and form new habits is still a main focus.
 
-Habits are automatic actions that require little concious effort~\cite{article_the_habitual_consumer}. To develop new habits people must keep to a strict routine and perform the action repeatedly to strengthen the automaticity of the action~\cite{article_promoting_habit_formation}. When strong habits are developed the likelihood of behaviours persisting is higher~\cite{putting_habit_into_practice} and habits are more effectively developed when specific and measurable goals are set~\cite{habits_better_when_have_specific_and_measurable_goals}. Psychology defines habits as learned automatic cue-response actions. The action will perform automatically in response to a trigger that has been actioned repeatedly in the past~\cite{article_the_habitual_consumer}. The more automatic the response the higher habit automaticity. For example, a simple action such as turning on the light when you enter a room, happens automatically, even if the light is already on. However, forming a new habit is difficult and people are more likely to give up due to their lack of routine~\cite{article_promoting_habit_formation, article_the_habitual_consumer}.
+Habits are automatic actions that require little concious effort~\cite{article_the_habitual_consumer}. To develop new habits people must keep to a strict routine and perform the action repeatedly to strengthen the automaticity of the action~\cite{article_promoting_habit_formation}. When strong habits are developed the likelihood of behaviours persisting is higher~\cite{putting_habit_into_practice} and habits are more effectively developed when specific and measurable goals are set~\cite{habits_better_when_have_specific_and_measurable_goals}. The action will perform automatically in response to a trigger that has been actioned repeatedly in the past~\cite{article_the_habitual_consumer}. The more automatic the response the higher habit automaticity. For example, a simple action such as turning on the light when you enter a room, happens automatically, even if the light is already on. However, forming a new habit is difficult and people are more likely to give up due to their lack of routine~\cite{article_promoting_habit_formation, article_the_habitual_consumer}.
 
 Technology can help people stick to a routine by sending repeated messages~\cite{chi_crowd_designed_motivation} and encouraging people~\cite{positive_reinforcement_pro}. However, these techniques do not always work and may build repetitive actions rather than habit automaticity~\cite{coaching_not_that_good}. Therefore, technology should be designed to avoid building repetitive actions and instead build habit automaticity. Repetitive actions lead people to become dependent on technology and when the system is eventually removed, habit performance decreases~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. Habit automaticity is a measure of habit strength~\cite{article_4q_SRBAI} and is the key that removes this dependency~\cite{article_beyond_self_tracking_designing_apps}. Automaticity can be increased by building motivation to complete the action~\cite{article_a_self_efficacy, article_meta_analytic_review_intrinsic_motivation}.
-Motivation can be encouraged by giving people positive reinforcement rewards after they complete an action. However, how the reward is delivered and the type of reward used is also crucial to success.
+Motivation can be encouraged by giving people positive reinforcement rewards after they complete an action~\cite{positive_reinforcement_pro}. However, how the reward is delivered and the type of reward used is also crucial to success.
 
-The method of delivery should suit each individual user and a choice of delivery should be available. For example, a survey on feedback systems~\cite{article_user_centred_multimodal_reminders} advised that delivery of interaction should span different sensory modes to increase retention and better suit the needs of users. In the context of HCI, a modality or mode is the classification of a single independent channel of sensory input or output between a computer and a human. Although interaction across modalities is important, this research does not have configurable feedback, but aims to compare how each type of feedback can affect motivation. Monetary (extrinsic) rewards can hinder motivation~\cite{article_meta_analytic_review_intrinsic_motivation}, whereas, satisfaction-based (intrinsic) rewards can be beneficial to motivation and should be preferred.
-This study uses a chatbot---a method of communicating with a computer system via a conversation---to deliver intrinsic positive reinforcement rewards from different modalities to see how participants habit automaticity and performance are affected.
+The method of delivery should suit each individual user and a choice of delivery should be available. For example, a survey on feedback systems~\cite{article_user_centred_multimodal_reminders} advised that delivery of interaction should span different sensory modes to increase retention and better suit the needs of users. In the context of HCI, a modality or mode is the classification of a single independent channel of sensory input or output between a computer and a human~\cite{hci_modality_definition}. Although interaction across modalities is important, this project does not have configurable feedback, but aims to compare how each type of feedback can affect motivation. Monetary (extrinsic) rewards can hinder motivation~\cite{article_meta_analytic_review_intrinsic_motivation}, whereas, satisfaction-based (intrinsic) rewards can be beneficial to motivation and should be preferred.
+This project uses a chatbot --- a method of communicating with a computer system via a conversation --- to achieve the aims and objectives below.
 
-This thesis is comprised of four main sections. First, existing literature into habit formation, behaviour change technologies and existing chatbots is reviewed to present two hypotheses. Second, a 4-week situated study is conducted to test the hypotheses with analysis of how each modality delivered by the chatbot, visual, auditory and visual-auditory, impacted participants habit automaticity and the number of habits participants marked as completed. Third, discussion of the results along with follow up interviews about how the bot-delivered rewards encourage people to stick to a routine and perform their habit. Finally, the effect of this habit tracking chatbot on participants and the success of the prototype for conducting research is evaluated against the hypotheses presented.
 
 \subsection{Aims and Objectives}
-The project aims to deliver insight into how rewards from different modalities affect habit automaticity and habit performance, opening up new research avenues for investigating the use of chatbots as vehicles for promoting behaviour change and aiding research trails.
+The project aims to answer three research questions (RQ).
 
-To achieve the aim the following objectives are followed.
+\begin{quote}
+RQ1: What is the effect of modalities on habit formation?
+\end{quote}
+\begin{quote}
+RQ2: What are people's attitudes towards using a chatbot?
+\end{quote}
+\begin{quote}
+RQ3: How effective are chatbots for supporting habit formation?
+\end{quote}
+
+A mixed-methods approach will be used to answer the research questions. This approach is common in HCI research~\cite{hci_mixed_methods} and combines qualitative and quantitative methods~\cite{hci_mixed_methods_2}. Therefore, to answer the three research questions the following objectives must be competed that use quantitative and qualitative methods:
 
 \begin{enumerate}
     \item Present an overview of existing research into:
       \begin{enumerate}
         \item Habit formation and behaviour change techniques.
-        \item Different types of rewards and how they impact motivation within habit formation.
+        \item Different types of rewards focused on on positive reinforcement and how they impact motivation within habit formation.
         \item Visual, auditory and visual-auditory feedback on habit performance and habit automaticity.
         \item Existing technology used to form habits.
       \end{enumerate}
-    \item Construct theory-based guidelines that focus on rewards for habit formation.
-    \item Create a prototype that tracks habits and delivers rewards from visual, auditory and visual-auditory modalities, using these guidelines to ensure the prototype is based on theory.
-    \item Conduct and analyse a 4-week study to evaluate the success of the prototype and the impact of each modality on habit automaticity and habit performance.
-    \item Evaluate habit automaticity and habit performance for each mode. Finally, determining the success of Harry's Habits.
+    \item Construct theory-based design requirements that focus on positive reinforcement rewards for habit formation.
+    \item Create a prototype based on the requirements that is grounded in theory, to track habits and provide positive reinforcement using visual, auditory and visual-auditory modalities.
+    \item Conduct a 4-week study to answer RQ1 by using two hypotheses during a 4-week study.
+    \begin{enumerate}
+        \item Hypothesis 1: positive reinforcement is effective at supporting habit formation by increasing automaticity and regular habit performance
+        \item Hypothesis 2: multiple modalities rewards are more effective then singular mode rewards
+    \end{enumerate}
+    \item Conduct and analyse interviews with participants after the 4-week study to answer RQ2.
+    \item Analyse the data from the study with participant interviews to answer RQ3.
 \end{enumerate}
+
+
+% This thesis is comprised of four main sections. First, existing literature on habit formation, behaviour change technologies and existing chatbots is reviewed to present two hypotheses: 1) what is the effect of rewards from multiple modalities on habit formation and hypothesis 2) what is the effect of combined modalities compared with singular modes on habit formation. Second, a 4-week situated study is conducted to test the hypotheses with analysis of how each modality delivered by the chatbot (visual, auditory and visual-auditory) impacted participants habit automaticity and the number of habits participants marked as completed. Third, discussion of the results along with follow up interviews about how the bot-delivered rewards encourage people to stick to a routine and perform their habit. Finally, the effect of this habit tracking chatbot on participants and the success of the prototype for conducting research is evaluated against the hypotheses presented.
 
 \subsection{Added Value}
 Evaluation from real people in a 4-week study reveals insights and adds value in four places. First, the positive and negative aspects of using a chatbot to track habits and collect data during a research trial are revealed. Second, the evaluation of Harry's Habits provides value on how to build a chatbot to deliver rewards from different modalities to support habit formation. Third, analysis about the impact of the chosen visual, auditory and visual-auditory rewards on habit automaticity and habit performance gives insight into using these modes for behaviour change interventions. Finally, the project opens up new research avenues for investigating the use of chatbots as vehicles for promoting behaviour change.
