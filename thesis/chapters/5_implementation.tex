@@ -1,6 +1,5 @@
 
 \section{Implementation}
-
 Figure~\ref{fig:prototype_component_overview} describes interaction between the chatbot and the Facebook Messenger servers. The user interacts with the chatbot using the Facebook Messenger platform on either a mobile phone or website. When the user sends a message to the chatbot, it is sent via Facebook servers who decide where to forward the message onto. The message comes in a \textit{json} format that is parsed by the chatbot application to understand the content of the message and how the user interacted with the bot. For example, if the response is from a quick reply, then additional parameters are sent. The chatbot reads and writes the necessary information into a database to decide a response. When it is ready, it sends a request to the Facebook servers that forward it onto the user's Facebook Messenger account that can be read from the Messenger platform (Figure~\ref{fig:prototype_component_overview}). All code is open-source and hosted on \textit{GitHub} (\url{www.github.com/harrymt/harryshabits}).
 
 \begin{figure}[H]
@@ -99,8 +98,7 @@ This ensured a seemly experience when using rewards for all levels of connection
 
 
 \subsection{Testing and Continuous Integration}
-A test harness was written to perform functional testing on the chatbot. An on-line continuous integration (CI) service was used to programatically run these tests when a \textit{commit} in \textit{git} (the \textit{version control} used) was performed on the \textit{master branch}. \textit{Travis CI} (\url{https://travis-ci.org/harrymt/harryshabits}) ran the defined tests to ensure the functionality worked throughout development. A pilot trial with five users also tested the basic chatbot functionality preparing for the full evaluation study (Section~\ref{study_comparing_rewards}).
-
+To get a measure of code quality, several online services (codacy, codebeat and code climate) were used to track quality over time (see more on the GitHub repo \url{www.github.com/harrymt/harryshabits}). A test harness was also written to perform functional testing on the chatbot. An on-line continuous integration (CI) service (Travis CI) was used to programatically run these tests when a \textit{commit} in \textit{git} (the \textit{version control} used) was performed on the \textit{master branch}. \textit{Travis CI} (\url{https://travis-ci.org/harrymt/harryshabits}) ran the defined tests to ensure the functionality worked throughout development. A pilot trial with three users also tested the basic chatbot functionality preparing for the full evaluation study (Section~\ref{study_comparing_rewards}).
 
 \subsection{Technical Issues}
 Throughout the implementation process different techniques were explored to implement the design.
