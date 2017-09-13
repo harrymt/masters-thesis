@@ -1,5 +1,5 @@
 % -*- root: main.tex -*-
-\documentclass[11pt]{article}
+\documentclass[11pt, twoside]{article}
 \renewcommand{\baselinestretch}{1.1}
 \usepackage[a4paper]{geometry}
 \geometry{top=4cm, bottom=2.5cm, left=2cm, right=2cm} % Title
@@ -50,25 +50,25 @@
     \pagenumbering{gobble} % Stop page numbering until we say again
 
     % For our custom title
-    % \newgeometry{top=2.4cm, bottom=2.5cm, left=2.2cm, right=2.2cm}
+    % \newgeometry{top=2.4cm, bottom=2.5cm, left=2.2cm, outer=2.2cm}
     % \maketitle
     % \newpage
     \includepdf[pages={1-},scale=1]{./resources/title-page.pdf}
 
     % Actual margins here
-    \newgeometry{top=2.4cm, bottom=2.5cm, left=2.2cm, right=2.2cm}
+    \newgeometry{top=2.4cm, bottom=2.5cm, left=3cm, right=2.2cm}
     \import{./chapters/}{acknowledgements}
     \newpage
 
     \import{./chapters/}{0_abstract}
 
     % Actual margins here
-    % TOC MARGINS ONLY
-    \newgeometry{top=1.9cm, bottom=2.1cm, left=2.2cm, right=2.2cm}
+    % TOC MARGINS
+    \newgeometry{top=1.9cm, bottom=2.1cm, left=3cm, right=2.2cm}
     % END TOC MARGINS
     \tableofcontents
     \newpage
-    \newgeometry{top=2.4cm, bottom=2.5cm, left=2.2cm, right=2.2cm}
+    \newgeometry{top=2.4cm, bottom=2.5cm, left=3cm, right=2.2cm}
 
     % Set styles after the title, abstract and toc
     \fancypagestyle{plain} {
