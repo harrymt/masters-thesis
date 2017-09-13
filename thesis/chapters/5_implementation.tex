@@ -92,7 +92,7 @@ This ensured a seemly experience when using rewards for all levels of connection
 \begin{figure}[H]
     \centering
     \includegraphics[width=6in]{../resources/diagrams/webview-flow-diagram.pdf}
-    \caption{Overview of how notifications are sent by the application using a scheduler to check if it is time to send the notifications every hour.}
+    \caption{How rewards are displayed to the user when they are on fast internet (top lane) and slow internet (bottom lane) over time.}
     \label{fig:fast_slow_opening_rewards}
 \end{figure}
 
@@ -135,7 +135,7 @@ This would trigger the vibration when the alarm sounded.
 Although this would mean a 1-minute delay after completing a habit, a good user flow could've reduced the wait time with some additional dialogue (Figure~\ref{fig:vibration_reward_issue}).
 But, this approach relied on the fitness tracker to sync with the phone after the alarm was programatically set. Unfortunately forcing the tracker to sync wasn't available, so this modality was abandoned. Another issue occurred with stopping the audio after it had been played during a reward. If a user closed the reward box, there was no way to stop the audio, unless a user waited until it had finished. This limitation was very minor, but also showed how difficult it is to seemly connect a website and a chatbot. Finally, edge cases throughout interaction were revealed during development and were coded for, for example deciding what would happen if users snoozed their backup notification when it reached the end of the day led to additional logic to stop users from snoozing when it reached the end of the day.
 
-\subsubsection*{Scheduler Time zone}
+\subsubsection*{Scheduler Time Zone}
 The scheduler used had several limitations. First, the documentation stated it runs on a best effort basis and cannot guarantee to run on time, however, this did not affect the chatbot as it missed very few schedules. Second, the time zone of the scheduler had to be converted to Coordinated Universal Time (UTC) time before checking against the defined times. This issue was revealed in a pilot trail and fixed, however, for this application to work across different time-zones (ones that were not UTC), Figure~\ref{fig:reminder_times} would have to be custom to each user.
 
 The implemented chatbot is tested during a 4-week study to answer the research questions and test the hypotheses.

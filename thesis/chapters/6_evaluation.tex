@@ -93,8 +93,8 @@ Participants were instructed to connect with the bot via Facebook Messenger and 
 
 The study used four conditions (Table~\ref{table:precise_rewards}): visual rewards, auditory rewards, visual-auditory rewards and a control without a reward. Participants were randomly assigned a condition by the bot after they completed the set-up, 15 participants were assigned to each condition. The rewards were aimed at motivating participants to keep coming back every day and completing their habits. Each GIF and audio track were selected based on popular combinations of videos and soundtracks (Figure~\ref{fig:visual_audio_combined_rewards}). A search for ``motivation'' on the website \url{https://www.reddit.com/r/GifSound/} to find suitable pairings of video and audio. The video was converted into a GIF with the speed adjusted to match the speed of the audio. The relationship between the audio and the visual is inferred, therefore this mapping is \textit{semi-congruent}. 5 GIFs and 5 matching audio tracks were selected as the rewards. Visual rewards had only the GIFs, auditory had only the audio and visual-auditory had them both at the same time. They can be found in the GitHub repo of the chatbot \url{https://github.com/harrymt/harryshabits/tree/master/public}.
 
-\begin{figure}[H]
-  \centering
+\begin{table}[H]
+\begin{center}
   \begin{tabular}{l l l l}
     {\small \textit{Condition}} & {\small\textit{Modality}} & {\small \textit{Reward}} & {\small \textit{No. Participants}}  \\ \hline
     V & visual & 15s GIF & 15 \\
@@ -103,7 +103,8 @@ The study used four conditions (Table~\ref{table:precise_rewards}): visual rewar
     N & none (control group) & confirmation message & 15 \\
   \end{tabular}
   \caption{Study conditions and their corresponding types of positive reinforcement that were randomly assigned to participants.}~\label{table:precise_rewards}
-\end{figure}
+\end{center}
+\end{table}
 
 \begin{figure}[H]
   \centering
@@ -160,14 +161,14 @@ After 3 weeks of participants interacting with the bot, all participants who com
 \subsection{Results}
 60 participants connected with the bot by pressing \textit{'Get Started'} in Facebook Messenger on the following platforms: 25 participants used a web browser, 18 used iOS and 12 used Android. 14 participants, or 23\% dropped out of the study at various stages (Figure~\ref{fig:study_dropout}): 54 participants, or 90\% continued interacting with the bot and started the set-up. 39 participants, or 65\% completed the set-up and out of these 39 participants, 3 participants ignored all messages from the bot during the trial. Leaving 36 participants, or 66\% that are considered active throughout and are included in the final analysis.
 
-
-The 36 participants who completed the study are 18-63 years old, (mean: 27 years old, SD: 12), 23 or, 64\% male, 11 or, 30\% female and 2 or, 6\% didn't say. These 36 remaining participants are split into the following modalities: 14 participants or, 93\% visual, 9 participants or, 60\% visual-auditory, 7 participants or, 46\% auditory and 6 participants or, 40\% had no rewards (control group). 36 participants sent a total of 1.1k messages to the bot (mean = 65 messages per participant) and the bot sent 2.7k total messages back. 184 total habits were marked as completed, with the bot issuing 69 visual rewards, 58 visual-auditory rewards and 17 auditory rewards to those participants. The control group completed 40 habits.
-
 \begin{figure}[H]
   \centering
   \includegraphics[width=.9\columnwidth]{resources/figures/study-flow.pdf}
   \caption{Participant drop-out and participation in optional interviews.}~\label{fig:study_dropout}
 \end{figure}
+
+
+The 36 participants who completed the study are 18-63 years old, (mean: 27 years old, SD: 12), 23 or, 64\% male, 11 or, 30\% female and 2 or, 6\% didn't say. These 36 remaining participants are split into the following modalities: 14 participants or, 93\% visual, 9 participants or, 60\% visual-auditory, 7 participants or, 46\% auditory and 6 participants or, 40\% had no rewards (control group). 36 participants sent a total of 1.1k messages to the bot (mean = 65 messages per participant) and the bot sent 2.7k total messages back. 184 total habits were marked as completed, with the bot issuing 69 visual rewards, 58 visual-auditory rewards and 17 auditory rewards to those participants. The control group completed 40 habits.
 
 \subsubsection*{Habit Performance}
 Comparing the number of participants who dropped out of the study versus their reward modality, shows that 7 participants who dropped out of the study had 27 visual rewards in total (mean = 3.85). 2 participants had 4 total auditory rewards (mean = 2) and 2 participants had 2 visual-auditory combined (mean = 6.5). These visual-auditory participants that dropped out had the highest amount of snoozes (24 total snoozes, 6 and 18 individually, mean = 12), compared with visual 10 total (mean = 2), and auditory with 0 snoozes.
@@ -197,8 +198,59 @@ Mostly participants chose existing routines that were suggested to them. For exa
 
 \subsubsection*{H1M1: The effect of positive reinforcement rewards on habit performance}
 
-A one-way between-groups analysis of variance with planned comparisons was conducted to explore the effect of rewards on the number of habits completed, compared with the control group (Figure~\ref{fig:m1_h1}). Participants were divided into two groups: group 1 with rewards, group 2 without rewards. There was a statistically significant difference at the $p$ $<$ $0.005$ level in both groups for $2$$/$$3$ of the weeks: week 1, $F(1,23.20) = 9.48$, $p = 0.005$, week 2, $F(1,33.35) = 4.46$, p = 0.42 and week 3, $F(1,50) = 17.01$, $p\leq 0.005$. The effect size for week 1, week 2 and week 3 are large, calculated using $\eta^{2}$, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
+Analysis of each individual reward on habit performance (Figure~\ref{fig:m1_h1_a} revealed that there was a statistically significant difference between each reward as determined by one-way ANOVA ($F(2,624) = 27.007$, $p < 0.05$). A Tukey post hoc test revealed that different in completed habits was statistically significantly lower for the auditory ($0.081 + 0.274$, $p < 0.005$) and visual-auditory ($0.267$ + $0.484$, $p = 0.025$) feedback compared to the visual feedback ($0.373$ + $0.484$).
 
+\begin{figure}[H]
+\centering
+ \begin{tikzpicture}
+   \begin{axis}[
+      width  = 0.5*\textwidth,
+      height = 6cm,
+      major x tick style = transparent,
+      ybar=2*\pgflinewidth,
+      bar width=15pt,
+      ymajorgrids = true,
+      symbolic x coords={Week-1, Week-2, Week-3},
+      xtick = data,
+      scaled y ticks = false,
+      enlarge x limits=0.45,
+      ymin=0,
+      ymax=30,
+      legend cell align=left,
+      legend style={at={(0.5,-0.15)},anchor=north},
+      ylabel={Habits Completed},
+   ]
+      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
+          coordinates { % Control group
+          (Week-1, 26)
+          (Week-2, 28)
+          (Week-3, 24)
+          };
+
+      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
+           coordinates { % Rewards
+          (Week-1, 5)
+          (Week-2, 0)
+          (Week-3, 12)
+           };
+
+
+      \addplot[style={fill=gray},error bars/.cd, y dir=both, y explicit,error bar style=red]
+           coordinates { % Rewards
+          (Week-1, 14)
+          (Week-2, 26)
+          (Week-3, 16)
+           };
+
+      \legend{Visual, Auditory, Visual-Auditory}
+
+  \end{axis}
+  \end{tikzpicture}
+  \caption{The number of habits completed for each reward over the 3-week period.}~\label{fig:m1_h1_a}
+\end{figure}
+
+
+A one-way between-groups analysis of variance with planned comparisons was conducted to explore the effect of rewards on the number of habits completed, compared with the control group (Figure~\ref{fig:m1_h1}). Participants were divided into two groups: group 1 with rewards, group 2 without rewards. There was a statistically significant difference at the $p$ $<$ $0.005$ level in both groups for $2$$/$$3$ of the weeks: week 1, $F(1,23.20) = 9.48$, $p = 0.005$, week 2, $F(1,33.35) = 4.46$, p = 0.42 and week 3, $F(1,50) = 17.01$, $p\leq 0.005$. The effect size for week 1, week 2 and week 3 are large, calculated using $\eta^{2}$, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
 
 \begin{figure}[H]
 \centering
