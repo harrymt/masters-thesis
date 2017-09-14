@@ -6,6 +6,7 @@
 
 \usepackage{fancyhdr} % Customise style
 % ERROR MEANS WE NEED TO GET RID OF EMPTY LINE \\'s
+\setlength\parskip{\baselineskip}
 \usepackage{hyperref}
 \usepackage{url} % References
 \usepackage{graphicx} % Show images
@@ -32,6 +33,8 @@
 \emergencystretch 3em
 \addbibresource{chapters/bibliography}
 
+\raggedbottom % Stop weird whitespace appearing because of twosided binding
+
 \usetikzlibrary{shapes.geometric, arrows} % For diagrams
 
 \newcommand\blankpage{ % Code for the blank page
@@ -56,20 +59,20 @@
     \includepdf[pages={1-},scale=1]{./resources/title-page.pdf}
 
     % Actual margins here
-    \newgeometry{top=2.4cm, bottom=2.5cm, left=3cm, right=2.2cm}
-    \import{./chapters/}{acknowledgements}
+    \newgeometry{top=2.4cm, bottom=2.5cm, left=2.7cm, right=2.2cm}
+    \import{./chapters/}{0_abstract}
     \newpage
 
-    \import{./chapters/}{0_abstract}
+    \import{./chapters/}{acknowledgements}
 
     % Actual margins here
     % TOC MARGINS
-    \newgeometry{top=1.9cm, bottom=2.1cm, left=3cm, right=2.2cm}
+    \newgeometry{top=1.9cm, bottom=2.1cm, left=2.7cm, right=2.2cm}
     % END TOC MARGINS
     \tableofcontents
     \newpage
-    \newgeometry{top=2.4cm, bottom=2.5cm, left=3cm, right=2.2cm}
-
+    \newgeometry{top=2.4cm, bottom=2.5cm, left=2.7cm, right=2.2cm}
+    \blankpage
     % Set styles after the title, abstract and toc
     \fancypagestyle{plain} {
       \fancyhf{}
@@ -82,7 +85,10 @@
     % Start page numbers
     \pagenumbering{arabic}
 
+    \newgeometry{top=2.2cm, bottom=2.5cm, left=2.7cm, right=2.2cm}
     \import{./chapters/}{1_introduction.tex}
+    \newgeometry{top=2.4cm, bottom=2.5cm, left=2.7cm, right=2.2cm}
+
     \import{./chapters/}{2_habit.tex}
     \import{./chapters/}{3_multimodal.tex}
     \import{./chapters/}{4_design.tex}
