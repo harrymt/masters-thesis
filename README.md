@@ -1,6 +1,7 @@
 ## Harry's Habits: A Chatbot Investigating the Impact of Positive Reinforcement Rewards on Habit Formation.
 
-Written at the University of Bristol for my MSc Advanced Computer Science [thesis](thesis.pdf). I built a [chatbot](https://github.com/harrymt/harryshabits) that helps people form new positive habits by deliving different types of positive reinforcement rewards.
+Written at the University of Bristol for my MSc Advanced Computer Science [thesis](thesis.pdf).
+I built a [chatbot](https://github.com/harrymt/harryshabits) that helps people form new positive habits by deliving different types of positive reinforcement rewards.
 
 ## Overview
 
