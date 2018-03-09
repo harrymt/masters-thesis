@@ -1,13 +1,15 @@
 ## Masters Thesis
 
+Written at the University of Bristol for my MSc Advanced Computer Science [thesis](thesis.pdf).
+I built a [chatbot](https://github.com/harrymt/harryshabits) to help people form new positive habits by deliving different types of positive reinforcement rewards.
+
+
 <p align="center">
     <a href="thesis.pdf" title="Harry's Habits: A Chatbot Investigating the Impact of Positive Reinforcement Rewards on Habit Formation.">
         <img src="screenshot.png" width="700" />
     </a>
 </p>
 
-Written at the University of Bristol for my MSc Advanced Computer Science [thesis](thesis.pdf).
-I built a [chatbot](https://github.com/harrymt/harryshabits) to help people form new positive habits by deliving different types of positive reinforcement rewards.
 
 ## Implementation
 
